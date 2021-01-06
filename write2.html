@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
+<meta name="HandheldFriendly" content="true">
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+
+<title>GONGJANG</title>
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="./css/common.css?ver=<?php echo time(); ?>">
+<script src="./js/swiper.min.js"></script>
+<link rel="stylesheet" href="./css/swiper.min.css">
+<!-- selectSet -->
+<script src="./js/selectSet.js"></script>
+<link rel="stylesheet" href="./css/selectSet.css">
+</head>
+
+<body class="login">
+
+<div class="sub_header">
+	<div class="logo">
+		<a href="/">
+			<img src="./img/logo_white.svg" />
+		</a>
+	</div>
+	<div class="sub_title">
+		<div class="bg"></div>
+		<h3>게시물 수정</h3>
+	</div>
+</div>
+
+<form method="post" name="write_form" onsubmit="return false;">
+<div class="write_form_group">
+	<label>카테고리</label>
+	<div class="write_form_content">
+		<select name="area" id="area">
+			<option value="">카테고리를 선택하세요.</option>
+			<option value="1">카테고리1</option>
+			<option value="2">카테고리2</option>
+		</select>	
+		<p class="help">* 소속된 공간 목록 중 업로드할 공간을 선택하세요.</p>
+	</div>
+</div>
+
+<div class="write_form_group">
+	<label>제목</label>
+	<div class="write_form_content">
+		<input type="text" name="write_subject" class="write_form_input" placeholder="제목을 입력하세요" />
+	</div>
+</div>
+
+<div class="write_form_group">
+	<label>내용</label>
+	<div class="write_form_content">
+		<textarea name="write_content" class="write_form_textarea" placeholder="내용을 입력하세요"></textarea>
+	</div>
+</div>
+
+<div class="write_form_group">
+	<label for="write_subject">업로드</label>
+	<div class="write_form_content">
+		<label class="write_file">업로드 파일 선택</label>
+		<input type="file" name="write_file" id="write_file">
+		<p class="help mt10">* 사진 및 동영상 업로드 가능.</p>
+		<a href="javascript:;" class="filebtn"><img src="./img/file-search-ico.svg" /></a>
+	</div>
+</div>
+
+<div class="write_form_group">
+	<label>권한설정</label>
+	<div class="write_form_content">
+		<div class="checks-wrap">
+			<div class="checks ">
+				<input type="radio" name="ck1" id="ck1" checked>
+				<label for="ck1">권한</label> 
+			</div>
+		</div>
+		<div class="checks-wrap">
+			<div class="checks">
+				<input type="radio" name="ck1" id="ck2" checked>
+				<label for="ck2">권한</label> 
+			</div>
+		</div>
+		<div class="checks-wrap">
+			<div class="checks">
+				<input type="radio" name="ck1" id="ck3" checked>
+				<label for="ck3">권한 3</label> 
+			</div>
+		</div>
+		<div class="checks-wrap">
+			<div class="checks">
+				<input type="radio" name="ck1" id="ck4" checked>
+				<label for="ck4">권한 4</label> 
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="write_button_group">
+	<button type="button" class="submit_btn">수정</button>
+	<button type="button" class="delete_btn">삭제</button>
+</div>
+
+</form>
+
+<div class="message-pop file-pop">
+	<a href="javascript:;" class="type1_click"><img src="./img/file1_ico.svg" /></a>
+	<a href="javascript:;" class="type2_click"><img src="./img/file2_ico.svg" /></a>
+</div>
+
+<div class="nav-bottom">
+	<a href="#" class="circle-logo-btn"><img src="./img/circle-logo.png" /></a>
+	<a href="./main.php" class="left-arrow-btn"><img src="./img/arrow-left-on.png" /></a>
+	<a href="#" class="right-arrow-btn"><img src="./img/arrow-right-on.png" /></a>
+</div>
+
+<script>
+selectSet("#area");	
+
+function fileProc() {
+	document.getElementById('write_file_txt').innerHTML=this.value;
+}
+
+$(document).on("change", "#write_file", function() {
+	// input file 동기 생성 코드 삽입 요
+	var filename = $(this).val();
+	var filename_arr = filename.split("\\");
+	filename = filename_arr[filename_arr.length -1];
+	var html = "<span class='add_file'>"+filename+" <a href='javascript:;'><img src='./img/file-delete-ico.svg' /></a></span>";
+	if ($(".write_file").html() == "업로드 파일 선택") {
+		$(".write_file").html(html);
+	} else {
+		$(".write_file").append(html);
+	}
+
+	var len = $(".add_file").length;
+	if (len < 1) {
+		len = 1;
+	}
+	$(".write_file").height(len * 36);
+
+});
+
+$(document).on("click", ".add_file a", function() {
+	$(this).parent().remove();
+	var len = $(".add_file").length;
+	if (len < 1) {
+		len = 1;
+	}
+	$(".write_file").height(len * 36);
+});
+
+//$(".write_file").after().click(function() {
+$(document).on("click",".filebtn",function() {
+	$(".type1_click").html("<img src='./img/file1_ico.svg' />");
+	$(".type2_click").html("<img src='./img/file2_ico.svg' />");
+	$(".message-pop").show();
+});
+
+$(document).on("click", ".type1_click", function() {
+	$(this).html("<img src='./img/file1_on_ico.svg' />");
+	$('#write_file').click();
+	$(".message-pop").hide();
+});
+
+$(document).on("click", ".type2_click", function() {
+	$(this).html("<img src='./img/file2_on_ico.svg' />");
+	$('#write_file').click();
+	$(".message-pop").hide();
+});
+</script>
+
+</body>
+</html>
+

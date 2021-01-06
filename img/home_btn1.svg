@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="41.919" height="42.576" viewBox="0 0 41.919 42.576">
+  <g id="그룹_971" data-name="그룹 971" transform="translate(-32 -299)">
+    <g id="그룹_783" data-name="그룹 783" transform="translate(72.919 340.576) rotate(180)">
+      <path id="패스_399" data-name="패스 399" d="M20.175,0,0,17.546v23.03H39.919V17.546Z" transform="translate(0)" fill="#337ef7" stroke="#337ef7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+    <g id="그룹_970" data-name="그룹 970">
+      <text id="공격" transform="translate(46.757 327.865)" fill="#fff" font-size="6" font-family="SourceHanSansK-Regular, Source Han Sans K"><tspan x="0" y="0">공격</tspan></text>
+      <g id="그룹_780" data-name="그룹 780" transform="translate(40.283 308.728)">
+        <g id="그룹_505" data-name="그룹 505" transform="translate(0 0)">
+          <ellipse id="타원_461" data-name="타원 461" cx="4.016" cy="4.016" rx="4.016" ry="4.016" transform="translate(6.928)" fill="#337ef7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <line id="선_351" data-name="선 351" x2="16.117" transform="translate(8.16)" fill="#fff" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <line id="선_352" data-name="선 352" x2="16.117" transform="translate(8.16 8.033)" fill="#fff" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <line id="선_353" data-name="선 353" x2="9.315" transform="translate(14.961 5.516)" fill="#fff" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <line id="선_354" data-name="선 354" x2="9.315" transform="translate(14.961 2.758)" fill="#fff" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <ellipse id="타원_460" data-name="타원 460" cx="4.016" cy="4.016" rx="4.016" ry="4.016" transform="translate(3.463)" fill="#337ef7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <path id="패스_674" data-name="패스 674" d="M4.016,0A4.016,4.016,0,1,1,0,4.016,4.129,4.129,0,0,1,.305,2.478,3.985,3.985,0,0,1,4.016,0Z" fill="#337ef7" stroke="#fff" stroke-linecap="round" stroke-width="1.5"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

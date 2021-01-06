@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="51.33" height="52.142" viewBox="0 0 51.33 52.142">
+  <g id="그룹_790" data-name="그룹 790" transform="translate(-89 -498.215)">
+    <text id="공격" transform="translate(107 534)" fill="#5a5553" font-size="8" font-family="SourceHanSansK-Light, Source Han Sans K" font-weight="300"><tspan x="0" y="0">공격</tspan></text>
+    <g id="그룹_780" data-name="그룹 780" transform="translate(47 131.986)">
+      <g id="그룹_505" data-name="그룹 505" transform="translate(-379.459 110.124)">
+        <circle id="타원_461" data-name="타원 461" cx="4.963" cy="4.963" r="4.963" transform="translate(440.021 267.89)" stroke-width="1.5" stroke="#5a5553" stroke-linecap="round" stroke-linejoin="round" fill="#fff"/>
+        <line id="선_351" data-name="선 351" x2="19.916" transform="translate(441.543 267.89)" fill="#fff" stroke="#5a5553" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <line id="선_352" data-name="선 352" x2="19.916" transform="translate(441.543 277.816)" fill="#fff" stroke="#5a5553" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <line id="선_353" data-name="선 353" x2="11.512" transform="translate(449.948 274.706)" fill="#fff" stroke="#5a5553" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <line id="선_354" data-name="선 354" x2="11.512" transform="translate(449.948 271.298)" fill="#fff" stroke="#5a5553" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <circle id="타원_460" data-name="타원 460" cx="4.963" cy="4.963" r="4.963" transform="translate(435.739 267.89)" stroke-width="1.5" stroke="#5a5553" stroke-linecap="round" stroke-linejoin="round" fill="#fff"/>
+        <path id="패스_674" data-name="패스 674" d="M4.963,0A4.963,4.963,0,1,1,0,4.963a5.1,5.1,0,0,1,.377-1.9A4.924,4.924,0,0,1,4.963,0Z" transform="translate(431.46 267.89)" fill="#fff" stroke="#5a5553" stroke-linecap="round" stroke-width="1.5"/>
+      </g>
+    </g>
+    <g id="그룹_783" data-name="그룹 783" transform="translate(435.915 1065.023) rotate(180)">
+      <path id="패스_399" data-name="패스 399" d="M195.973-202.982,171.042-181.3v28.459h49.33V-181.3Z" transform="translate(125.544 718.648)" fill="none" stroke="#5a5553" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

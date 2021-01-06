@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
+<meta name="HandheldFriendly" content="true">
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+
+<title>GONGJANG</title>
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="./css/common.css?ver=<?php echo time(); ?>">
+<script src="./js/swiper.min.js"></script>
+<link rel="stylesheet" href="./css/swiper.min.css">
+<!-- selectSet -->
+<script src="./js/selectSet.js"></script>
+<link rel="stylesheet" href="./css/selectSet.css">
+</head>
+
+<body class="login">
+
+<div class="sub_header">
+	<div class="logo">
+		<a href="/">
+			<img src="./img/logo_white.svg" />
+		</a>
+	</div>
+	<div class="step">
+		<ul>
+			<li class="on"><label>예약 1단계</label></li>
+			<li class="on"><label>예약 2단계</label></li>
+			<li class=""><label>예약 3단계</label></li>
+		</ul>
+		<span>예약 2단계</span>
+	</div>
+	<div class="sub_title">
+		<div class="bg"></div>
+		<h3>예약하기</h3>
+	</div>
+</div>
+
+<form method="post" name="write_form" onsubmit="return false;">
+
+<div class="location_detail cal">
+	<div class="cal_header">
+		<h3>4월</h3>
+		<a href="javascript:;" class="cal-left"><img src="./img/cal-arrow-left-ico.svg" /></a>
+		<a href="javascript:;" class="cal-right"><img src="./img/cal-arrow-right-ico.svg" /></a>
+	</div>
+	<div class="cal_body">
+		<table>
+			<thead><tr><th>일</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th><th>토</th></tr></thead>
+			<tbody>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><span class="dis">1</span></td>
+					<td><span class="dis">2</span></td>
+					<td><span class="dis">3</span></td>
+					<td><span class="dis">4</span></td>
+				</tr>
+				<tr>
+					<td><span class="dis">5</span></td>
+					<td><span class="dis">6</span></td>
+					<td><span class="dis">7</span></td>
+					<td><span class="dis">8</span></td>
+					<td><span class="dis">9</span></td>
+					<td><span class="dis">10</span></td>
+					<td><span class="dis">11</span></td>
+				</tr>
+				<tr>
+					<td><span class="dis">12</span></td>
+					<td><span class="dis">13</span></td>
+					<td><span class="dis">14</span></td>
+					<td><span class="dis">15</span></td>
+					<td><span class="dis">16</span></td>
+					<td><span class="dis">17</span></td>
+					<td><span class="dis">18</span></td>
+				</tr>
+				<tr>
+					<td><span class="dis">19</span></td>
+					<td><span class="dis">20</span></td>
+					<td><span class="today">21</span></td>
+					<td><span>22</span></td>
+					<td><span>23</span></td>
+					<td><span>24</span></td>
+					<td><span>25</span></td>
+				</tr>
+				<tr>
+					<td><span>26</span></td>
+					<td><span class="dis">27</span></td>
+					<td><span>28</span></td>
+					<td><span>29</span></td>
+					<td><span>30</span></td>
+					<td><span>31</span></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	
+	<div class="write_form_group type2">
+		<label>날짜</label>
+		<div class="write_form_content">
+			4월 21일
+		</div>
+	</div>
+
+</div>
+
+<div class="write_form_group">
+	<label>지점</label>
+	<div class="write_form_content">
+		<input type="text" name="write_search1" class="write_form_input write_search" placeholder="지점을 선택하세요." />
+	</div>
+</div>
+
+<div class="write_form_group">
+	<label>구장</label>
+	<div class="write_form_content">
+		<select name="area" id="area">
+			<option value="">구장을 선택하세요.</option>
+			<option value="1">구장1</option>
+			<option value="2">구장2</option>
+		</select>	
+		<p class="info">* 구장을 선택해야 시간이 표출됩니다.</p>
+	</div>
+</div>
+
+
+<div class="write_form_group">
+	<label>시간</label>
+	<div class="write_form_content">
+		<button type="button" class="toggle_btn">am 06 : 00 ~ am 08 : 00</button>
+		<button type="button" class="toggle_btn">am 06 : 00 ~ am 08 : 00</button>
+		<button type="button" class="toggle_btn">am 06 : 00 ~ am 08 : 00</button>
+		<button type="button" class="toggle_btn">am 06 : 00 ~ am 08 : 00</button>
+		<button type="button" class="toggle_btn">am 06 : 00 ~ am 08 : 00</button>
+		<button type="button" class="toggle_btn">am 06 : 00 ~ am 08 : 00</button>
+		<button type="button" class="toggle_btn">am 06 : 00 ~ am 08 : 00</button>
+		<button type="button" class="toggle_btn">am 06 : 00 ~ am 08 : 00</button>
+		<button type="button" class="toggle_btn">am 06 : 00 ~ am 08 : 00</button>
+		<p class="info">* 대관할 구장을 선택해 주십시오.</p>
+	</div>
+</div>
+
+<div class="write_form_group">
+	<label>선수</label>
+	<div class="write_form_content">
+		<input type="text" name="write_search2" class="write_form_input write_search" placeholder="선수 명단 검색" />
+		<p class="info">* 함께 경기할 선수의 이름을 입력하세요.</p>
+	</div>
+</div>
+
+<div class="write_form_group res">
+	<label></label>
+	<div class="write_form_content">
+		<div class="player_select_wrap">
+			<ul class="player_select_list">
+				<li>
+					<div class="player_select_info">
+						<img src="./img/player1.png" />
+						<span>김공장</span>
+					</div>
+					<input type="text" class="player_no" value="" placeholder="번호입력" />
+					<a href="javascript:;"><img src="./img/minus_gr_ico.svg" /></a>
+				</li>
+				<li>
+					<div class="player_select_info">
+						<img src="./img/player1.png" />
+						<span>김공장</span>
+					</div>
+					<input type="text" class="player_no" value="" placeholder="번호입력" />
+					<a href="javascript:;"><img src="./img/minus_gr_ico.svg" /></a>
+				</li>
+				<li>
+					<div class="player_select_info">
+						<img src="./img/player1.png" />
+						<span>김공장</span>
+					</div>
+					<input type="text" class="player_no" value="" placeholder="번호입력" />
+					<a href="javascript:;"><img src="./img/minus_gr_ico.svg" /></a>
+				</li>
+				<li>
+					<div class="player_select_info">
+						<img src="./img/player1.png" />
+						<span>김공장</span>
+					</div>
+					<input type="text" class="player_no" value="" placeholder="번호입력" />
+					<a href="javascript:;"><img src="./img/minus_gr_ico.svg" /></a>
+				</li>
+				<li>
+					<div class="player_select_info">
+						<img src="./img/player1.png" />
+						<span>김공장</span>
+					</div>
+					<input type="text" class="player_no" value="" placeholder="번호입력" />
+					<a href="javascript:;"><img src="./img/minus_gr_ico.svg" /></a>
+				</li>
+				<li>
+					<div class="player_select_info">
+						<img src="./img/player1.png" />
+						<span>김공장</span>
+					</div>
+					<input type="text" class="player_no" value="" placeholder="번호입력" />
+					<a href="javascript:;"><img src="./img/minus_gr_ico.svg" /></a>
+				</li>
+				<li>
+					<div class="player_select_info">
+						<img src="./img/player1.png" />
+						<span>김공장</span>
+					</div>
+					<input type="text" class="player_no" value="" placeholder="번호입력" />
+					<a href="javascript:;"><img src="./img/minus_gr_ico.svg" /></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="write_form_group total">
+	<label>합계</label>
+	<div class="write_form_content">
+		0원<br />(구장대여 0시간 0원 + 옵션선택 0원)
+	</div>
+</div>
+
+<div class="write_form_check">
+	<input type="checkbox" id="fck1" /><label for="fck1"></label> <span>자동 매치 등록하기</span>
+	<p class="info">* 매치를 등록하면 경기를 희망하는 팀의 연락을 <br />받을 수 있습니다.</p>
+</div>
+<div class="write_form_check">
+	<input type="checkbox" id="fck2" /><label for="fck2"></label> <span>자동 용병모집 등록하기</span>
+	<p class="info">* 용병모집을 등록하면 커뮤니티의 용병모집란에 <br />자동 등록 됩니다.</p>
+</div>
+<div class="write_form_check">
+	<input type="checkbox" id="fck3" /><label for="fck3"></label> <span>같이 평가하기</span>
+	<p class="info">* 서로의 평가가 가능한 기능입니다.</p>
+</div>
+
+<div class="agree_content">
+	<div class="agree">
+		<button class="form_btn">결제하기</button>
+	</div>
+</div>
+</form>
+
+<div class="message-pop area-select">
+	<h3>지점 선택</h3>
+	<ul class="left-menu">
+		<li class="on" data-target="right-menu1">서울, 경기 지역</li>
+		<li data-target="right-menu2">광주, 전라 지역</li>
+		<li data-target="right-menu3">대전, 충청 지역</li>
+		<li data-target="right-menu4">부산, 경상 지역</li>
+		<li data-target="right-menu5">제주 지역</li>
+	</ul>
+
+	<ul class="right-menu" id="right-menu1">
+		<li><a href="javascript:;">동대문점</a></li>
+		<li><a href="javascript:;">서수원점</a></li>
+		<li><a href="javascript:;">안산 고잔점</a></li>
+		<li><a href="javascript:;">일산점</a></li>
+	</ul>
+	<ul class="right-menu" id="right-menu2" style="display:none;">
+		<li><a href="javascript:;">전주완산점</a></li>
+	</ul>
+	<ul class="right-menu" id="right-menu3" style="display:none;">
+		<li><a href="javascript:;">대전 탄방점</a></li>
+		<li><a href="javascript:;">동대전점</a></li> 
+	</ul>
+	<ul class="right-menu" id="right-menu4" style="display:none;">
+		<li><a href="javascript:;">부산 가야점</a></li>
+		<li><a href="javascript:;">부산 북구점</a></li>
+		<li><a href="javascript:;">울산 남구점</a></li>
+		<li><a href="javascript:;">울산 북구점</a></li>
+		<li><a href="javascript:;">창원점</a></li>
+	</ul>
+	<ul class="right-menu" id="right-menu5" style="display:none;">
+		<li><a href="javascript:;">가천대학교 운동장</a></li>
+		<li><a href="javascript:;">GLOBAL ARENA(Japan)</a></li>
+		<li><a href="javascript:;">Seogwipo, JEJU</a></li>
+	</ul>
+
+	<div class="popup-btn-wrap">
+		<button class="form_btn close_btn">선택하기</button>
+	</div>
+
+</div>
+<script>
+$(document).on("click", ".left-menu li", function() {
+	var target = $(this).data("target");
+	$(".left-menu li").removeClass("on");
+	$(this).addClass("on");
+	$(".right-menu").hide();
+	$("#"+target).show();
+});
+
+$(document).on("click", ".close_btn", function() {
+	$(".area-select").hide();
+});
+
+</script>
+
+<div class="message-pop player-pop">
+	<h3>선수 명단 선택</h3>
+
+	<div class="write_form_group">
+		<div class="write_form_content">
+			<select name="area3" id="area3">
+				<option value="">팀 선택</option>
+				<option value="1">팀1</option>
+				<option value="2">팀2</option>
+			</select>	
+		</div>
+		<span>  *팀 선택 후 선수를 선택할 수 있습니다.</span>
+	</div>
+
+	<div class="write_form_group">
+		<div class="write_form_content">
+			<input type="text" name="write_subject" class="write_form_input" placeholder="이름 입력" />
+			<a href="javascript:;" class="filebtn"><img src="./img/file-search-ico.svg" /></a>
+		</div>
+		<span> * 함께 경기할 선수의 이름을 입력하세요.</span>
+	</div>
+
+	<ul class="player_add_list">
+		<li>
+			<img src="./img/player1.png" class="user_img" />
+			<span>김공장</span>
+			<a href="javascript:;"><img src="./img/plus_gr_ico.svg" /></a>
+		</li>
+		<li>
+			<img src="./img/player1.png" class="user_img" />
+			<span>김공장장</span>
+			<a href="javascript:;"><img src="./img/minus_gr_ico.svg" /></a>
+		</li>
+		<li>
+			<img src="./img/player1.png" class="user_img" />
+			<span>김과장</span>
+			<a href="javascript:;"><img src="./img/minus_gr_ico.svg" /></a>
+		</li>
+		<li>
+			<img src="./img/player1.png" class="user_img" />
+			<span>김뱌뱌</span>
+			<a href="javascript:;"><img src="./img/minus_gr_ico.svg" /></a>
+		</li>
+		<li>
+			<img src="./img/player1.png" class="user_img" />
+			<span>김광장</span>
+			<a href="javascript:;"><img src="./img/minus_gr_ico.svg" /></a>
+		</li>
+		<li>
+			<img src="./img/player1.png" class="user_img" />
+			<span>김공장</span>
+			<a href="javascript:;"><img src="./img/minus_gr_ico.svg" /></a>
+		</li>
+		<li>
+			<img src="./img/player1.png" class="user_img" />
+			<span>김공장</span>
+			<a href="javascript:;"><img src="./img/minus_gr_ico.svg" /></a>
+		</li>
+
+	</ul>
+	<div class="player_add_btn">
+		<button type="button" class="add_complete_btn">완료</button>
+	</div>
+</div>
+
+
+<div class="nav-bottom">
+	<a href="#" class="circle-logo-btn"><img src="./img/circle-logo.png" /></a>
+	<a href="./main.php" class="left-arrow-btn"><img src="./img/arrow-left-on.png" /></a>
+	<a href="#" class="right-arrow-btn"><img src="./img/arrow-right-on.png" /></a>
+</div>
+
+<script>
+selectSet("#area");	
+selectSet("#area3");
+selectSet("#type");	
+
+$(document).on("click","input[name='write_search1']", function() {
+	$(".area-select").show();
+});
+
+$(document).on("click","input[name='write_search2']",function() {
+	$(".message-pop").show();
+});
+
+$(document).on("click", ".add_complete_btn", function() {
+	$(".message-pop").hide();
+});
+
+</script>
+
+</body>
+</html>
+

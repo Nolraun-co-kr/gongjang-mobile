@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="33.98" height="25.353" viewBox="0 0 33.98 25.353">
+    <defs>
+        <style>
+            .prefix__cls-1,.prefix__cls-2{fill:none;stroke:#337ef7;stroke-linecap:round;stroke-width:3px}.prefix__cls-1{stroke-miterlimit:10}.prefix__cls-2{stroke-linejoin:round}
+        </style>
+    </defs>
+    <g id="prefix__그룹_868" data-name="그룹 868" transform="translate(1.503 1.5)">
+        <path id="prefix__선_143" d="M0 5.546L0 0" class="prefix__cls-1" data-name="선 143" transform="translate(15.488 16.807)"/>
+        <path id="prefix__선_144" d="M0 0L10.084 0" class="prefix__cls-1" data-name="선 144" transform="translate(10.445 22.353)"/>
+        <path id="prefix__패스_487" d="M455.073 277.785s-4.774-2.736-5.324 1.771c-.513 4.2 7.167 6.764 7.167 6.764" class="prefix__cls-2" data-name="패스 487" transform="translate(-449.725 -275.354)"/>
+        <path id="prefix__패스_488" d="M475.1 277.785s4.774-2.736 5.324 1.771c.513 4.2-7.166 6.764-7.166 6.764" class="prefix__cls-2" data-name="패스 488" transform="translate(-449.47 -275.354)"/>
+        <path id="prefix__패스_486" d="M454.987 275.372h20.337s.84 16.807-10.169 16.807-10.168-16.807-10.168-16.807z" class="prefix__cls-2" data-name="패스 486" transform="translate(-449.668 -275.372)"/>
+    </g>
+</svg>

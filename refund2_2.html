@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
+<meta name="HandheldFriendly" content="true">
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+
+<title>GONGJANG</title>
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="./css/common.css?ver=<?php echo time(); ?>">
+<script src="./js/swiper.min.js"></script>
+<link rel="stylesheet" href="./css/swiper.min.css">
+<!-- selectSet -->
+<script src="./js/selectSet.js"></script>
+<link rel="stylesheet" href="./css/selectSet.css">
+</head>
+
+<body class="login">
+
+<div class="sub_header">
+	<div class="logo">
+		<a href="/">
+			<img src="./img/logo_white.svg" />
+		</a>
+	</div>
+	<div class="sub_title">
+		<h3>환불내역</h3>
+	</div>
+</div>
+
+<div class="refund_basic">
+	<div class="refund-basic-list-data">
+		<div class="refund-content-title">
+			<span class="branch">예약완료</span>
+			<h5 class="branch"><strong>부천중동</strong>점(가맹점)</h5>
+			<p>예약번호 01011010</p>
+		</div>
+		<div class="refund-content-type">
+			<div class="type-line">예약 날짜</div>
+			<div class="type-line">예약 시간</div>
+			<div class="type-line">예약 가격</div>
+			<div class="type-line">예약자</div>
+		</div>
+		<div class="refund-content-value">
+			<div class="type-line">2020. 2. 22</div>
+			<div class="type-line">18:00 - 22:00</div>
+			<div class="type-line">50,500원</div>
+			<div class="type-line">환불대기</div>
+		</div>
+	</div>
+</div>
+
+<div class="refund_total">
+	<label>환불 금액</label>
+	<div class="refund_total_content">
+		<span class="">50,500원</span>
+	</div>
+</div>
+<div class="refund_total">
+	<label>환불 정책</label>
+	<div class="refund_total_content">
+		<span class="">1. 단순 대관 날짜 변경은 불가하며 예약 취소 및 환불 규정에<br />&nbsp;&nbsp;&nbsp;의거해 환불 후 신규 대관일을 신청하셔야 합니다.<br />2. 대관 당일에는 취소가 불가합니다.<br />3. 환불 및 취소는 일일 단위로 가능합니다.<br /><br />30일 - 21일 전 : 100% 환불 / 20일 - 16일 전 : 80% 환불<br />15일 - 11일 전 : 60% 환불 / 10일 - 7일 전 : 50%환불<br />6일 - 4일 전 : 30% 환불 / 3일 전 - 당일 : 환불 불가<br /><br />4. 당일 환불은 천재지변으로 인한 경우에만 100% 환불됩니다.<br />(호우경보, 대설경보, 태풍주의보, 태풍경보만 적용)<br /><br />임시 추가 내용입니다.
+		</span>
+	</div>
+</div>
+
+<div class="refund_reason">
+	<p>환불 사유</p>
+	<input type="text" class="refund_input" value="" placeholder="환불 사유를 입력해주세요." />
+</div>
+
+<div class="refund_type">
+	<label>환불방식</label>
+	<div class="refund_filter">
+		<select name="type" id="type">
+			<option value="">선택</option>
+			<option value="1">계좌이체</option>
+			<option value="2">적립금</option>
+		</select>		
+	</div>
+	<div class="refund_write">
+		<p>은행</p>
+		<input type="text" class="refund_input" value="" placeholder="은행을 입력해주세요" />
+	</div>
+	<div class="refund_write">
+		<p>계좌번호</p>
+		<input type="text" class="refund_input" value="" placeholder="계좌번호를 입력해주세요" />
+	</div>
+</div>
+<div class="refund_btn_wrap">
+	<button class="complete_btn">완료</button>
+	<button class="cancel_btn">환불취소</button>
+</div>
+
+
+
+
+<div class="nav_padding"></div>
+
+<div class="nav-bottom">
+	<a href="#" class="circle-logo-btn"><img src="./img/circle-logo.png" /></a>
+	<a href="./main.php" class="left-arrow-btn"><img src="./img/arrow-left-on.png" /></a>
+	<a href="#" class="right-arrow-btn"><img src="./img/arrow-right-on.png" /></a>
+</div>
+
+
+<div class="message-pop refund-pop">
+	<h3>환불을<br />취소하시겠습니까?</h3>
+	
+	<div class="refund_pop_btn">
+		<button type="button" class="complete_btn">네</button>
+		<button type="button" class="cancel_btn">아니오</button>
+	</div>
+</div>
+
+
+<script>
+selectSet("#type");
+$(".refund-pop").show();
+
+$(document).on("click", ".refund_btn_wrap .cancel_btn", function() {
+	$(".refund-pop").show();
+});
+
+$(document).on("click", ".refund_pop_btn .complete_btn", function() {
+	$(".refund-pop").hide();
+});
+
+$(document).on("click", ".refund_pop_btn .cancel_btn", function() {
+	$(".refund-pop").hide();
+});
+</script>
+</body>
+</html>
+

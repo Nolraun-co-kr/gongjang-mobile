@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
+<meta name="HandheldFriendly" content="true">
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+
+<title>GONGJANG</title>
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="./css/common.css?ver=<?php echo time(); ?>">
+<script src="./js/swiper.min.js"></script>
+<link rel="stylesheet" href="./css/swiper.min.css">
+<!-- selectSet -->
+<script src="./js/selectSet.js"></script>
+<link rel="stylesheet" href="./css/selectSet.css">
+</head>
+
+<body>
+
+<header class="shadowdark">
+	<a href="#" class="menu_btn"><img src="./img/menu-ico.svg" /></a>
+	<a href="#" class="item_btn"></a>
+	<div class="top_title">
+		고객센터	
+	</div>
+	<ul class="sub_tab3">
+		<li><a href="javascript:;">1:1문의</a></li>
+		<li><a href="javascript:;">FAQ</a></li>
+		<li><a href="javascript:;">공지사항</a></li>
+		<li class="on"><a href="javascript:;">이벤트</a></li>
+	</ul>
+</header>
+
+<div class="content sub customer">
+	<div class="event_header_wrap">
+		<p>목록</p>
+		<div class="event_header_category">
+			<select name="area" id="area">
+				<option value="">진행상황</option>
+				<option value="1">진행중</option>
+				<option value="2">마감</option>
+			</select>
+		</div>
+	</div>
+	<ul class="event_list_wrap">
+			<li>
+				<div class="event_list_img"><img src="./img/event_img.jpg" /></div>
+				<div class="event_list_data">
+					<span class="event_list_type"><img src="./img/star.svg" /> 진행중</span>
+					<a href="#">유소년 이벤트!</a>
+					<span class="event_list_date">2020.02.01~2020.02.28</span>
+				</div>
+			</li>
+			<li>
+				<div class="event_list_img"><img src="./img/event_img.jpg" /></div>
+				<div class="event_list_data">
+					<span class="event_list_type"><img src="./img/star.svg" /> 진행중</span>
+					<a href="#">유소년 이벤트!</a>
+					<span class="event_list_date">2020.02.01~2020.02.28</span>
+				</div>
+			</li>
+			<li>
+				<div class="event_list_img"><img src="./img/event_img.jpg" /></div>
+				<div class="event_list_data">
+					<span class="event_list_type"><img src="./img/star.svg" /> 진행중</span>
+					<a href="#">유소년 이벤트!</a>
+					<span class="event_list_date">2020.02.01~2020.02.28</span>
+				</div>
+			</li>
+			<li>
+				<div class="event_list_img"><img src="./img/event_img.jpg" /></div>
+				<div class="event_list_data">
+					<span class="event_list_type"><img src="./img/star.svg" /> 진행중</span>
+					<a href="#">유소년 이벤트!</a>
+					<span class="event_list_date">2020.02.01~2020.02.28</span>
+				</div>
+			</li>
+	<ul>
+
+</div>
+
+<div class="nav_padding"></div>
+
+<div class="nav-bottom dark">
+	<a href="#" class="circle-logo-btn"><img src="./img/circle-logo.png" /></a>
+	<a href="./main.php" class="left-arrow-btn"><img src="./img/arrow-left-on.png" /></a>
+	<a href="#" class="right-arrow-btn"><img src="./img/arrow-right-on.png" /></a>
+</div>
+
+<footer>
+
+</footer>
+
+
+
+<script>
+selectSet("#area");
+</script>
+</body>
+</html>
+

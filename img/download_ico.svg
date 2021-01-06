@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="11.6" height="12.594" viewBox="0 0 11.6 12.594">
+    <defs>
+        <style>
+            .prefix__cls-2{fill:none;stroke:#707070;stroke-linecap:round}
+        </style>
+    </defs>
+    <g id="prefix__그룹_961" data-name="그룹 961" transform="translate(-513 -979.406)">
+        <g id="prefix__그룹_960" data-name="그룹 960" transform="translate(513.831 979.906)">
+            <path id="prefix__패스_645" d="M348.491 303.305l4.969 4.969 4.969-4.969" data-name="패스 645" transform="translate(-348.491 -299.33)" style="stroke-linejoin:round;stroke-miterlimit:10;fill:none;stroke:#707070;stroke-linecap:round"/>
+            <path id="prefix__패스_647" d="M0 0h8.447" class="prefix__cls-2" data-name="패스 647" transform="rotate(90 2.484 2.484)"/>
+        </g>
+        <path id="prefix__선_741" d="M0 0L10.6 0" class="prefix__cls-2" data-name="선 741" transform="translate(513.5 991.5)"/>
+    </g>
+</svg>

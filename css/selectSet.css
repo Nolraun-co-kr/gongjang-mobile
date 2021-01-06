@@ -1,0 +1,16 @@
+/*
+ * Product selectSet v1.0.1
+ * Copyright 2020, ys kim
+ * Licensed under MIT
+ * Released on: April 01, 2020
+ */
+.form-select { display:none; }
+.form-select-after { width:100%;border:1px solid #5A5553;border-radius:7px;padding:0px 0px 0px 10px;margin:10px 0 0 0; }
+.form-select-after.on { padding:0px 0px 4px 10px; }
+.form-select-after .p-holder { position:relative;color:#5A5553;font-size:10px;height:3em;line-height:3em;border-bottom:none;margin:0em;padding:0em;width:calc(100% - 2.6em);cursor:pointer; }
+.form-select-after .p-holder:after { content:'';position:absolute;right:-14px;top:12px;width:12px;height:7px;background:url('../img/arrow-down.svg');cursor:pointer; }
+.form-select-after .p-option { display:none;position:relative;color:#5A5553;font-size:10px;height:20px;line-height:20px;margin:0em;padding:0em;width:100%;cursor:pointer; }
+.form-select-after .p-holder-txt { display:none; }
+.form-select-after.on .p-holder { border-bottom:1px solid #e4e4e4;margin-bottom:0.4em; }
+.form-select-after.on .p-option { display:block; }
+.form-select-after .p-holder.on { color:#24E5FF;font-weight:900; }

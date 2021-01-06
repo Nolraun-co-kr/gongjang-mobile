@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
+<meta name="HandheldFriendly" content="true">
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+
+<title>GONGJANG</title>
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="./css/common.css?ver=<?php echo time(); ?>">
+<script src="./js/swiper.min.js"></script>
+<link rel="stylesheet" href="./css/swiper.min.css">
+<!-- selectSet -->
+<script src="./js/selectSet.js"></script>
+<link rel="stylesheet" href="./css/selectSet.css">
+</head>
+
+<body class="login">
+
+<div class="sub_header">
+	<div class="logo">
+		<a href="/">
+			<img src="./img/logo_white.svg" />
+		</a>
+	</div>
+</div>
+
+<div class="complete-msg">
+	<img src="./img/circle-check.png" />
+	<h3>비밀번호가<br />변경되었니다.</h3>
+
+	<button class="complete_btn">로그인 바로가기</button>
+</div>
+
+<div class="nav-bottom">
+	<a href="#" class="circle-logo-btn"><img src="./img/circle-logo.png" /></a>
+	<a href="./login.php" class="left-arrow-btn"><img src="./img/arrow-left-on.png" /></a>
+	<a href="#" class="right-arrow-btn"><img src="./img/arrow-right.png" /></a>
+</div>
+
+
+
+
+
+
+<script>
+
+$(document).on("click",".complete_btn", function() {
+	location.href = "login.php";
+});
+
+
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
+<meta name="HandheldFriendly" content="true">
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+
+<title>GONGJANG</title>
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="./css/common.css?ver=<?php echo time(); ?>">
+<script src="./js/swiper.min.js"></script>
+<link rel="stylesheet" href="./css/swiper.min.css">
+<!-- selectSet -->
+<script src="./js/selectSet.js"></script>
+<link rel="stylesheet" href="./css/selectSet.css">
+</head>
+
+<body class="login">
+
+<div class="sub_header">
+	<div class="logo">
+		<a href="/">
+			<img src="./img/logo_white.svg" />
+		</a>
+	</div>
+	<div class="sub_title">
+		<h3>QR코드 생성</h3>
+	</div>
+</div>
+
+<div class="qrcode_print">
+	<img src="./img/qrcode.png" />
+	<p>QR정보 : H487BQ12GHJ9</p>
+</div>
+
+<div class="qrcode_info">
+	QR코드가 생성 및 저장 되었습니다.<br />마일리지를 적립 받기 위해 사용하실 수 있습니다.
+</div>
+
+<div class="qrcode_btn_wrap">
+	<button class="form_btn">다음</button>
+</div>
+
+
+<div class="nav_padding"></div>
+
+<div class="nav-bottom">
+	<a href="#" class="circle-logo-btn"><img src="./img/circle-logo.png" /></a>
+	<a href="./main.php" class="left-arrow-btn"><img src="./img/arrow-left-on.png" /></a>
+	<a href="#" class="right-arrow-btn"><img src="./img/arrow-right-on.png" /></a>
+</div>
+
+
+<div class="message-pop qrcode-pop">
+	<h3>QR코드가 현재<br />존재하지 않습니다.</h3>
+	<p>QR코드를 신규로 생성하시겠습니까?
+	
+	<div class="qrcode_pop_btn">
+		<button type="button" class="complete_btn">네</button>
+		<button type="button" class="cancel_btn">아니오</button>
+	</div>
+</div>
+
+
+<script>
+$(".qrcode-pop").show();
+
+$(document).on("click", ".qrcode_btn_wrap .form_btn", function() {
+	$(".qrcode-pop").show();
+});
+
+$(document).on("click", ".qrcode_pop_btn .complete_btn", function() {
+	$(".qrcode-pop").hide();
+});
+
+$(document).on("click", ".qrcode_pop_btn .cancel_btn", function() {
+	$(".qrcode-pop").hide();
+});
+</script>
+</body>
+</html>
+

@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
+<meta name="HandheldFriendly" content="true">
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+
+<title>GONGJANG</title>
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="./css/common.css?ver=<?php echo time(); ?>">
+<script src="./js/swiper.min.js"></script>
+<link rel="stylesheet" href="./css/swiper.min.css">
+<!-- selectSet -->
+<script src="./js/selectSet.js"></script>
+<link rel="stylesheet" href="./css/selectSet.css">
+</head>
+
+<body class="login">
+
+<div class="sub_header">
+	<div class="logo">
+		<a href="/">
+			<img src="./img/logo_white.svg" />
+		</a>
+	</div>
+	<div class="sub_title">
+		<div class="bg"></div>
+		<h3>선수 정보 입력</h3>
+	</div>
+</div>
+
+<form method="post" name="register_form" onsubmit="return false;">
+<div class="form-wrap">
+	
+	<div class="form-input-group">
+		<label for="">축구 포지션</label>
+		<select name="area" id="position1">
+			<option value="">포지션을 선택하세요.</option>
+			<option value="1">피보 (PIVO) * 공격수로서 상대 진영에 가장 가깝게 위치</option>
+			<option value="2">아라 (ALA) * 윙어로서 가장 많이 뛰어야 하는 위치</option>
+			<option value="3">픽소 (FLXO) * 수비수</option>
+			<option value="4">골레이로 (GOAEIRO) * 골키퍼</option>
+		</select>		
+	</div>
+
+	<div class="form-input-group">
+		<label for="">풋살 포지션</label>
+		<select name="area" id="position2">
+			<option value="">포지션을 선택하세요.</option>
+			<option value="1">피보 (PIVO) * 공격수로서 상대 진영에 가장 가깝게 위치</option>
+			<option value="2">아라 (ALA) * 윙어로서 가장 많이 뛰어야 하는 위치</option>
+			<option value="3">픽소 (FLXO) * 수비수</option>
+			<option value="4">골레이로 (GOAEIRO) * 골키퍼</option>
+		</select>		
+	</div>
+
+	<div class="form-input-group">
+		<label for="">신장</label>
+		<input type="text" name="birth" placeholder="신장입력" maxlength="3" />
+	</div>
+
+	<div class="form-input-group">
+		<label for="">몸무게</label>
+		<input type="text" name="height" placeholder="몸무게 입력" maxlength="3" />
+	</div>
+
+	<div class="form-input-group">
+		<label for="">선출</label>
+		<div class="checks reg">
+			<input type="radio" name="ck1" id="ck1">
+			<label for="ck1">선출</label> 
+			<input type="radio" name="ck1" id="ck2">
+			<label for="ck2">비선출</label>
+		</div>
+		<div class="checks_info">*선출 안내문입니다.</div>
+	</div>
+</div>
+<button class="form_btn">완료</button>
+
+</form>
+
+<div class="message-pop">
+	<h3><span>부가정보를</span><span>입력하시겠습니까?</span></h3>
+	<div class="pop-info"><span>부가정보 입력시 선수 정보를 더 자세한</span><span>서비스를 받으실 수 있습니다.</span></div>
+	<div class="pop-btn-group">
+		<button type="button" class="button-main pop-more-btn">네</button>
+		<button type="button" class="button-secondary pop-cancel-btn">아니오</button>
+	</div>
+
+</div>
+
+<script>
+selectSet("#position1");
+selectSet("#position2");
+
+$(document).on("click",".form_btn", function() {
+	location.href = "register_complete.php";
+});
+
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="41.919" height="42.576" viewBox="0 0 41.919 42.576">
+  <g id="그룹_975" data-name="그룹 975" transform="translate(-128.081 -299)">
+    <g id="그룹_787" data-name="그룹 787" transform="translate(169 340.576) rotate(180)">
+      <path id="패스_399" data-name="패스 399" d="M20.175,0,0,17.546v23.03H39.919V17.546Z" transform="translate(0)" fill="#337ef7" stroke="#337ef7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+    <g id="그룹_974" data-name="그룹 974">
+      <text id="수비" transform="translate(142.838 327.865)" fill="#fff" font-size="6" font-family="SourceHanSansK-Regular, Source Han Sans K"><tspan x="0" y="0">수비</tspan></text>
+      <g id="그룹_782" data-name="그룹 782" transform="translate(136.364 306.299)">
+        <g id="그룹_509" data-name="그룹 509">
+          <ellipse id="타원_467" data-name="타원 467" cx="2.416" cy="2.416" rx="2.416" ry="2.416" transform="translate(9.851)" fill="#337ef7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <path id="패스_679" data-name="패스 679" d="M295.617,455.028v-6.274s0-1.322.917-1.322h5.59s.9-.159.9,1.289v6.307" transform="translate(-287.184 -442.016)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <path id="패스_680" data-name="패스 680" d="M276.429,448.918l-2.983,3.308-3.213-4.1" transform="translate(-270.233 -442.545)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <path id="패스_681" data-name="패스 681" d="M325.977,448.918l2.983,3.308,3.213-4.1" transform="translate(-307.896 -442.545)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

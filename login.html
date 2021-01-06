@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
+<meta name="HandheldFriendly" content="true">
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+
+<title>GONGJANG</title>
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="./css/common.css?ver=<?php echo time(); ?>">
+<script src="./js/swiper.min.js"></script>
+<link rel="stylesheet" href="./css/swiper.min.css">
+</head>
+
+<body class="login">
+
+<form method="post" name="login_form" onsubmit="return false;">
+<div class="login_form">
+	<img src="./img/login_logo.svg" />
+	<div class="login_title">
+		<h3>환영합니다!</h3>
+		<span>로그인하면 더 많은 혜택이 있습니다!</span>
+	</div>
+	<div class="input_group">
+		<input type="text" name="fid" placeholder="ID" class="input_form" />
+		<input type="password" name="fid" placeholder="PW" class="input_form" />
+	</div>
+	<div class="login_sub_menu">
+		<a href="#">아이디 찾기</a><a href="#">비밀번호 찾기</a><a href="#">회원가입</a>
+	</div>
+	<button class="form_btn">로그인</button>
+</div>
+</form>
+
+<div class="bot_menu">
+	<a href="#">카카오 로그인</a><a href="#">네이버 로그인</a><a href="#">구글 로그인</a><a href="#">페이스북 로그인</a>
+</div>
+
+<footer>
+
+</footer>
+
+
+
+<script>
+$(document).on("click",".form_btn", function() {
+	location.href="./main.php";
+});
+
+</script>
+</body>
+</html>
+

@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
+<meta name="HandheldFriendly" content="true">
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+
+<title>GONGJANG</title>
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="./css/common.css?ver=<?php echo time(); ?>">
+<script src="./js/swiper.min.js"></script>
+<link rel="stylesheet" href="./css/swiper.min.css">
+<!-- selectSet -->
+<script src="./js/selectSet.js"></script>
+<link rel="stylesheet" href="./css/selectSet.css">
+</head>
+
+<body class="login">
+
+<div class="sub_header">
+	<div class="logo">
+		<a href="/">
+			<img src="./img/logo_white.svg" />
+		</a>
+	</div>
+
+	<div class="sub_title">
+		<div class="bg"></div>
+		<h3>앱 설정</h3>
+	</div>
+</div>
+<div class="content-part content-part-end">
+	<ul class="setting-list-data">
+		<li>
+			<div class="setting-content-title">
+				<span class="title">선수 채팅 알람 설정</span>
+				<span class="title_info">새로운 메세지가 있을 때 알림을 받으시겠습니까?</span>
+			</div>
+
+			<div class="setting-content-value">
+				<div class="custom-toggle-btn">
+					<input type="checkbox" name="set1" id="set1" checked />
+					<div class="custom-toggle-content"></div>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="setting-content-title">
+				<span class="title">선수 정보 설정</span>
+				<span class="title_info">선수 정보를 전체 공개 하시겠습니까?</span>
+			</div>
+
+			<div class="setting-content-value">
+				<div class="custom-toggle-btn">
+					<input type="checkbox" name="set2"  checked />
+					<div class="custom-toggle-content"></div>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="setting-content-title">
+				<span class="title">팀원 추가 설정</span>
+				<span class="title_info">새로운 팀원을 받으시겠습니까?</span>
+			</div>
+
+			<div class="setting-content-value">
+				<div class="custom-toggle-btn">
+					<input type="checkbox" name="set3"  checked />
+					<div class="custom-toggle-content"></div>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="setting-content-title">
+				<span class="title">최신 업데이트 유무</span>
+				<span class="title_info">자동으로 최신 업데이트 서비스를 받으시겠습니까?</span>
+			</div>
+
+			<div class="setting-content-value">
+				<div class="custom-toggle-btn">
+					<input type="checkbox" name="set4"  checked />
+					<div class="custom-toggle-content"></div>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="setting-content-title">
+				<span class="title">마케팅 정보 수신 설정</span>
+				<span class="title_info">광고 및 관련 내용을 받아보시겠습니까?</span>
+			</div>
+
+			<div class="setting-content-value">
+				<div class="custom-toggle-btn">
+					<input type="checkbox" name="set5"  checked />
+					<div class="custom-toggle-content"></div>
+				</div>
+			</div>
+		</li>
+
+	</ul>
+</div>
+
+<div class="nav-bottom">
+	<a href="#" class="circle-logo-btn"><img src="./img/circle-logo.png" /></a>
+	<a href="./main.php" class="left-arrow-btn"><img src="./img/arrow-left-on.png" /></a>
+	<a href="#" class="right-arrow-btn"><img src="./img/arrow-right.png" /></a>
+</div>
+
+<script>
+selectSet("#date");	
+
+/* custom-toggle-btn 처리 */
+$(".custom-toggle-btn").each(function() {
+	var checked = $(this).find("input[type='checkbox']").prop("checked");
+	if (checked) {
+		$(this).find(".custom-toggle-content").addClass("on");
+	}
+});
+
+$(document).on("click", ".custom-toggle-btn", function() {
+	if ($(this).find(".custom-toggle-content").hasClass("on")) {
+		$(this).find(".custom-toggle-content").removeClass("on");
+		$(this).find("input[type='checkbox']").attr("checked", false);
+	} else {
+		$(this).find(".custom-toggle-content").addClass("on");
+		$(this).find("input[type='checkbox']").attr("checked", true);
+	}
+});
+
+</script>
+
+</body>
+</html>
+

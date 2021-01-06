@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
+<meta name="HandheldFriendly" content="true">
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+
+<title>GONGJANG</title>
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="./css/common.css?ver=<?php echo time(); ?>">
+<script src="./js/swiper.min.js"></script>
+<link rel="stylesheet" href="./css/swiper.min.css">
+<!-- selectSet -->
+<script src="./js/selectSet.js"></script>
+<link rel="stylesheet" href="./css/selectSet.css">
+</head>
+
+<body class="login">
+
+<div class="sub_header">
+	<div class="logo">
+		<a href="/">
+			<img src="./img/logo_white.svg" />
+		</a>
+	</div>
+	<div class="sub_title">
+		<h3>비밀번호 찾기</h3>
+	</div>
+</div>
+
+<div class="info-txt">
+	<p>* 등록된 휴대폰 번호로 비밀번호 찾기</p>
+	가입 당시 입력한 휴대전화 번호를 통해 인증후 새 비밀번호를 입력해주세요.
+</div>
+
+<form method="post" name="register_form" onsubmit="return false;">
+<div class="form-wrap">
+	
+	
+	<div class="form-input-group with-btn">
+		<label for="">아이디</label>
+		<input type="text" name="id" placeholder="가입된 아이디 입력" />
+	</div>
+
+	<div class="form-input-group with-btn">
+		<label for="">이름</label>
+		<input type="text" name="name" placeholder="본인 실명을 입력하세요." />
+	</div>
+
+	<div class="form-input-group with-btn">
+		<label for="">휴대폰 번호</label>
+		<input type="text" name="hp" placeholder="'-'구분없이 입력" maxlength="13" />
+		<button type="button">인증번호 발송</button>
+	</div>
+
+	<div class="form-input-group with-btn">
+		<label for="">인증번호</label>
+		<input type="text" name="hp" class="on" placeholder="6자리 입력" maxlength="13" />
+	</div>
+
+	<button class="form_btn">다음</button>
+
+</form>
+
+<script>
+$(document).on("click",".form_btn", function() {
+	location.href = "lostpw2.php";
+});
+
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="91" height="91" viewBox="0 0 91 91">
+    <defs>
+        <filter id="prefix__타원_398" width="91" height="91" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset/>
+            <feGaussianBlur result="blur" stdDeviation="3"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <style>
+            .prefix__cls-2{fill:#fff}
+        </style>
+    </defs>
+    <g id="prefix__그룹_838" data-name="그룹 838" transform="translate(9 8.803)">
+        <g transform="translate(-9 -8.8)">
+            <circle id="prefix__타원_398-2" cx="36.5" cy="36.5" r="36.5" data-name="타원 398" transform="translate(9 9)" style="fill:#24e5ff"/>
+        </g>
+        <g id="prefix__그룹_864" data-name="그룹 864" transform="translate(21 19)">
+            <path id="prefix__패스_1351" d="M341.529 280.4l-1.428 1.428a13.321 13.321 0 0 1-18.838 18.839l-1.428 1.429a15.341 15.341 0 1 0 21.694-21.7z" class="prefix__cls-2" data-name="패스 1351" transform="translate(-315.326 -275.915)"/>
+            <path id="prefix__패스_1352" d="M317.95 278.526a15.241 15.241 0 0 0-4.494 10.847 14.087 14.087 0 0 0 .105 1.6 1 1 0 0 0-.121.468v15.944a1.01 1.01 0 0 0 2.02 0V296.72l.193.542a15.388 15.388 0 0 0 2.3 2.96l1.428-1.429a13.205 13.205 0 0 1-3.724-7.33v-.025a1 1 0 0 0-.046-.285 13.382 13.382 0 0 1-.132-1.779 13.32 13.32 0 0 1 22.74-9.419l1.428-1.428a15.358 15.358 0 0 0-21.697-.001z" class="prefix__cls-2" data-name="패스 1352" transform="translate(-313.441 -274.04)"/>
+        </g>
+    </g>
+</svg>

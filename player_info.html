@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
+<meta name="HandheldFriendly" content="true">
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+
+<title>GONGJANG</title>
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="./css/common.css?ver=<?php echo time(); ?>">
+<script src="./js/swiper.min.js"></script>
+<link rel="stylesheet" href="./css/swiper.min.css">
+<!-- selectSet -->
+<script src="./js/selectSet.js"></script>
+<link rel="stylesheet" href="./css/selectSet.css">
+</head>
+
+<body class="login">
+
+<div class="member_header">
+	<div class="logo">
+		<a href="/">
+			<img src="./img/logo_white.svg" />
+		</a>
+	</div>
+	<div class="step">
+	</div>
+	<div class="sub_title_tab">
+		<a href="javascript:;">
+			<div class="sub_title">
+				<h3>회원정보</h3>
+			</div>
+		</a>
+		<a href="javascript:;" class="on">
+			<div class="sub_title">
+				<h3>선수정보</h3>
+			</div>
+		</a>
+	</div>
+</div>
+
+<div class="player_info_item">
+	<p>공개</p>
+	<span>김공장님의 선수 홈을 전체공개 하시겠습니까?</span>
+	<div class="player_toggle_wrap">
+		<div class="custom-toggle-btn">
+			<input type="checkbox" name="set1" id="set1" />
+			<div class="custom-toggle-content"></div>
+		</div>
+	</div>
+</div>
+
+<div class="player_info_section">
+	<p>선수 정보</p>
+	<div class="player_img_wrap">
+		<img src="./img/player1.png" />
+	</div>
+	<div class="player_info_wrap">
+		<div class="player_info">
+			<label class="title">프로필 사진</label>
+			<div class="write_form_content">
+				<label class="write_file">사진변경</label>
+				<input type="file" name="write_file" id="write_file">
+				<a href="javascript:;" class="filebtn"><img src="./img/modify_search.svg" /></a>
+			</div>
+		</div>
+
+		<div class="player_info">
+			<label class="title">이름</label>
+			<div class="write_form_content">
+				<span class="pt10">김공장</span>
+			</div>
+		</div>
+		<div class="player_info">
+			<label class="title">생년월일</label>
+			<div class="write_form_content">
+				<span class="pt10">970503</span>
+			</div>
+		</div>
+		
+		<div class="player_info">
+			<label class="title">축구 표지션</label>
+			<div class="write_form_content">
+				<select name="area" id="area">
+					<option value="">선택</option>
+					<option value="1">포지션1</option>
+					<option value="2">포지션2</option>
+				</select>	
+			</div>
+		</div>
+
+		<div class="player_info">
+			<label class="title">풋살 표지션</label>
+			<div class="write_form_content">
+				<select name="area2" id="area2">
+					<option value="">선택</option>
+					<option value="1">포지션1</option>
+					<option value="2">포지션2</option>
+				</select>	
+			</div>
+		</div>
+		
+		<div class="player_info">
+			<label class="title">신장</label>
+			<div class="write_form_content">
+				<input type="text" name="write_subject" value="182cm" class="write_form_input" placeholder="신장을 입력하세요" />
+			</div>
+		</div>
+
+		<div class="player_info">
+			<label class="title">몸무게</label>
+			<div class="write_form_content">
+				<input type="text" name="write_subject2" value="80kg" class="write_form_input" placeholder="몸무게를 입력하세요" />
+			</div>
+		</div>
+
+		<div class="player_info">
+			<label class="title">선출</label>
+			<div class="write_form_content">
+				<select name="area3" id="area3">
+					<option value="">선택</option>
+					<option value="1">선출</option>
+					<option value="2">비선출</option>
+				</select>	
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="player_info_section bb0 pr0">
+	<p>선수카드 목록</p>
+	<div class="player_card">
+		<span class="player_title">선택하신 카드를 -로 사용하시겠습니까?</span>
+		<div class="card_wrap">
+			<table>
+				<tr>
+					<td class="on"><div><img src="./img/card.svg" /></div><span>2018플레이컵</span></td>
+					<td><div><img src="./img/card.svg" /></div><span>2018플레이컵</span></td>
+					<td><div><img src="./img/card.svg" /></div><span>2018플레이컵</span></td>
+					<td><div><img src="./img/card.svg" /></div><span>2018플레이컵</span></td>
+					<td><div><img src="./img/card.svg" /></div><span>2018플레이컵</span></td>
+					<td><div><img src="./img/card.svg" /></div><span>2018플레이컵</span></td>
+					<td><div><img src="./img/card.svg" /></div><span>2018플레이컵</span></td>
+					<td><div><img src="./img/card.svg" /></div><span>2018플레이컵</span></td>
+					<td><div><img src="./img/card.svg" /></div><span>2018플레이컵</span></td>
+					<td><div><img src="./img/card.svg" /></div><span>2018플레이컵</span></td>
+					<td><div><img src="./img/card.svg" /></div><span>2018플레이컵</span></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+</div>
+
+<div class="player_info_btn">
+	<button type="button">완료</button>
+</div>
+
+
+<script>
+selectSet("#area");	
+selectSet("#area2");
+selectSet("#area3");
+
+$(document).on("click", ".card_wrap td", function() {
+	$(".card_wrap td").removeClass("on");
+	$(this).addClass("on");
+
+});
+
+/* custom-toggle-btn 처리 */
+$(".custom-toggle-btn").each(function() {
+	var checked = $(this).find("input[type='checkbox']").prop("checked");
+	if (checked) {
+		$(this).find(".custom-toggle-content").addClass("on");
+	}
+});
+
+$(document).on("click", ".custom-toggle-btn", function() {
+	if ($(this).find(".custom-toggle-content").hasClass("on")) {
+		$(this).find(".custom-toggle-content").removeClass("on");
+		$(this).find("input[type='checkbox']").attr("checked", false);
+	} else {
+		$(this).find(".custom-toggle-content").addClass("on");
+		$(this).find("input[type='checkbox']").attr("checked", true);
+	}
+});
+
+
+function fileProc() {
+	document.getElementById('write_file_txt').innerHTML=this.value;
+}
+
+$(document).on("change", "#write_file", function() {
+	// input file 동기 생성 코드 삽입 요
+	var filename = $(this).val();
+	var filename_arr = filename.split("\\");
+	filename = filename_arr[filename_arr.length -1];
+	var html = "<span class='add_file'>"+filename+" <a href='javascript:;'><img src='./img/file-delete-ico.svg' /></a></span>";
+	$(".write_file").html(html);
+});
+
+$(document).on("click", ".add_file a", function() {
+	$(this).parent().remove();
+	$('#write_file').val("");
+	$("label.write_file").html("사진변경");
+});
+
+$(document).on("click",".filebtn",function() {
+	$('#write_file').click();
+});
+
+</script>
+
+</body>
+</html>
+

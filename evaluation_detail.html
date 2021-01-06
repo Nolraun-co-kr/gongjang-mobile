@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
+<meta name="HandheldFriendly" content="true">
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+
+<title>GONGJANG</title>
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="./css/common.css?ver=<?php echo time(); ?>">
+<script src="./js/swiper.min.js"></script>
+<link rel="stylesheet" href="./css/swiper.min.css">
+<!-- selectSet -->
+<script src="./js/selectSet.js"></script>
+<link rel="stylesheet" href="./css/selectSet.css">
+</head>
+
+<body class="login">
+
+<div class="sub_header">
+	<div class="logo">
+		<a href="/">
+			<img src="./img/logo_white.svg" />
+		</a>
+	</div>
+	<div class="sub_title">
+		<div class="bg"></div>
+		<h3>평가하기</h3>
+	</div>
+	<span class="sub_title_info">* 최고의 공격수, 수비수, 패스마스터를 뽑아주세요</span>
+</div>
+
+<ul class="evaluation_list">
+	<li id="user1" class="on1">
+		<a href="javascript:;" data-idx="user1"><img src="./img/player1.png" /></a>
+		<p>김공장</p>
+		<span><img src="./img/team_sm_ico.png" /> 티키타카 스포츠</span>
+	</li>
+	<li id="user2">
+		<a href="javascript:;" data-idx="user2"><img src="./img/player1.png" /></a>
+		<p>김공장</p>
+		<span><img src="./img/team_sm_ico.png" /> 티키타카 스포츠</span>
+	</li>
+	<li id="user3">
+		<a href="javascript:;" data-idx="user3"><img src="./img/player1.png" /></a>
+		<p>김공장</p>
+		<span><img src="./img/team_sm_ico.png" /> 티키타카 스포츠</span>
+	</li>
+
+	<li id="user4">
+		<a href="javascript:;" data-idx="user4"><img src="./img/player2.png" /></a>
+		<p>김공장</p>
+		<span><img src="./img/team_sm_ico.png" /> 티키타카 스포츠</span>
+	</li>
+	<li id="user5">
+		<a href="javascript:;" data-idx="user5"><img src="./img/player2.png" /></a>
+		<p>김공장</p>
+		<span><img src="./img/team_sm_ico.png" /> 티키타카 스포츠</span>
+	</li>
+	<li id="user6">
+		<a href="javascript:;" data-idx="user6"><img src="./img/player2.png" /></a>
+		<p>김공장</p>
+		<span><img src="./img/team_sm_ico.png" /> 티키타카 스포츠</span>
+	</li>
+
+	<li id="user7">
+		<a href="javascript:;" data-idx="user7"><img src="./img/player3.png" /></a>
+		<p>김공장</p>
+		<span><img src="./img/team_sm_ico.png" /> 티키타카 스포츠</span>
+	</li>
+	<li id="user8">
+		<a href="javascript:;" data-idx="user8"><img src="./img/player3.png" /></a>
+		<p>김공장</p>
+		<span><img src="./img/team_sm_ico.png" /> 티키타카 스포츠</span>
+	</li>
+	<li id="user9">
+		<a href="javascript:;" data-idx="user9"><img src="./img/player3.png" /></a>
+		<p>김공장</p>
+		<span><img src="./img/team_sm_ico.png" /> 티키타카 스포츠</span>
+	</li>
+
+	<li id="user10">
+		<a href="javascript:;" data-idx="user10"><img src="./img/player4.png" /></a>
+		<p>김공장</p>
+		<span><img src="./img/team_sm_ico.png" /> 티키타카 스포츠</span>
+	</li>
+	<li id="user11">
+		<a href="javascript:;" data-idx="user11"><img src="./img/player4.png" /></a>
+		<p>김공장</p>
+		<span><img src="./img/team_sm_ico.png" /> 티키타카 스포츠</span>
+	</li>
+	<li id="user12">
+		<a href="javascript:;" data-idx="user12"><img src="./img/player4.png" /></a>
+		<p>김공장</p>
+		<span><img src="./img/team_sm_ico.png" /> 티키타카 스포츠</span>
+	</li>
+</ul>
+
+
+<div class="agree_content">
+	<div class="agree">
+		<button class="form_btn">완료</button>
+	</div>
+</div>
+
+<div class="message-pop">
+	<h3><span>선수 평가를 완료했습니다.</span><span>팀 매너 평가를 <br />하시겠습니까?</span></h3>
+	<div class="pop-info"><span>평가를 전원 완료하시면 마일리지가 적립됩니다!</span><span class="message-pop-col">*3월6일 pm4:00 친선경기에 대한 선수평가입니다.</span></div>
+	<div class="pop-btn-group">
+		<button type="button" class="button-main pop-more-btn">평가하기</button>
+		<button type="button" class="button-secondary pop-cancel-btn">나중에 할게요.</button>
+	</div>
+
+</div>
+
+<div class="eval-pop">
+	<div class="user-info">
+		<img src="./img/player_img.png" class="user-img" />
+		<p>김공장</p>
+		<span><img src="./img/team_sm_ico.png" /> 티키타카 스포츠</span>
+	</div>
+	<ul class="eval-btn">
+		<li><a href="javascript:;" class="eval1"><img src="./img/eval1_ico.svg" /></a></li>
+		<li><a href="javascript:;" class="eval2"><img src="./img/eval2_ico.svg" /></a></li>
+		<li><a href="javascript:;" class="eval3"><img src="./img/eval3_ico.svg" /></a></li>
+	</ul>
+	<div class="pop-btn-group">
+		<button type="button" class="button-main btn-suc">완료</button>
+		<button type="button" class="button-secondary btn-can">취소</button>
+	</div>
+</div>
+
+<script>
+$(document).on("click", ".eval1",function() {
+	$("input[name='type']").val("1");
+	$(".eval1").html('<img src="./img/eval1_on_ico.svg" />');
+	$(".eval2").html('<img src="./img/eval2_ico.svg" />');
+	$(".eval3").html('<img src="./img/eval3_ico.svg" />');
+});
+$(document).on("click", ".eval2",function() {
+	$("input[name='type']").val("2");
+	$(".eval1").html('<img src="./img/eval1_ico.svg" />');
+	$(".eval2").html('<img src="./img/eval2_on_ico.svg" />');
+	$(".eval3").html('<img src="./img/eval3_ico.svg" />');
+});
+$(document).on("click", ".eval3",function() {
+	$("input[name='type']").val("3");
+	$(".eval1").html('<img src="./img/eval1_ico.svg" />');
+	$(".eval2").html('<img src="./img/eval2_ico.svg" />');
+	$(".eval3").html('<img src="./img/eval3_on_ico.svg" />');
+});
+
+$(document).on("click", ".btn-can",function() {
+	$("input[name='user']").val("");
+	$("input[name='type']").val("");
+	$(".eval-pop").hide();
+});
+
+$(document).on("click", ".btn-suc",function() {
+	var user = $("input[name='user']").val();
+	var type = $("input[name='type']").val();
+
+	if (type == "1") {
+		$("input[name='type1']").val(user);
+	} else if (type == "2") {
+		$("input[name='type2']").val(user);
+	} else if (type == "3") {
+		$("input[name='type3']").val(user);
+	}
+
+	var type1 = $("input[name='type1']").val();
+	var type2 = $("input[name='type2']").val();
+	var type3 = $("input[name='type3']").val();
+
+	$("input[name='user']").val("");
+	$("input[name='type']").val("");
+	$(".eval-pop").hide();
+	
+	$(".on1").removeClass("on1");
+	$(".on2").removeClass("on2");
+	$(".on3").removeClass("on3");
+
+	if (type1) {
+		$("#"+type1).addClass("on1");
+	}
+
+	if (type2) {
+		$("#"+type2).addClass("on2");
+	}
+
+	if (type3) {
+		$("#"+type3).addClass("on3");
+	}
+});
+
+</script>
+
+
+<div class="nav-bottom">
+	<a href="#" class="circle-logo-btn"><img src="./img/circle-logo.png" /></a>
+	<a href="./main.php" class="left-arrow-btn"><img src="./img/arrow-left-on.png" /></a>
+	<a href="#" class="right-arrow-btn"><img src="./img/arrow-right-on.png" /></a>
+</div>
+
+<form>
+<input type="hidden" name="user" value="" />
+<input type="hidden" name="type" value="" />
+
+<input type="hidden" name="type1" value="" />
+<input type="hidden" name="type2" value="" />
+<input type="hidden" name="type3" value="" />
+</form>
+
+<script>
+$(document).on("click", ".evaluation_list li a", function() {
+	var user = $(this).data("idx");
+	$("input[name='user']").val(user);
+	$(".eval1").html('<img src="./img/eval1_ico.svg" />');
+	$(".eval2").html('<img src="./img/eval2_ico.svg" />');
+	$(".eval3").html('<img src="./img/eval3_ico.svg" />');
+
+	$(".eval-pop").show();
+});
+
+$(document).on("click", ".form_btn", function() {
+	$(".message-pop").show();
+});
+
+
+</script>
+
+</body>
+</html>
+

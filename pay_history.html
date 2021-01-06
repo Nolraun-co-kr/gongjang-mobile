@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
+<meta name="HandheldFriendly" content="true">
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+
+<title>GONGJANG</title>
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="./css/common.css?ver=<?php echo time(); ?>">
+<script src="./js/swiper.min.js"></script>
+<link rel="stylesheet" href="./css/swiper.min.css">
+<!-- selectSet -->
+<script src="./js/selectSet.js"></script>
+<link rel="stylesheet" href="./css/selectSet.css">
+</head>
+
+<body class="login">
+
+<div class="register_header">
+	<div class="logo">
+		<a href="/">
+			<img src="./img/logo_white.svg" />
+		</a>
+	</div>
+
+	<div class="sub_title">
+		<div class="bg"></div>
+		<h3>결제내역</h3>
+	</div>
+</div>
+
+<form method="post" name="register_form" onsubmit="return false;">
+	<input type="hidden" name="reg_type" value="" />
+<div class="history-wrap">
+	<ul class="history-tab">
+		<li class="history-li">
+			<div class="form-input-group">
+				<select name="type" id="type">
+					<option value="">전체</option>
+					<option value="1">예약</option>
+					<option value="2">아카데미</option>
+					<option value="3">리그컵</option>
+				</select>		
+			</div>
+		</li>
+		<li class="history-li">
+			<div class="form-input-group">
+				<select name="date" id="date">
+					<option value="">기간</option>
+					<option value="1">하루</option>
+					<option value="2">일주일</option>
+					<option value="3">1개월</option>
+					<option value="4">3개월</option>
+					<option value="5">6개월</option>
+					<option value="6">1년</option>
+				</select>		
+			</div>
+		</li>
+	</ul>
+	<ul class="history-list-data">
+		<li>
+			<div class="history-content-title">
+				<span>new 예약</span>
+				<h5>2018 제주국제유스축구대회</h5>
+				<a href="#">취소</a>
+			</div>
+			<div class="history-content-type">
+				<div class="type-line">결제날짜</div>
+				<div class="type-line">결제가격</div>
+				<div class="type-line">결제상황</div>
+			</div>
+			<div class="history-content-value">
+				<div class="type-line">2020. 2. 22</div>
+				<div class="type-line">50,500원</div>
+				<div class="type-line">결제완료</div>
+			</div>
+		</li>
+		<li>
+			<div class="history-content-title">
+				<span>new 예약</span>
+				<h5>2018 제주국제유스축구대회</h5>
+				<a href="#">취소</a>
+			</div>
+			<div class="history-content-type">
+				<div class="type-line">결제날짜</div>
+				<div class="type-line">결제가격</div>
+				<div class="type-line">결제상황</div>
+			</div>
+			<div class="history-content-value">
+				<div class="type-line">2020. 2. 22</div>
+				<div class="type-line">50,500원</div>
+				<div class="type-line">결제완료</div>
+			</div>
+		</li>
+		<li>
+			<div class="history-content-title">
+				<span>new 예약</span>
+				<h5>2018 제주국제유스축구대회</h5>
+				<a href="#">취소</a>
+			</div>
+			<div class="history-content-type">
+				<div class="type-line">결제날짜</div>
+				<div class="type-line">결제가격</div>
+				<div class="type-line">결제상황</div>
+			</div>
+			<div class="history-content-value">
+				<div class="type-line">2020. 2. 22</div>
+				<div class="type-line">50,500원</div>
+				<div class="type-line">결제완료</div>
+			</div>
+		</li>
+		<li>
+			<div class="history-content-title">
+				<span>new 예약</span>
+				<h5>2018 제주국제유스축구대회</h5>
+				<a href="#">취소</a>
+			</div>
+			<div class="history-content-type">
+				<div class="type-line">결제날짜</div>
+				<div class="type-line">결제가격</div>
+				<div class="type-line">결제상황</div>
+			</div>
+			<div class="history-content-value">
+				<div class="type-line">2020. 2. 22</div>
+				<div class="type-line">50,500원</div>
+				<div class="type-line">결제완료</div>
+			</div>
+		</li>
+
+	</ul>
+	
+
+</div>
+
+</form>
+
+<div class="nav-bottom">
+	<a href="#" class="circle-logo-btn"><img src="./img/circle-logo.png" /></a>
+	<a href="./main.php" class="left-arrow-btn"><img src="./img/arrow-left-on.png" /></a>
+	<a href="#" class="right-arrow-btn"><img src="./img/arrow-right.png" /></a>
+</div>
+
+<script>
+selectSet("#type");
+selectSet("#date");
+</script>
+
+</body>
+</html>
+

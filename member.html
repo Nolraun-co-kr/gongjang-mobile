@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
+<meta name="HandheldFriendly" content="true">
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+
+<title>GONGJANG</title>
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="./css/common.css?ver=<?php echo time(); ?>">
+<script src="./js/swiper.min.js"></script>
+<link rel="stylesheet" href="./css/swiper.min.css">
+<!-- selectSet -->
+<script src="./js/selectSet.js"></script>
+<link rel="stylesheet" href="./css/selectSet.css">
+</head>
+
+<body class="login">
+
+<div class="member_header">
+	<div class="logo">
+		<a href="/">
+			<img src="./img/logo_white.svg" />
+		</a>
+	</div>
+	<div class="step">
+	</div>
+	<div class="sub_title_tab">
+		<a href="javascript:;" class="on">
+			<div class="sub_title">
+				<h3>회원정보</h3>
+			</div>
+		</a>
+		<a href="javascript:;">
+			<div class="sub_title">
+				<h3>선수정보</h3>
+			</div>
+		</a>
+	</div>
+</div>
+
+<form method="post" name="member_form" onsubmit="return false;">
+	<input type="hidden" name="reg_type" value="" />
+<div class="form-wrap">
+	<div class="form-input-group with-btn">
+		<label for="">ID</label>
+		<div class="member-info-txt">jkjkjj</div>
+	</div>
+	<div class="form-input-group">
+		<label for="">비밀번호</label>
+		<input type="password" name="pw" placeholder="영문자+숫자+특수문자 조합 8자 이상~16자 이하" />
+	</div>
+	<div class="form-input-group">
+		<label for="">비밀번호 확인</label>
+		<input type="password" name="pwre" placeholder="비밀번호 확인" />
+	</div>
+	<div class="form-input-group with-btn">
+		<label for="">닉네임</label>
+		<input type="text" name="nick" placeholder="닉네임 입력" value="jkjkjj" />
+		<button type="button">중복확인</button>
+	</div>
+	<div class="form-input-group">
+		<label for="">이름</label>
+		<div class="member-info-txt">김공장</div>
+	</div>
+	<div class="form-input-group">
+		<div class="checks">
+			<input type="radio" name="ck1" id="ck1" checked>
+			<label for="ck1">남자</label> 
+		</div>
+	</div>
+
+	<div class="form-input-group">
+		<label for="">생년월일</label>
+		<div class="member-info-txt">970503</div>
+	</div>
+	<div class="form-input-group">
+		<label for="">이메일</label>
+		<input type="text" name="email" placeholder="이메일 입력" value="dpdmekdf@naver.com" />
+	</div>
+	<div class="form-input-group with-btn">
+		<label for="">휴대폰 번호</label>
+		<input type="text" name="hp" placeholder="'-'구분없이 입력" value="01023344444" />
+		<button type="button">인증확인</button>
+	</div>
+
+	<div class="form-input-group">
+		<label for="">지역</label>
+		<div class="slabel">시도</div>
+		<div class="sdata">
+			<select name="area" id="area">
+				<option value="">시도</option>
+				<option value="1">서울, 경기 지역</option>
+				<option value="2" selected>광주, 전라 지역</option>
+				<option value="3">대전, 충청 지역</option>
+				<option value="4">부산, 경상 지역</option>
+				<option value="5">제주 지역</option>
+			</select>		
+		</div>
+		<div class="slabel ml20">시군구</div>
+		<div class="sdata">
+			<select name="area2" id="area2">
+				<option value="">시도</option>
+				<option value="1">서울, 경기 지역</option>
+				<option value="2" selected>광주, 전라 지역</option>
+				<option value="3">대전, 충청 지역</option>
+				<option value="4">부산, 경상 지역</option>
+				<option value="5">제주 지역</option>
+			</select>		
+		</div>
+	</div>
+</div>
+<button class="form_btn">완료</button>
+
+</form>
+
+<div class="message-pop">
+	<h3><span>부가정보를</span><span>입력하시겠습니까?</span></h3>
+	<div class="pop-info"><span>부가정보 입력시 선수 정보를 더 자세한</span><span>서비스를 받으실 수 있습니다.</span></div>
+	<div class="pop-btn-group">
+		<button type="button" class="button-main pop-more-btn">네</button>
+		<button type="button" class="button-secondary pop-cancel-btn">아니오</button>
+	</div>
+
+</div>
+
+<script>
+selectSet("#area");	
+selectSet("#area2");	
+
+$(document).on("click",".form_btn", function() {
+	$(".message-pop").show();
+});
+
+
+$(document).on("click",".pop-more-btn", function() {
+	location.href="./player.php";
+});
+
+$(document).on("click",".pop-cancel-btn", function() {
+	$(".message-pop").hide();
+});
+
+
+</script>
+
+</body>
+</html>
+

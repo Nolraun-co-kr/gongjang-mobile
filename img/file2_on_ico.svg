@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="123" height="142" viewBox="0 0 123 142">
+  <g id="그룹_960" data-name="그룹 960" transform="translate(-199 -335)">
+    <text id="동영상" transform="translate(226 436)" fill="#24e5ff" font-size="10" font-family="SourceHanSansK-Bold, Source Han Sans K" font-weight="700"><tspan x="21.2" y="12">동영상</tspan></text>
+    <g id="사각형_511" data-name="사각형 511" transform="translate(199 335)" fill="none" stroke="#24e5ff" stroke-width="1">
+      <rect width="123" height="142" rx="10" stroke="none"/>
+      <rect x="0.5" y="0.5" width="122" height="141" rx="9.5" fill="none"/>
+    </g>
+    <g id="그룹_647" data-name="그룹 647" transform="translate(0 -5)">
+      <path id="다각형_2" data-name="다각형 2" d="M18.333.6a1,1,0,0,1,1.334,0L36.049,15.255A1,1,0,0,1,35.383,17H2.617a1,1,0,0,1-.667-1.745Z" transform="translate(271.5 414.5) rotate(-90)" fill="#fff" stroke="#24e5ff" stroke-linejoin="round" stroke-width="2"/>
+      <rect id="사각형_523" data-name="사각형 523" width="42" height="42" rx="5" transform="translate(233 374)" fill="#fff" stroke="#24e5ff" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
+<meta name="HandheldFriendly" content="true">
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+
+<title>GONGJANG</title>
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="./css/common.css?ver=<?php echo time(); ?>">
+<script src="./js/swiper.min.js"></script>
+<link rel="stylesheet" href="./css/swiper.min.css">
+</head>
+
+<body class="login">
+
+<header>
+	<a href="#" class="menu_btn"><img src="./img/menu-ico.svg" /></a>
+	<a href="#" class="item_btn4"><img src="./img/top-search.svg" /></a>
+	<a href="./search.php" class="item_btn2"><img src="./img/more.svg" /></a>
+	<div class="logo">
+		<a href="/"><img src="./img/logo_white.svg" /></a>		
+	</div>
+</header>
+
+<div class="board_image">
+	<img src="./img/sample.png" />
+</div>
+
+<div class="board_control">
+	<div class="board_control_left">
+		<a href="javascript:;"><img src="./img/like_ico.svg" /><span>좋아요</span></a>
+		<a href="javascript:;"><img src="./img/unlike_ico.svg" /><span>싫어요</span></a>
+		<a href="javascript:;"><img src="./img/pub_ico.svg" /><span>공유</span></a>
+		<a href="javascript:;" onclick="$('.pub-pop').show()"><img src="./img/singo_ico.svg" /><span>신고</span></a>
+	</div>
+
+	<ul class="board_control_right">
+		<li><img src="./img/white_msg_ico.svg" />&nbsp;&nbsp;&nbsp;2</li>
+		<li><img src="./img/white_heart_ico.svg" />&nbsp;&nbsp;&nbsp;365</li>
+		<li><img src="./img/white_view_ico.svg" />&nbsp;&nbsp;&nbsp;40</li>
+	</ul>
+	<span class="board_date">2020. 03. 29</span>
+</div>
+
+<div class="board_wrap">
+	<div class="board_content">
+		<div class="board_content_head">
+			<span><strong>전국 풋살대회 리플레이 영상</strong> 인기영상</span>
+			<div class="board_user">
+				<img src="./img/player2.png" /> aaytaa
+			</div>
+			<button class="board_move_btn">공간가기 <img src="./img/white_logo_ico.svg" /></button>
+		</div>
+		<div class="board_content_view">
+			내용
+		</div>
+	</div>
+
+	<div class="board_reply">
+		<div class="board_reply_form">
+			<input type="text" class="board_input" placeholder="댓글을 입력하세요." />
+			<button class="board_submit">전송</button>
+		</div>
+		<div class="board_reply_list">
+			<p class="board_reply_info">34개의 모든 댓글 보기</p>
+			<ul class="board_reply_item">
+				<li><img src="./img/player1.png" /></li>
+				<li>
+					<strong>김공장</strong>
+					<span>aaytaa</span>
+				</li>
+				<li>기대가 됩니다.!!!! 2020 리그 파이팅!!</li>
+				<li>2.24 am 8:00</li>
+			</ul>
+
+			<ul class="board_reply_item">
+				<li><img src="./img/player1.png" /></li>
+				<li>
+					<strong>김공장</strong>
+					<span>aaytaa</span>
+				</li>
+				<li>기대가 됩니다.!!!! 2020 리그 파이팅!!</li>
+				<li>2.24 am 8:00</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="board_other_list">
+		<h3>관련 게시물 목록</h3>
+		<ul>
+			<li><img src="./img/sample.png" /></li>
+			<li>
+				<span>인기영상</span>
+				<strong>전국 풋살대회 리플레이-</strong>
+				<div class="board_other_item_cont">내용</div>
+				<div class="board_other_user">
+					<img src="./img/player1.png" /> jkjkjj
+				</div>
+			</li>
+		</ul>
+		<ul>
+			<li><img src="./img/sample.png" /></li>
+			<li>
+				<span>인기영상</span>
+				<strong>전국 풋살대회 리플레이-</strong>
+				<div class="board_other_item_cont">내용</div>
+				<div class="board_other_user">
+					<img src="./img/player1.png" /> jkjkjj
+				</div>
+			</li>
+		</ul>
+	</div>
+
+</div>
+
+<div class="pub-pop">
+	<h3><span>어디로 공유할까요?</span></h3>
+	<div class="pop-btn-group">
+		<button type="button" class="button-main pub-btn">공유</button>
+	</div>
+
+</div>
+
+<div class="message-pop">
+	<h3><strong>김공장</strong>님의 공간과<span>함께 합니다!</span></h3>
+	<div class="pop-info"><span>김공장님의 공간을 보러 가시겠습니까?</span></div>
+	<div class="pop-btn-group">
+		<button type="button" class="button-main pop-more-btn">보라가기</button>
+		<button type="button" class="button-secondary pop-cancel-btn">아니오</button>
+	</div>
+
+</div>
+
+
+<div class="nav-bottom chat">
+	<a href="#" class="circle-logo-btn"><img src="./img/circle-logo.png" /></a>
+	<a href="./main.php" class="left-arrow-btn"><img src="./img/arrow-left.svg" /></a>
+	<a href="#" class="right-arrow-btn"><img src="./img/arrow-right.svg" /></a>
+</div>
+<script>
+//$(".message-pop").show();
+$(document).on('click', '.pub-btn', function() {
+	$(".pub-pop").hide();
+});
+$(document).on('click', '.pop-cancel-btn', function() {
+	$(".message-pop").hide();
+});
+$(document).on('click', '.board_move_btn', function() {
+	$(".message-pop").show();
+});
+
+
+</script>
+</body>
+</html>
+

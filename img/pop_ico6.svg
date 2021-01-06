@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="29.358" height="24.926" viewBox="0 0 29.358 24.926">
+    <defs>
+        <style>
+            .prefix__cls-1,.prefix__cls-2{fill:none;stroke:#337ef7;stroke-linecap:round;stroke-width:3px}.prefix__cls-2{stroke-linejoin:round;stroke-miterlimit:10}
+        </style>
+    </defs>
+    <g id="prefix__그룹_871" data-name="그룹 871" transform="translate(1.5 1.5)">
+        <path id="prefix__선_229" d="M0 3.426L0 0" class="prefix__cls-1" data-name="선 229" transform="rotate(90 2.398 12.334)"/>
+        <path id="prefix__선_230" d="M0 7.537L0 0" class="prefix__cls-1" data-name="선 230" transform="translate(13.019 6.852)"/>
+        <path id="prefix__패스_529" d="M384.9 272.039h5.624s-.449 4.4 3.709 5.35v3.811s0 11.515-8.836 12.763c-8.836-1.249-8.836-12.763-8.836-12.763v-3.813c3.914-.243 3.709-5.35 3.709-5.35z" class="prefix__cls-2" data-name="패스 529" transform="translate(-372.217 -272.039)"/>
+        <path id="prefix__패스_530" d="M374.72 292.164l-4.781 4.781 2.8 2.8 3.472-3.472" class="prefix__cls-2" data-name="패스 530" transform="translate(-369.939 -278.961)"/>
+        <path id="prefix__패스_531" d="M402.044 292.164l4.781 4.781-2.8 2.8-3.473-3.472" class="prefix__cls-2" data-name="패스 531" transform="translate(-380.467 -278.961)"/>
+    </g>
+</svg>

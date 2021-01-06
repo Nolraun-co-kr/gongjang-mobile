@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
+<meta name="HandheldFriendly" content="true">
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+
+<title>GONGJANG</title>
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="./css/common.css?ver=<?php echo time(); ?>">
+<script src="./js/swiper.min.js"></script>
+<link rel="stylesheet" href="./css/swiper.min.css">
+</head>
+
+<body>
+<header class="dark">
+	<a href="#" class="menu_btn"><img src="./img/menu_dark_ico.svg" /></a>
+	<a href="#" class="item_btn"></a>
+	<a href="./search.php" class="item_btn2"><img src="./img/search_dark_ico.svg" /></a>
+	<div class="top_title">
+		리그
+	</div>
+</header>
+
+<div class="content detail">
+	<ul class="sub_detail">
+		<li class="sub_detail_item">
+			<span><img src="./img/star.svg" /> 진행중</span>
+			<div class="loc_txt"><strong>2018 제주국제유스축구대회</strong></div>
+			<div class="loc_addr">2018. 8. 13(mon)-2018. 8. 19(sun)</div>
+			<button class="rev_btn">공간 <img src="./img/league_branch_ico.svg" /></button>
+			<button class="dec_btn">신청하기</button>
+		</li>
+	</ul>
+	<script>
+		$(document).on("click",".sub_detail_item .dec_btn", function() {
+			if ($(this).hasClass("on")) {
+				$(this).removeClass("on");
+			} else {
+				$(this).addClass("on");
+			}
+		});
+	</script>
+	<div class="dark_tab_wrap">
+		<ul class="dark_tab">
+			<li class="on"><a href="javascript:;">컵소개</a></li>
+			<li><a href="javascript:;">팀리스트</a></li>
+			<li><a href="javascript:;">경기일점</a></li>
+			<li><a href="javascript:;">순위</a></li>
+			<li><a href="javascript:;">공지사항</a></li>
+		</ul>
+	</div>
+	<div class="sub_detail_img bt5">
+		<img src="./img/poster_img.png" width="100%" />
+		<div class="img_position"><img src="./img/page_off.svg" /><img src="./img/page_on.svg" /><img src="./img/page_off.svg" /><img src="./img/page_off.svg" /></div>
+	</div>
+	
+	<ul class="league_detail_list">
+		<li class="league_detail_list_item">
+			<span>일시</span>
+			<p class="type1">2018년 5월 19일 - 7월 15일</p>
+		</li>
+		
+		<li class="league_detail_list_item">
+			<div class="league_detail_list_item_title border-right-none">구장안내</div>
+			<div class="league_detail_list_item_content info_txt">
+				<span class="type1">전국 10개 AIA Vitality Arena</span><br />
+				<span class="type1">(홈플러스 옥상 HM풋살파크)</span><br /><br />
+			</div>
+			<div class="league_detail_list_item_content">
+				<table>
+					<tbody>
+						<tr>
+							<td>5. 19 - 20</td>
+							<td>동대문점</td>
+						</tr>
+						<tr>
+							<td>6. 9 - 10</td>
+							<td>울산남구점</td>
+						</tr>
+						<tr>
+							<td>6. 23 - 24</td>
+							<td>일산점</td>
+						</tr>
+						<tr>
+							<td>7. 7 - 8</td>
+							<td>안산고잔점</td>
+						</tr>
+						<tr>
+							<td>6. 2 - 3</td>
+							<td>대전탐방점, 부산가야점</td>
+						</tr>
+						<tr>
+							<td>6. 16 - 17</td>
+							<td>서수원점, 동대전점</td>
+						</tr>
+						<tr>
+							<td>6. 30 - 7. 1</td>
+							<td>전주완산점, 창원점</td>
+						</tr>
+						<tr>
+							<td>7. 14 - 15</td>
+							<td>전국 본선, 결승</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</li>
+
+		<li class="league_detail_list_item">
+			<span>대상</span>
+			<div class="league_detail_list_item_content info_txt">
+				<span class="type1">만 19세 이상 성인 풋살팀 (지역별 선착순 36팀/ 총 360팀)</span><br />
+				<span class="type1">현 초등학교 2학년 유소년 축구팀 (지역별 선착순 24팀 / 총240팀)</span><br />
+			</div>
+		</li>
+
+		<li class="league_detail_list_item">
+			<span>대상</span>
+			<div class="league_detail_list_item_content info_txt">
+				<strong class="title title_col">총 상금 4,500만원</strong><br />
+				<strong class="title title_col">성인 최종 우승팀 '홍콩 AIA 챔피언십 2019' 출전</strong><br />
+				<span>* AIA 챔피언십 결승 진출 시, 런던행 티켓 획득!</span><br />
+				<span>(결승전, 토트넘 팬미팅, EPL 관광, 여행 등)</span><br />
+			</div>
+		</li>
+
+		<li class="league_detail_list_item">
+			<span>대회규칙</span>
+			<div class="league_detail_list_item_content info_txt">
+				<span>대회 규칙.hwp<a href="#"><img src="./img/download_ico.svg" /></a></span>
+			</div>
+		</li>
+		<li class="league_detail_list_item"></li>
+		<li class="league_detail_list_item"></li>
+
+	</ul>
+
+</div>
+
+<div class="left_nav">
+	<div class="left_wrap">
+		<div class="sect">
+			<a href="/" class="side_logo"><img src="./img/logo.jpg" /></a>
+			<div class="profile">
+				<a href="javascript:;" class="profile_img"><img src="./img/user1.jpg" /></a>
+				<span><strong>김공장</strong>님,<br />안녕하세요?</span>
+			</div>
+		</div>
+		<div class="sect2">
+			<ul class="sect2_btn">
+				<li>
+					<a href="./pay_history.php" class="side_btn1">결제내역</a>
+					<a href="./membership.php" class="side_btn2">멤버십</a>
+					<a href="./app.php" class="side_btn3">앱설정</a>
+				</li>
+			</ul>
+		</div>
+		<div class="sect3">
+			<ul class="sec3_menu">
+				<li class="side_menu" data-page="m1"><a href="./member.php">회원수정</a></li>
+				<li class="side_menu" data-page="m2"><a href="#">내 공간 관리</a></li>
+				<li class="side_menu" data-page="m3"><a href="#">고객센터</a></li>
+			</ul>
+		</div>
+
+		<div class="sect4">
+			<a href="#">이용약관</a>
+			<a href="#">버전정보</a>
+			<a href="#">공지사항</a>
+			<a href="#">로그아웃</a>
+		</div>
+	</div>
+</div>
+
+<div class="nav-bottom">
+	<a href="#" class="circle-logo-btn"><img src="./img/circle-logo.png" /></a>
+	<a href="./main.php" class="left-arrow-btn"><img src="./img/arrow-left-on.png" /></a>
+	<a href="#" class="right-arrow-btn"><img src="./img/arrow-right-on.png" /></a>
+</div>
+
+<footer>
+
+</footer>
+
+
+
+<script>
+
+$(document).on('click', '.menu_btn', function() {
+	if ($(".left_nav").hasClass("on")) {
+		$(".left_nav").removeClass("on");
+	} else {
+		$(".left_nav").addClass("on");
+	}
+});
+
+var swiper = new Swiper('.swiper-container', {
+	slidesPerView : 3,
+	spaceBetween : 10,
+	slidesPerGroup : 2,
+	loopFillGroupWithBlank : true
+});
+
+var cw = $('.swiper-slide:nth-child(1)').width();
+console.log(cw);
+$('.swiper-slide img').css({'height':cw+'px'});
+
+$(document).on('click', '.nav_close', function() {
+	$(".left_nav").removeClass("on");
+});
+
+/*
+$(document).ready(function() {
+	$('.intro').delay(1000).fadeOut(1500);
+});
+*/
+
+
+
+</script>
+</body>
+</html>
+

@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
+<meta name="HandheldFriendly" content="true">
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+
+<title>GONGJANG</title>
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="./css/common.css?ver=<?php echo time(); ?>">
+<script src="./js/swiper.min.js"></script>
+<link rel="stylesheet" href="./css/swiper.min.css">
+</head>
+
+<body class="light">
+
+<header class="shadow">
+	<a href="#" class="menu_btn2"><img src="./img/mov_ico.svg" /></a>
+	<a href="#" class="item_btn3"><img src="./img/search-ico.svg" /></a>
+	<a href="#" class="item_btn2"><img src="./img/more.svg" /></a>
+	<div class="logo">
+		<a href="/">채팅</a>		
+	</div>
+</header>
+<div class="content white shadow">
+	<div class="form-input-wrap mt10">
+		<a href="#" class="search-btn"><img src="./img/search-sm-dark-ico.svg" /></a>
+		<input type="text" class="search dark" />
+		
+	</div>
+
+	<ul class="chat_search_list">
+		<li>
+			<div class="img_wrap">
+				<img src="./img/player1.png" />
+			</div>
+			<div class="info_wrap">
+				<strong>관리자 1</strong>
+				<span>아카데미 놀러오세요</span>
+			</div>
+			<button type="button" class="chat_list_btn">3</button>
+			<span class="chat_list_date">pm 7:27</span>
+		</li>
+		<li>
+			<div class="img_wrap">
+				<img src="./img/player2.png" />
+			</div>
+			<div class="info_wrap">
+				<strong>관리자 1</strong>
+				<span>아카데미 놀러오세요</span>
+			</div>
+			<button type="button" class="chat_list_btn">3</button>
+			<span class="chat_list_date">pm 7:27</span>
+		</li>
+		<li>
+			<div class="img_wrap">
+				<img src="./img/player3.png" />
+			</div>
+			<div class="info_wrap">
+				<strong>관리자 1</strong>
+				<span>아카데미 놀러오세요</span>
+			</div>
+			<button type="button" class="chat_list_btn">3</button>
+			<span class="chat_list_date">pm 7:27</span>
+		</li>
+		<li>
+			<div class="img_wrap">
+				<img src="./img/player4.png" />
+			</div>
+			<div class="info_wrap">
+				<strong>관리자 1</strong>
+				<span>아카데미 놀러오세요</span>
+			</div>
+			<button type="button" class="chat_list_btn">3</button>
+			<span class="chat_list_date">pm 7:27</span>
+		</li>
+		<li>
+			<div class="img_wrap">
+				<img src="./img/player1.png" />
+			</div>
+			<div class="info_wrap">
+				<strong>관리자 1</strong>
+				<span>아카데미 놀러오세요</span>
+			</div>
+			<button type="button" class="chat_list_btn">3</button>
+			<span class="chat_list_date">pm 7:27</span>
+		</li>
+	</ul>
+	
+	
+</div>
+
+
+
+<div class="nav-bottom">
+	<a href="#" class="circle-logo-btn"><img src="./img/circle-logo.png" /></a>
+	<a href="./main.php" class="left-arrow-btn"><img src="./img/arrow-left-on.png" /></a>
+	<a href="#" class="right-arrow-btn"><img src="./img/arrow-right-on.png" /></a>
+</div>
+<footer>
+
+</footer>
+
+
+
+<script>
+
+$(document).on('click', '.menu_btn', function() {
+	if ($(".left_nav").hasClass("on")) {
+		$(".left_nav").removeClass("on");
+	} else {
+		$(".left_nav").addClass("on");
+	}
+});
+
+var swiper = new Swiper('.swiper-container', {
+	slidesPerView : 3,
+	spaceBetween : 10,
+	slidesPerGroup : 2,
+	loopFillGroupWithBlank : true
+});
+
+var cw = $('.swiper-slide:nth-child(1)').width();
+console.log(cw);
+$('.swiper-slide img').css({'height':cw+'px'});
+
+$(document).on('click', '.nav_close', function() {
+	$(".left_nav").removeClass("on");
+});
+
+
+$(document).ready(function() {
+//	$('.intro').delay(1000).fadeOut(1500);
+});
+
+
+
+</script>
+</body>
+</html>
+

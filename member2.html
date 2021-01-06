@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
+<meta name="HandheldFriendly" content="true">
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+
+<title>GONGJANG</title>
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="./css/common.css?ver=<?php echo time(); ?>">
+<script src="./js/swiper.min.js"></script>
+<link rel="stylesheet" href="./css/swiper.min.css">
+<!-- selectSet -->
+<script src="./js/selectSet.js"></script>
+<link rel="stylesheet" href="./css/selectSet.css">
+</head>
+
+<body class="login">
+
+<div class="member_header">
+	<div class="logo">
+		<a href="/">
+			<img src="./img/logo.jpg" />
+		</a>
+	</div>
+	<div class="step">
+	</div>
+	<div class="sub_title_tab">
+		<a href="javascript:;">
+			<div class="sub_title">
+				<h3>회원정보</h3>
+			</div>
+		</a>
+		<a href="javascript:;" class="on">
+			<div class="sub_title">
+				<h3>선수정보</h3>
+			</div>
+		</a>
+	</div>
+</div>
+
+<form method="post" name="member_form" onsubmit="return false;">
+<input type="hidden" name="reg_type" value="" />
+<div class="form-wrap">
+	<div class="form-input-group with-btn ">
+		<div class="info-fl">
+			<label for="">공개</label>
+			<div class="member-info-txt2">김공장님의 선수 홈을 전체공개 하시겠습니까?</div>
+		</div>
+		<div class="info-fr">
+			<div class="setting-content-value">
+				<div class="custom-toggle-btn">
+					<input type="checkbox" name="set3"  checked />
+					<div class="custom-toggle-content"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="form-input-group">
+		<label for="">선수정보</label>
+		<div class="form-half-group">
+			<div class="form-half-img"><img src="./img/player1.png" /></div>
+			<div class="form-half-content">
+				<div class="form-half-item">
+					<label>이름</label>
+					<div class="form-half-item-con">
+						김공장
+					</div>
+				</div>
+				<div class="form-half-item">
+					<label>생년월일</label>
+					<div class="form-half-item-con">
+						970503
+					</div>
+				</div>
+				<div class="form-half-item">
+					<label>축구 포지션</label>
+					<div class="form-half-item-con">
+						<select name="area" id="area">
+							<option value="">포지션선택</option>
+							<option value="1">피보 (PIVO)</option>
+						</select>
+					</div>
+				</div>
+				<div class="form-half-item">
+					<label>풋살 포지션</label>
+					<div class="form-half-item-con">
+						<select name="area" id="area">
+							<option value="">포지션선택</option>
+							<option value="1">피보 (PIVO)</option>
+						</select>
+					</div>
+				</div>
+				<div class="form-half-item">
+					<label>신장</label>
+					<div class="form-half-item-con">
+						<input type="text" placeholder="신장입력" />
+					</div>
+				</div>
+				<div class="form-half-item">
+					<label>몸무게</label>
+					<div class="form-half-item-con">
+						<input type="text" placeholder="몸무게입력" />
+					</div>
+				</div>
+				<div class="form-half-item">
+					<label>선출</label>
+					<div class="form-half-item-con">
+						<select name="area" id="area">
+							<option value="">선출선택</option>
+							<option value="1">선출</option>
+
+						</select>
+					</div>
+				</div>
+	
+			</div>
+		</div>
+	</div>
+	
+<button class="form_btn">완료</button>
+
+</form>
+
+<div class="message-pop">
+	<h3><span>부가정보를</span><span>입력하시겠습니까?</span></h3>
+	<div class="pop-info"><span>부가정보 입력시 선수 정보를 더 자세한</span><span>서비스를 받으실 수 있습니다.</span></div>
+	<div class="pop-btn-group">
+		<button type="button" class="button-main pop-more-btn">네</button>
+		<button type="button" class="button-secondary pop-cancel-btn">아니오</button>
+	</div>
+
+</div>
+
+<script>
+/* custom-toggle-btn 처리 */
+$(".custom-toggle-btn").each(function() {
+	var checked = $(this).find("input[type='checkbox']").prop("checked");
+	if (checked) {
+		$(this).find(".custom-toggle-content").addClass("on");
+	}
+});
+
+$(document).on("click", ".custom-toggle-btn", function() {
+	if ($(this).find(".custom-toggle-content").hasClass("on")) {
+		$(this).find(".custom-toggle-content").removeClass("on");
+		$(this).find("input[type='checkbox']").attr("checked", false);
+	} else {
+		$(this).find(".custom-toggle-content").addClass("on");
+		$(this).find("input[type='checkbox']").attr("checked", true);
+	}
+});
+
+
+</script>
+
+</body>
+</html>
+

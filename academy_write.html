@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
+<meta name="HandheldFriendly" content="true">
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+
+<title>GONGJANG</title>
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="./css/common.css?ver=<?php echo time(); ?>">
+<script src="./js/swiper.min.js"></script>
+<link rel="stylesheet" href="./css/swiper.min.css">
+<!-- selectSet -->
+<script src="./js/selectSet.js"></script>
+<link rel="stylesheet" href="./css/selectSet.css">
+</head>
+
+<body class="login">
+
+<div class="sub_header">
+	<div class="logo">
+		<a href="/">
+			<img src="./img/logo_white.svg" />
+		</a>
+	</div>
+	<div class="step">
+		<ul>
+			<li class=""><label>신청 1단계</label></li>
+			<li class="on"><label>신청 2단계</label></li>
+			<li class=""><label>신청 3단계</label></li>
+		</ul>
+		<span>신청 2단계</span>
+	</div>
+	<div class="sub_title">
+		<div class="bg"></div>
+		<h3>신청하기</h3>
+	</div>
+</div>
+
+<form method="post" name="write_form" onsubmit="return false;">
+
+<div class="write_form_group">
+	<label>학생이름</label>
+	<div class="write_form_content">
+		<input type="text" name="write_subject" class="write_form_input" placeholder="이름 입력" />
+	</div>
+</div>
+
+<div class="write_form_group">
+	<label>생년월일</label>
+	<div class="write_form_content">
+		<input type="text" name="write_subject" class="write_form_input" placeholder="생년월일 입력" />
+	</div>
+</div>
+
+<div class="write_form_group">
+	<label>희망요일</label>
+	<div class="write_form_content">
+		<div class="checks-wrap2">
+			<div class="checks ">
+				<input type="radio" name="dck1" id="dck1" checked>
+				<label for="dck1">월 AM10 - PM1</label> 
+			</div>
+		</div>
+		<div class="checks-wrap2">
+			<div class="checks">
+				<input type="radio" name="dck2" id="dck2" checked>
+				<label for="dck2">화 AM10 - PM1</label> 
+			</div>
+		</div>
+		<div class="checks-wrap2">
+			<div class="checks">
+				<input type="radio" name="dck3" id="dck3" checked>
+				<label for="dck3">수 AM10 - PM1</label> 
+			</div>
+		</div>
+		<div class="checks-wrap2">
+			<div class="checks">
+				<input type="radio" name="dck4" id="dck4" checked>
+				<label for="dck4">목 AM10 - PM1</label> 
+			</div>
+		</div>
+		<div class="checks-wrap2">
+			<div class="checks">
+				<input type="radio" name="dck5" id="dck5" checked>
+				<label for="dck5">금 AM10 - PM1</label> 
+			</div>
+		</div>
+		<div class="checks-wrap2">
+			<div class="checks">
+				<input type="radio" name="dck6" id="dck6" checked>
+				<label for="dck6">토 AM10 - PM1</label> 
+			</div>
+		</div>
+		<div class="checks-wrap2">
+			<div class="checks">
+				<input type="radio" name="dck7" id="dck7" checked>
+				<label for="dck7">일 AM10 - PM1</label> 
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+$(document).on("click", "input[type='radio']", function() {
+	var checked = $(this).attr("checked");
+
+	if (checked == "checked") {
+		$(this).attr("checked", false);
+	} else {
+		$(this).attr("checked", true);
+	}
+});
+</script>
+
+
+<div class="write_form_group">
+	<label>희망시간</label>
+	<div class="write_form_content">
+		<select name="area" id="area">
+			<option value="">시간선택</option>
+			<option value="1">10:00-11:00</option>
+			<option value="2">11:00-12:00</option>
+		</select>	
+	</div>
+</div>
+
+<div class="write_form_group">
+	<label>옵션</label>
+	<div class="write_form_content">
+		<span class="info-value">패키지(유니폼+풋살화+양말)</span>
+		<div class="checks-wrap">
+			<div class="checks ">
+				<input type="radio" name="ock1" id="ock1" checked>
+				<label for="ock1" class="block">필요합니다.</label> 
+			</div>
+		</div>
+		<div class="checks-wrap">
+			<div class="checks">
+				<input type="radio" name="ock1" id="ock2" checked>
+				<label for="ock2" class="block">필요 없어요.</label> 
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="write_form_group">
+	<label>특이사항</label>
+	<div class="write_form_content">
+		<textarea name="write_content" class="write_form_textarea academy" placeholder="내용을 입력하세요"></textarea>
+	</div>
+</div>
+
+<div class="write_form_group">
+	<label>가격</label>
+	<div class="write_form_content">
+		<span class="info-value-bold">300,000원</span>
+		<span class="info-value-sub">수업(100,000) + 패키지(유니폼+풋살화+양말)(200,000)</span>
+	</div>
+</div>
+
+<div class="write_form_group">
+	<label>쿠폰</label>
+	<div class="write_form_content with-btn">
+		<input type="text" name="write_subject" class="write_form_input" placeholder="쿠폰번호입력" />
+		<button type="button">쿠폰확인</button>
+	</div>
+</div>
+
+<div class="write_form_group">
+	<label>총 결제금액</label>
+	<div class="write_form_content">
+		<span class="info-value-bold info-value-blue">280,000원</span>
+		<span class="info-value-sub">수업(100,000) + 패키지(유니폼+풋살화+양말)(200,000) - 쿠폰(20,000)</span>
+	</div>
+</div>
+
+<div class="write_form_group">
+	<label>결제방식</label>
+	<div class="write_form_content">
+		<select name="type" id="type">
+			<option value="">선택하기</option>
+			<option value="1">결제방식1</option>
+			<option value="2">결제방식2</option>
+		</select>	
+	</div>
+</div>
+
+<div class="agree_content">
+<div class="agree">
+		<h5>아래 내용 동의</h5>
+		<ul>
+			<li>
+				<div class="checks">
+					<input type="checkbox" id="ckall">
+					<label for="ckall">모두 동의합니다.</label> 
+				</div>
+
+			</li>
+			<li>
+				<div class="checks">
+					<input type="checkbox" name="ck1" id="ck1">
+					<label for="ck1">이용약관 동의</label> 
+				</div>
+				<a href="javascript:;" class="doc1">보기</a>
+			</li>
+			<li>
+				<div class="checks">
+					<input type="checkbox" name="ck2" id="ck2">
+					<label for="ck2">개인정보 수집 및 이용 동의</label> 
+				</div>
+				<a href="javascript:;" class="doc2">보기</a>
+			</li>
+			<li>
+				<div class="checks">
+					<input type="checkbox" name="ck3" id="ck3">
+					<label for="ck3">마케팅 정보 수신동의<span>선택</span></label> 
+				</div>
+				<a href="javascript:;" class="doc3">보기</a>
+			</li>
+		</ul>
+
+		<button class="form_btn">완료</button>
+	</div>
+</div>
+</form>
+
+<div class="message-pop file-pop">
+	<a href="javascript:;" class="type1_click"><img src="./img/file1_ico.svg" /></a>
+	<a href="javascript:;" class="type2_click"><img src="./img/file2_ico.svg" /></a>
+</div>
+
+<div class="preview-pop">
+
+</div>
+
+<div class="nav-bottom">
+	<a href="#" class="circle-logo-btn"><img src="./img/circle-logo.png" /></a>
+	<a href="./main.php" class="left-arrow-btn"><img src="./img/arrow-left-on.png" /></a>
+	<a href="#" class="right-arrow-btn"><img src="./img/arrow-right-on.png" /></a>
+</div>
+
+<script>
+selectSet("#area");	
+selectSet("#type");	
+
+function fileProc() {
+	document.getElementById('write_file_txt').innerHTML=this.value;
+}
+
+$(document).on("change", "#write_file", function() {
+	// input file 동기 생성 코드 삽입 요
+	var filename = $(this).val();
+	var filename_arr = filename.split("\\");
+	filename = filename_arr[filename_arr.length -1];
+	var html = "<span class='add_file'>"+filename+" <a href='javascript:;'><img src='./img/file-delete-ico.svg' /></a></span>";
+	if ($(".write_file").html() == "업로드 파일 선택") {
+		$(".write_file").html(html);
+	} else {
+		$(".write_file").append(html);
+	}
+
+	var len = $(".add_file").length;
+	if (len < 1) {
+		len = 1;
+	}
+	$(".write_file").height(len * 36);
+
+});
+
+$(document).on("click", ".add_file a", function() {
+	$(this).parent().remove();
+	var len = $(".add_file").length;
+	if (len < 1) {
+		len = 1;
+	}
+	$(".write_file").height(len * 36);
+});
+
+//$(".write_file").after().click(function() {
+$(document).on("click",".filebtn",function() {
+	$(".type1_click").html("<img src='./img/file1_ico.svg' />");
+	$(".type2_click").html("<img src='./img/file2_ico.svg' />");
+	$(".message-pop").show();
+});
+
+$(document).on("click", ".type1_click", function() {
+	$(this).html("<img src='./img/file1_on_ico.svg' />");
+	$('#write_file').click();
+	$(".message-pop").hide();
+});
+
+$(document).on("click", ".type2_click", function() {
+	$(this).html("<img src='./img/file2_on_ico.svg' />");
+	$('#write_file').click();
+	$(".message-pop").hide();
+});
+</script>
+
+</body>
+</html>
+

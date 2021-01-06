@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="123" height="142" viewBox="0 0 123 142">
+  <g id="그룹_967" data-name="그룹 967" transform="translate(-199 -335)">
+    <g id="그룹_966" data-name="그룹 966">
+      <g id="그룹_965" data-name="그룹 965">
+        <g id="그룹_964" data-name="그룹 964">
+          <g id="그룹_626" data-name="그룹 626" transform="translate(0 -4)">
+            <g id="사각형_511" data-name="사각형 511" transform="translate(199 339)" fill="none" stroke="#d7d4d2" stroke-width="1">
+              <rect width="123" height="142" rx="10" stroke="none"/>
+              <rect x="0.5" y="0.5" width="122" height="141" rx="9.5" fill="none"/>
+            </g>
+          </g>
+          <g id="그룹_963" data-name="그룹 963">
+            <text id="동영상" transform="translate(226 436)" fill="#646464" font-size="10" font-family="SourceHanSansK-Bold, Source Han Sans K" font-weight="700"><tspan x="21.2" y="12">동영상</tspan></text>
+            <g id="그룹_677" data-name="그룹 677" transform="translate(2)">
+              <path id="다각형_2" data-name="다각형 2" d="M18.333.6a1,1,0,0,1,1.334,0L36.049,15.255A1,1,0,0,1,35.383,17H2.617a1,1,0,0,1-.667-1.745Z" transform="translate(269.5 409.5) rotate(-90)" fill="#fff" stroke="#5a5553" stroke-linejoin="round" stroke-width="2"/>
+              <rect id="사각형_523" data-name="사각형 523" width="42" height="42" rx="5" transform="translate(231 369)" fill="#fff" stroke="#5a5553" stroke-linejoin="round" stroke-width="2"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

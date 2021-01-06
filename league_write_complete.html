@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
+<meta name="HandheldFriendly" content="true">
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+
+<title>GONGJANG</title>
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="./css/common.css?ver=<?php echo time(); ?>">
+<script src="./js/swiper.min.js"></script>
+<link rel="stylesheet" href="./css/swiper.min.css">
+<!-- selectSet -->
+<script src="./js/selectSet.js"></script>
+<link rel="stylesheet" href="./css/selectSet.css">
+</head>
+
+<body class="login">
+
+<div class="sub_header">
+	<div class="logo">
+		<a href="/">
+			<img src="./img/logo_white.svg" />
+		</a>
+	</div>
+</div>
+
+<div class="league-complete-msg">
+	<img src="./img/circle-check.png" />
+	<h3><p>신청이 완료되었습니다.</p></h3>
+	<div class="info">결제 내역은 마이페이지에서 확인 가능합니다!</div>
+
+	<ul class="league-complete-data">
+		<li>
+			<div class="league-content-title">
+				<p>신청완료</p>
+				<h5>2018 제주국제유스축구대회</h5>				
+				<span>신청번호 01011010</span>
+			</div>
+			<div class="league-content-type">
+				<div class="type-line">신청 날짜</div>
+				<div class="type-line">신청 가격</div>
+				<div class="type-line">신청팀</div>
+			</div>
+			<div class="league-content-value">
+				<div class="type-line">2020. 2. 22</div>
+				<div class="type-line">50,500원</div>
+				<div class="type-line">김공장</div>
+			</div>
+		</li>
+
+	</ul>
+	
+	<div class="complete_btn_wrap">
+		<button class="complete_btn">공유하기</button>
+	</div>
+</div>
+
+<div class="nav-bottom">
+	<a href="#" class="circle-logo-btn"><img src="./img/circle-logo.png" /></a>
+	<a href="./login.php" class="left-arrow-btn"><img src="./img/arrow-left-on.png" /></a>
+	<a href="#" class="right-arrow-btn"><img src="./img/arrow-right.png" /></a>
+</div>
+
+
+<div class="message-pop confirm-pop">
+	<h3>해당 내용을<br />공유하시겠습니까?</h3>
+
+	<div class="write_form_check">
+		<input type="checkbox" id="fck1"><label for="fck1"></label> <span>팀 스케줄 공유하기</span>
+		<p class="info">* 팀 내 선수들에게 대관예약 내역을 공유합니다.</p>
+	</div>
+
+	<div class="write_form_check">
+		<input type="checkbox" id="fck2"><label for="fck2"></label> <span>푸시 메세지 보내기</span>
+		<p class="info">* 팀 내 선수들에게 대관예약에 따른 스케줄 알람을 보냅니다.</p>
+	</div>
+
+	
+
+	
+	<div class="confirm_btn">
+		<button type="button" class="comp_btn">완료</button>
+		<button type="button" class="cancle_btn">아니오</button>
+	</div>
+
+
+</div>
+
+
+
+<script>
+
+
+
+$(document).on("click", ".complete_btn", function() {
+	$(".message-pop").show();
+});
+
+$(document).on("click", ".comp_btn", function() {
+	$(".message-pop").hide();
+});
+
+$(document).on("click", ".cancle_btn", function() {
+	$(".message-pop").hide();
+});
+
+
+
+</script>
+
+</body>
+</html>
+

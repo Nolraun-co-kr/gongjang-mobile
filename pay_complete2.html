@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
+<meta name="HandheldFriendly" content="true">
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+
+<title>GONGJANG</title>
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="./css/common.css?ver=<?php echo time(); ?>">
+<script src="./js/swiper.min.js"></script>
+<link rel="stylesheet" href="./css/swiper.min.css">
+<!-- selectSet -->
+<script src="./js/selectSet.js"></script>
+<link rel="stylesheet" href="./css/selectSet.css">
+</head>
+
+<body class="login">
+
+<div class="sub_header">
+	<div class="logo">
+		<a href="/">
+			<img src="./img/logo_white.svg" />
+		</a>
+	</div>
+</div>
+
+<div class="pay-complete-msg">
+	<img src="./img/circle-check.svg" />
+	<h3>예약이 완료되었습니다.</h3>
+	<p>결제 내역은 마이페이지에서 확인 가능합니다!</p>
+
+	<ul class="pay-complete-list-data">
+		<li>
+			<div class="pay-complete-content-title">
+				
+				<a href="#">예약완료</a>
+				<h5>부천중동<span>점 (가맹점)</span></h5>
+				<span>예약번호 01011010</span>
+				
+			</div>
+			<div class="pay-complete-content-type">
+				<div class="type-line">예약 날짜</div>
+				<div class="type-line">예약 시간</div>
+				<div class="type-line">예약 가격</div>
+				<div class="type-line">예약자</div>
+			</div>
+			<div class="pay-complete-content-value">
+				<div class="type-line">2020. 2. 22</div>
+				<div class="type-line">18:00~22:00</div>
+				<div class="type-line">50,500원</div>
+				<div class="type-line">김공장</div>
+			</div>
+		</li>
+	</ul>
+	<a href="#" class="pub_btn">공유하기</a>
+</div>
+
+<div class="nav-bottom">
+	<a href="#" class="circle-logo-btn"><img src="./img/circle-logo.png" /></a>
+	<a href="./login.php" class="left-arrow-btn"><img src="./img/arrow-left.svg" /></a>
+	<a href="#" class="right-arrow-btn"><img src="./img/arrow-right.svg" /></a>
+</div>
+
+<div class="message-pop refund-pop">
+	<h3>해당 내용을<br />공유하시겠습니까?</h3>
+	
+	<div class="refund_pop_btn">
+		<button type="button" class="complete_btn">네</button>
+		<button type="button" class="cancel_btn">아니오</button>
+	</div>
+</div>
+
+
+
+
+<script>
+$(".refund-pop").show();
+
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
+<meta name="HandheldFriendly" content="true">
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+
+<title>GONGJANG</title>
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="./css/common.css?ver=<?php echo time(); ?>">
+<script src="./js/swiper.min.js"></script>
+<link rel="stylesheet" href="./css/swiper.min.css">
+</head>
+
+<body class="login">
+
+<div class="register_header">
+	<div class="logo">
+		<a href="/">
+			<img src="./img/logo_white.svg" />
+		</a>
+	</div>
+	<div class="step">
+		<ul>
+			<li class="on"><label>신청 1단계</label></li>
+			<li class=""><label>신청 2단계</label></li>
+		</ul>
+		<span>신청 1단계</span>
+	</div>
+	<div class="sub_title">
+		<div class="bg"></div>
+		<h3>회원가입</h3>
+	</div>
+</div>
+
+<form method="post" name="register_form" onsubmit="return false;">
+	<input type="hidden" name="reg_type" value="" />
+<div class="register_content">
+	<button class="register_btn" data-type="1">14세 미만 회원</button>
+	<button class="register_btn" data-type="2">14세 이상 회원</button>
+	<button class="register_btn" data-type="3">외국인 회원</button>
+
+	<span class="help_txt">* 학부모 가입 시 입력받아야 할 필드명 필요</span>
+
+	<div class="agree" style="display:none;">
+		<h5>아래 내용 동의</h5>
+		<ul>
+			<li>
+				<div class="checks bold">
+					<input type="checkbox" id="ckall">
+					<label for="ckall">모두 동의합니다.</label> 
+				</div>
+
+			</li>
+			<li>
+				<div class="checks">
+					<input type="checkbox" name="ck1" id="ck1">
+					<label for="ck1">이용약관 동의</label> 
+				</div>
+				<a href="javascript:;" class="doc1">보기</a>
+			</li>
+			<li>
+				<div class="checks">
+					<input type="checkbox" name="ck2" id="ck2">
+					<label for="ck2">개인정보 수집 및 이용 동의</label> 
+				</div>
+				<a href="javascript:;" class="doc2">보기</a>
+			</li>
+			<li>
+				<div class="checks">
+					<input type="checkbox" name="ck3" id="ck3">
+					<label for="ck3">위치 정보 이용약관 동의<span>선택</span></label> 
+				</div>
+				<a href="javascript:;" class="doc3">보기</a>
+			</li>
+			<li class="type3">
+				<div class="checks">
+					<input type="checkbox" name="ck4" id="ck4">
+					<label for="ck4">법적 대리인 인증</label> 
+				</div>
+				<a href="javascript:;" class="doc4">보기</a>
+			</li>
+		</ul>
+
+		<button class="form_btn">다음</button>
+	</div>
+
+	
+
+</div>
+</form>
+
+
+<div class="message-pop" id="agree1">
+	<h3 class="msg_title">이용약관</h3>
+	<div class="msg_scroll">aa</div>
+	<hr />
+	<div class="pop-btn-group bt1">
+		<button type="button" class="button-main pop-agree-btn">동의</button>
+		<button type="button" class="button-secondary pop-cancel-btn">비동의</button>
+	</div>
+</div>
+
+<div class="message-pop" id="agree2">
+	<h3 class="msg_title">개인정보 수집 및 이용 동의</h3>
+	<div class="msg_scroll">aa</div>
+	<hr />
+	<div class="pop-btn-group bt1">
+		<button type="button" class="button-main pop-agree-btn">동의</button>
+		<button type="button" class="button-secondary pop-cancel-btn">비동의</button>
+	</div>
+</div>
+
+
+<div class="message-pop" id="agree3">
+	<h3 class="msg_title">위치 정보 이용약관 동의선택</h3>
+	<div class="msg_scroll">aa</div>
+	<hr />
+	<div class="pop-btn-group bt1">
+		<button type="button" class="button-main pop-agree-btn">동의</button>
+		<button type="button" class="button-secondary pop-cancel-btn">비동의</button>
+	</div>
+</div>
+
+
+<div class="message-pop" id="agree4">
+	<h3 class="msg_title">법적 대리인 인증</h3>
+	<div class="msg_scroll">aa</div>
+	<hr />
+	<div class="pop-btn-group bt1">
+		<button type="button" class="button-main pop-agree-btn">동의</button>
+		<button type="button" class="button-secondary pop-cancel-btn">비동의</button>
+	</div>
+</div>
+
+
+
+
+<footer>
+
+</footer>
+
+
+
+<script>
+$(document).on("click",".doc1", function() {
+	$("#agree1").show();
+});
+$(document).on("click","#agree1 .pop-agree-btn", function() {
+	$("#agree1").hide();
+	$("#ck1").prop("checked", true);
+});
+$(document).on("click","#agree1 .pop-cancel-btn", function() {
+	$("#agree1").hide();
+	$("#ck1").prop("checked", false);
+});
+
+$(document).on("click",".doc2", function() {
+	$("#agree2").show();
+});
+$(document).on("click","#agree2 .pop-agree-btn", function() {
+	$("#agree2").hide();
+	$("#ck2").prop("checked", true);
+});
+$(document).on("click","#agree2 .pop-cancel-btn", function() {
+	$("#agree2").hide();
+	$("#ck2").prop("checked", false);
+});
+
+
+$(document).on("click",".doc3", function() {
+	$("#agree3").show();
+});
+$(document).on("click","#agree3 .pop-agree-btn", function() {
+	$("#agree3").hide();
+	$("#ck3").prop("checked", true);
+});
+$(document).on("click","#agree3 .pop-cancel-btn", function() {
+	$("#agree3").hide();
+	$("#ck3").prop("checked", false);
+});
+
+
+$(document).on("click",".doc4", function() {
+	$("#agree4").show();
+});
+$(document).on("click","#agree4 .pop-agree-btn", function() {
+	$("#agree4").hide();
+	$("#ck4").prop("checked", true);
+});
+$(document).on("click","#agree4 .pop-cancel-btn", function() {
+	$("#agree4").hide();
+	$("#ck4").prop("checked", false);
+});
+
+
+$(document).on("click","#ckall", function() {
+	var temp = $(this).prop("checked");
+	if (temp == true)	{
+		$(".checks input[type='checkbox']").prop("checked", true);
+	} else {
+		$(".checks input[type='checkbox']").prop("checked", false);
+	}
+});
+
+$(document).on("click",".form_btn", function() {
+	location.href="./register2.php";
+});
+
+$(document).on("click",".register_btn", function() {
+	if ($(this).hasClass("on"))	{
+		$("input[name='reg_type']").val("");
+		$(this).removeClass("on");
+		$(".agree").hide();
+	} else {
+		var reg_type = $(this).data("type");
+		$(".register_btn").removeClass("on");
+		$(this).addClass("on");
+		$("input[name='reg_type']").val(reg_type);
+		$(".agree").show();
+		if (reg_type == "1") {
+			$(".type3").show();
+		} else {
+			$(".type3").hide();
+		}
+	}
+});
+
+</script>
+
+</body>
+</html>
+
