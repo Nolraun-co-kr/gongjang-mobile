@@ -23,12 +23,14 @@
 
 <header class="dark">
 	<a href="#" class="menu_btn"><img src="./img/menu_dark_ico.svg" /></a>
-	<a href="#" class="item_btn3"><img src="./img/plus_dark_ico.svg" /></a>
-	<a href="./search.php" class="item_btn2"><img src="./img/search_dark_ico.svg" /></a>
+	<a href="#" class="item_btn_part"><img src="./img/more_dark_ico.svg" /></a>
+	<a href="./search.php" class="item_btn_part2"><img src="./img/search_dark_ico.svg" /></a>
+	<a href="#" class="item_btn_part3"><img src="./img/plus_dark_ico.svg" /></a>
 	<div class="top_title">
 		김공장님의 공간
 	</div>
 </header>
+
 
 <div class="content detail">
 	<ul class="sub_detail">
@@ -44,7 +46,10 @@
 			<button class="dec_btn">함께하기</button>
 		</li>
 	</ul>
-	<div class="underarrow"></div>
+
+	<div class="menu_sel_position1"><img src="./img/menu_under_arrow.svg"></div>
+
+<!--	<div class="underarrow"></div>-->
 	<script>
 		$(document).on("click",".sub_detail_item .rev_btn", function() {
 			if ($(this).hasClass("on")) {
@@ -187,6 +192,16 @@
 	<a href="#" class="circle-logo-btn"><img src="./img/circle-logo.png" /></a>
 	<a href="./main.php" class="left-arrow-btn"><img src="./img/arrow-left-on.png" /></a>
 	<a href="#" class="right-arrow-btn"><img src="./img/arrow-right-on.png" /></a>
+</div>
+
+
+<div class="message-pop" style="display: block;">
+	<h3><strong>김공장</strong>님의 공간과 <br>함께 합니다!</h3>
+	<div class="pop-info"><span>김공장님의 공간을 보러 가시겠습니까?</span></div>
+	<div class="pop-btn-group">
+		<button type="button" class="button-main pop-more-btn">보라가기</button>
+		<button type="button" class="button-secondary pop-cancel-btn" onclick="$('.message-pop').hide();">아니오</button>
+	</div>
 </div>
 
 <footer>

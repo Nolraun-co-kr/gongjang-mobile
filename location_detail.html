@@ -30,7 +30,7 @@
 	<a href="#" class="item_btn"></a>
 	<a href="./search.php" class="item_btn2"><img src="./img/search_dark_ico.svg" /></a>
 	<div class="top_title">
-		지점		
+		지점
 	</div>
 </header>
 
@@ -62,7 +62,7 @@
 		<span>문의사항</span>
 		<p>010-6252-1007/010-9505-6646(10:00-24:00)</p>
 	</div>
-	
+
 	<ul class="location-detail-tab">
 		<li class="location-detail-li"><button type="button" class="location-tab-btn">구장 안내</button></li>
 		<li class="location-detail-li"><button type="button" class="location-tab-btn">대관 요금</button></li>
@@ -75,7 +75,7 @@
 			<span>시설특징</span>
 			<p>#인조잔디 #국제규격 #실내구장 #탈의실 #주차장</p>
 		</li>
-		
+
 		<li class="sub_detail_list_item">
 			<div class="opt_item">
 				<div class="sub_detail_list_item_title border-right-none">구장 안내</div>
@@ -112,7 +112,7 @@
 			<div class="opt_item mt30">
 				<div class="sub_detail_list_item_title border-right-none">옵션 안내</div>
 				<div class="sub_detail_list_item_content">
-					
+
 						<div class="option_list">
 							<div class="option_list_circle"><img src="./img/opt_ico1.svg" /></div>
 							<div class="option_list_name">조끼</div>
@@ -397,6 +397,9 @@ $(document).ready(function() {
 */
 
 
+$('.location-tab-btn').on('click', function(){
+	$(this).toggleClass('active');
+})
 
 </script>
 </body>

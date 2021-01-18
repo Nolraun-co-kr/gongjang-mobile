@@ -2,7 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bddca6b7-b5a3-4dff-9c02-cb9f99a2676d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/branch_player-cancel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/academy_home4.html" beforeDir="false" afterPath="$PROJECT_DIR$/academy_home4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/branch_academy.html" beforeDir="false" afterPath="$PROJECT_DIR$/branch_academy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/branch_player.html" beforeDir="false" afterPath="$PROJECT_DIR$/branch_player.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/common.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer1_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/customer1_3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer4.html" beforeDir="false" afterPath="$PROJECT_DIR$/customer4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/user1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/user1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/user2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/user2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/location_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/location_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/write.html" beforeDir="false" afterPath="$PROJECT_DIR$/write.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +25,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1mhiHJNCCQJne8ZkhIlgRpnvVco" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -26,6 +41,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -36,7 +52,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609952134955</updated>
-      <workItem from="1609952136243" duration="388000" />
+      <workItem from="1609952136243" duration="959000" />
+      <workItem from="1610933563740" duration="8058000" />
     </task>
     <servers />
   </component>
@@ -53,5 +70,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
