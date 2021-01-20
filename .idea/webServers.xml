@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="0f420c08-7601-4954-a8b9-114e9daffefb" name="공장모바일">
+        <fileTransfer rootFolder="/gvshop" accessType="SFTP" host="gvshop.cafe24.com" port="22" sshConfigId="4fdd6942-d420-4f4b-a2c6-f6c8c66cf56d" sshConfig="gvshop@gvshop.cafe24.com:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

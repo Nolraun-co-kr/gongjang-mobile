@@ -2,24 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bddca6b7-b5a3-4dff-9c02-cb9f99a2676d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/branch_player-cancel.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/38.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/39.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/academy_home4.html" beforeDir="false" afterPath="$PROJECT_DIR$/academy_home4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/branch_academy.html" beforeDir="false" afterPath="$PROJECT_DIR$/branch_academy.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/branch_player.html" beforeDir="false" afterPath="$PROJECT_DIR$/branch_player.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/common.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer1_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/customer1_3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer4.html" beforeDir="false" afterPath="$PROJECT_DIR$/customer4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/user1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/user1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/user2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/user2.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/location_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/location_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/write.html" beforeDir="false" afterPath="$PROJECT_DIR$/write.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -35,12 +30,14 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -53,7 +50,11 @@
       <option name="presentableId" value="Default" />
       <updated>1609952134955</updated>
       <workItem from="1609952136243" duration="959000" />
-      <workItem from="1610933563740" duration="8058000" />
+      <workItem from="1610933563740" duration="8318000" />
+      <workItem from="1610948540728" duration="15000" />
+      <workItem from="1610950961038" duration="2244000" />
+      <workItem from="1611126872073" duration="1244000" />
+      <workItem from="1611169554625" duration="1517000" />
     </task>
     <servers />
   </component>
