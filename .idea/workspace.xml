@@ -21,8 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="bddca6b7-b5a3-4dff-9c02-cb9f99a2676d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/44-3-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/44-3-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/44-7-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/44-7-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/44-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/44-7.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/common.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +36,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1mhiHJNCCQJne8ZkhIlgRpnvVco" />
   <component name="ProjectLevelVcsManager">
@@ -90,7 +100,7 @@
       <workItem from="1611990203142" duration="121000" />
       <workItem from="1612152467161" duration="2053000" />
       <workItem from="1612209960845" duration="1275000" />
-      <workItem from="1612252016112" duration="1580000" />
+      <workItem from="1612252016112" duration="3625000" />
     </task>
     <servers />
   </component>
@@ -108,23 +118,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="2480" y="337" key="#Deployment" timestamp="1611816580706">
-      <screen x="1920" y="143" width="1920" height="1057" />
-    </state>
-    <state x="2480" y="337" key="#Deployment/1920.143.1920.1057/0.23.1920.1177@1920.143.1920.1057" timestamp="1611816580706" />
-    <state x="2368" y="253" key="SettingsEditor" timestamp="1611190181532">
-      <screen x="1920" y="143" width="1920" height="1057" />
-    </state>
-    <state x="2368" y="253" key="SettingsEditor/1920.143.1920.1057/0.23.1920.1177@1920.143.1920.1057" timestamp="1611190181532" />
-    <state x="2588" y="410" width="584" height="522" key="find.popup" timestamp="1611558285668">
-      <screen x="1920" y="143" width="1920" height="1057" />
-    </state>
-    <state x="2588" y="410" width="584" height="522" key="find.popup/1920.143.1920.1057/0.23.1920.1177@1920.143.1920.1057" timestamp="1611558285668" />
-    <state x="2545" y="378" width="670" height="676" key="search.everywhere.popup" timestamp="1611215748753">
-      <screen x="1920" y="143" width="1920" height="1057" />
-    </state>
-    <state x="2545" y="378" width="670" height="676" key="search.everywhere.popup/1920.143.1920.1057/0.23.1920.1177@1920.143.1920.1057" timestamp="1611215748753" />
   </component>
 </project>
