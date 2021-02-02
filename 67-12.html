@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
+<meta name="HandheldFriendly" content="true">
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+
+<title>GONGJANG</title>
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="./css/common.css?ver=<?php echo time(); ?>">
+<script src="./js/swiper.min.js"></script>
+<link rel="stylesheet" href="./css/swiper.min.css">
+<!-- selectSet -->
+<script src="./js/selectSet.js"></script>
+<link rel="stylesheet" href="./css/selectSet.css">
+<link rel="stylesheet" href="./css/new.css">
+</head>
+
+<body class="login">
+
+<header class="league">
+    <a href="#" class="menu_btn"><img src="./img/menu-ico.png" /></a>
+    <a href="#" class="item_btn"></a>
+    <a href="./search.php" class="item_btn2"><img src="./img/search-ico.png" /></a>
+    <div class="top_title">
+        매치용병
+    </div>
+    <ul class="sub_tab sub_tab—2">
+        <li class="on"><a href="javascript:;">매치</a></li>
+        <li><a href="javascript:;">용병</a></li>
+    </ul>
+</header>
+
+<div class="content schedule pb-70">
+	<div class="_row">
+        <div class="sub_title">
+            <h3>신청하기</h3>
+        </div>
+		<div class="write_form_group">
+			<label>이름</label>
+			<div class="write_form_content">
+				<input type="text" name="write_subject" class="write_form_input" placeholder="이름을 입력하세요" />
+			</div>
+		</div>
+		<div class="write_form_group">
+			<label>연락처</label>
+			<div class="write_form_content">
+				<input type="text" name="write_subject" class="write_form_input" placeholder="010-0110-2020" />
+			</div>
+		</div>
+	</div>
+	<div class="_row">
+	<div class="write_form_group">
+		<h3 class="_sub-title">*선택 항목</h3>
+	</div>
+		<div class="write_form_group">
+			<label>팀 선택</label>
+			<div class="write_form_content">
+				<select name="area" id="area3">
+					<option value="">팀을 선택하세요.</option>
+					<option value="1">카테고리1</option>
+					<option value="2">카테고리2</option>
+				</select>
+			</div>
+		</div>
+		<div class="write_form_group">
+			<label>참여선수</label>
+			<div class="write_form_content">
+				<input type="text" name="write_search2" class="write_form_input write_search" placeholder="선수를 선택하세요.">
+				<p class="help">* 팀 선택 후 선수 선택이 가능합니다.</p>
+			</div>
+		</div>
+		<div class="write_form_group res" style="display:none">
+            <label></label>
+            <div class="write_form_content">
+                <div class="player_select_wrap">
+                    <ul class="player_select_list">
+                        <li>
+                            <div class="player_select_info">
+                                <img src="./img/player1.png">
+                                <span>김공장</span>
+                            </div>
+                            <input type="text" class="player_no" value="" placeholder="번호입력">
+                            <a href="javascript:;"><img src="./img/minus_gr_ico.svg"></a>
+                        </li>
+                        <li>
+                            <div class="player_select_info">
+                                <img src="./img/player1.png">
+                                <span>김공장</span>
+                            </div>
+                            <input type="text" class="player_no" value="" placeholder="번호입력">
+                            <a href="javascript:;"><img src="./img/minus_gr_ico.svg"></a>
+                        </li>
+                        <li>
+                            <div class="player_select_info">
+                                <img src="./img/player1.png">
+                                <span>김공장</span>
+                            </div>
+                            <input type="text" class="player_no" value="" placeholder="번호입력">
+                            <a href="javascript:;"><img src="./img/minus_gr_ico.svg"></a>
+                        </li>
+                        <li>
+                            <div class="player_select_info">
+                                <img src="./img/player1.png">
+                                <span>김공장</span>
+                            </div>
+                            <input type="text" class="player_no" value="" placeholder="번호입력">
+                            <a href="javascript:;"><img src="./img/minus_gr_ico.svg"></a>
+                        </li>
+                        <li>
+                            <div class="player_select_info">
+                                <img src="./img/player1.png">
+                                <span>김공장</span>
+                            </div>
+                            <input type="text" class="player_no" value="" placeholder="번호입력">
+                            <a href="javascript:;"><img src="./img/minus_gr_ico.svg"></a>
+                        </li>
+                        <li>
+                            <div class="player_select_info">
+                                <img src="./img/player1.png">
+                                <span>김공장</span>
+                            </div>
+                            <input type="text" class="player_no" value="" placeholder="번호입력">
+                            <a href="javascript:;"><img src="./img/minus_gr_ico.svg"></a>
+                        </li>
+                        <li>
+                            <div class="player_select_info">
+                                <img src="./img/player1.png">
+                                <span>김공장</span>
+                            </div>
+                            <input type="text" class="player_no" value="" placeholder="번호입력">
+                            <a href="javascript:;"><img src="./img/minus_gr_ico.svg"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+		<button class="form_btn _form_btn">완료</button>
+	</div>
+	
+</div>
+
+
+<div class="message-pop file-pop">
+	<a href="javascript:;" class="type1_click"><img src="./img/file1_ico.svg" /></a>
+	<a href="javascript:;" class="type2_click"><img src="./img/file2_ico.svg" /></a>
+</div>
+
+<div class="preview-pop2">
+
+	<div class="board_image">
+		<img src="./img/sample.png" />
+	</div>
+
+	<div class="board_control">
+		<div class="board_control_left">
+			<a href="javascript:;"><img src="./img/like_ico.svg" /><span>좋아요</span></a>
+			<a href="javascript:;"><img src="./img/unlike_ico.svg" /><span>싫어요</span></a>
+			<a href="javascript:;"><img src="./img/pub_ico.svg" /><span>공유</span></a>
+			<a href="javascript:;"><img src="./img/singo_ico.svg" /><span>신고</span></a>
+		</div>
+
+		<ul class="board_control_right">
+			<li><img src="./img/white_msg_ico.svg" /> 2</li>
+			<li><img src="./img/white_heart_ico.svg" /> 365</li>
+			<li><img src="./img/white_view_ico.svg" /> 40</li>
+		</ul>
+		<span class="board_date">2020. 03. 29</span>
+	</div>
+
+	<div class="board_wrap">
+		<div class="board_content">
+			<div class="board_content_head">
+				<span><strong>전국 풋살대회 리플레이 영상</strong> 인기영상</span>
+				<div class="board_user">
+					<img src="./img/player2.png" /> aaytaa
+				</div>
+				<button class="board_move_btn">공간가기 <img src="./img/white_logo_ico.svg" /></button>
+			</div>
+			<div class="board_content_view">
+				내용
+			</div>
+		</div>
+	</div>
+	<div class="pop-btn-group">
+		<button type="button" class="button-main pop-close-btn">확인</button>
+	</div>
+</div>
+
+<div class="message-pop player-pop" style="display:block;">
+	<h3>선수 명단 선택</h3>
+
+	<div class="write_form_group">
+		<div class="write_form_content">
+			<select name="area3" id="area3" style="display: none;">
+				<option value="">팀 선택</option>
+				<option value="1">팀1</option>
+				<option value="2">팀2</option>
+			</select><ul class="form-select-after" data-target="#area3"><li class="p-holder">팀 선택</li><li class="p-holder-txt">팀 선택</li><li class="p-option" data-value="1">팀1</li><li class="p-option" data-value="2">팀2</li></ul>	
+		</div>
+		<span>  *팀 선택 후 선수를 선택할 수 있습니다.</span>
+	</div>
+
+	<div class="write_form_group">
+		<div class="write_form_content">
+			<input type="text" name="write_subject" class="write_form_input" placeholder="선수 명단 검색">
+			<a href="javascript:;" class="filebtn"><img src="./img/file-search-ico.svg"></a>
+		</div>
+		<span> * 함께 경기할 선수의 이름을 입력하세요.</span>
+	</div>
+
+	<ul class="player_add_list">
+		<li>
+			<img src="./img/player1.png" class="user_img">
+			<span>김공장</span>
+			<a href="javascript:;"><img src="./img/plus_gr_ico.svg"></a>
+		</li>
+		<li>
+			<img src="./img/player1.png" class="user_img">
+			<span>김공장장</span>
+			<a href="javascript:;"><img src="./img/minus_gr_ico.svg"></a>
+		</li>
+		<li>
+			<img src="./img/player1.png" class="user_img">
+			<span>김과장</span>
+			<a href="javascript:;"><img src="./img/minus_gr_ico.svg"></a>
+		</li>
+		<li>
+			<img src="./img/player1.png" class="user_img">
+			<span>김뱌뱌</span>
+			<a href="javascript:;"><img src="./img/minus_gr_ico.svg"></a>
+		</li>
+		<li>
+			<img src="./img/player1.png" class="user_img">
+			<span>김광장</span>
+			<a href="javascript:;"><img src="./img/minus_gr_ico.svg"></a>
+		</li>
+		<li>
+			<img src="./img/player1.png" class="user_img">
+			<span>김공장</span>
+			<a href="javascript:;"><img src="./img/minus_gr_ico.svg"></a>
+		</li>
+		<li>
+			<img src="./img/player1.png" class="user_img">
+			<span>김공장</span>
+			<a href="javascript:;"><img src="./img/minus_gr_ico.svg"></a>
+		</li>
+
+	</ul>
+	<div class="player_add_btn">
+		<button type="button" class="add_complete_btn">완료</button>
+	</div>
+</div>
+
+
+
+<div class="nav-bottom">
+	<a href="#" class="circle-logo-btn"><img src="./img/circle-logo.png" /></a>
+	<a href="./main.php" class="left-arrow-btn"><img src="./img/arrow-left-on.png" /></a>
+	<a href="#" class="right-arrow-btn"><img src="./img/arrow-right-on.png" /></a>
+</div>
+
+<script>
+selectSet("#area");
+selectSet("#area2");
+selectSet("#area3");
+selectSet("#area4");
+
+
+$(document).on("click", ".pop-close-btn", function() {
+	$(".preview-pop2").hide();
+});
+$(document).on("click", ".delete_btn", function() {
+	$(".preview-pop2").show();
+});
+
+function fileProc() {
+	document.getElementById('write_file_txt').innerHTML=this.value;
+}
+
+$(document).on("change", "#write_file", function() {
+	// input file 동기 생성 코드 삽입 요
+	var filename = $(this).val();
+	var filename_arr = filename.split("\\");
+	filename = filename_arr[filename_arr.length -1];
+	var html = "<span class='add_file'>"+filename+" <a href='javascript:;'><img src='./img/file-delete-ico.svg' /></a></span>";
+	if ($(".write_file").html() == "업로드 파일 선택") {
+		$(".write_file").html(html);
+	} else {
+		$(".write_file").append(html);
+	}
+
+	var len = $(".add_file").length;
+	if (len < 1) {
+		len = 1;
+	}
+	$(".write_file").height(len * 36);
+
+});
+
+$(document).on("click", ".add_file a", function() {
+	$(this).parent().remove();
+	var len = $(".add_file").length;
+	if (len < 1) {
+		len = 1;
+	}
+	$(".write_file").height(len * 36);
+});
+
+//$(".write_file").after().click(function() {
+$(document).on("click",".filebtn",function() {
+	$(".type1_click").html("<img src='./img/file1_ico.svg' />");
+	$(".type2_click").html("<img src='./img/file2_ico.svg' />");
+	$(".message-pop").show();
+});
+
+$(document).on("click", ".type1_click", function() {
+	$(this).html("<img src='./img/file1_on_ico.svg' />");
+	$('#write_file').click();
+	$(".message-pop").hide();
+});
+
+$(document).on("click", ".type2_click", function() {
+	$(this).html("<img src='./img/file2_on_ico.svg' />");
+	$('#write_file').click();
+	$(".message-pop").hide();
+});
+</script>
+
+</body>
+</html>
+
