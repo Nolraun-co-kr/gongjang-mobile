@@ -1,10 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="bddca6b7-b5a3-4dff-9c02-cb9f99a2676d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/38.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/39.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/39.html" beforeDir="false" afterPath="$PROJECT_DIR$/39.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/common.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -30,7 +47,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
@@ -39,7 +56,15 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -54,7 +79,19 @@
       <workItem from="1610948540728" duration="15000" />
       <workItem from="1610950961038" duration="2244000" />
       <workItem from="1611126872073" duration="1244000" />
-      <workItem from="1611169554625" duration="1517000" />
+      <workItem from="1611169554625" duration="2203000" />
+      <workItem from="1611175395577" duration="19000" />
+      <workItem from="1611190131807" duration="6114000" />
+      <workItem from="1611204816579" duration="7698000" />
+      <workItem from="1611223142765" duration="1741000" />
+      <workItem from="1611457268466" duration="96000" />
+      <workItem from="1611473135490" duration="419000" />
+      <workItem from="1611557355237" duration="1522000" />
+      <workItem from="1611816562178" duration="55000" />
+      <workItem from="1611990203142" duration="121000" />
+      <workItem from="1612152467161" duration="2053000" />
+      <workItem from="1612209960845" duration="1275000" />
+      <workItem from="1612252016112" duration="1366000" />
     </task>
     <servers />
   </component>
@@ -72,5 +109,23 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2480" y="337" key="#Deployment" timestamp="1611816580706">
+      <screen x="1920" y="143" width="1920" height="1057" />
+    </state>
+    <state x="2480" y="337" key="#Deployment/1920.143.1920.1057/0.23.1920.1177@1920.143.1920.1057" timestamp="1611816580706" />
+    <state x="2368" y="253" key="SettingsEditor" timestamp="1611190181532">
+      <screen x="1920" y="143" width="1920" height="1057" />
+    </state>
+    <state x="2368" y="253" key="SettingsEditor/1920.143.1920.1057/0.23.1920.1177@1920.143.1920.1057" timestamp="1611190181532" />
+    <state x="2588" y="410" width="584" height="522" key="find.popup" timestamp="1611558285668">
+      <screen x="1920" y="143" width="1920" height="1057" />
+    </state>
+    <state x="2588" y="410" width="584" height="522" key="find.popup/1920.143.1920.1057/0.23.1920.1177@1920.143.1920.1057" timestamp="1611558285668" />
+    <state x="2545" y="378" width="670" height="676" key="search.everywhere.popup" timestamp="1611215748753">
+      <screen x="1920" y="143" width="1920" height="1057" />
+    </state>
+    <state x="2545" y="378" width="670" height="676" key="search.everywhere.popup/1920.143.1920.1057/0.23.1920.1177@1920.143.1920.1057" timestamp="1611215748753" />
   </component>
 </project>

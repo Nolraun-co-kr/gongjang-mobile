@@ -1760,7 +1760,6 @@ div.alarm_txt span.title_info { display:block;color:#646464;font-weight:300;marg
 .mercenary_detail_item dl.player_info { margin-top:10px; }
 .mercenary_detail_item dl.player_info ul { list-style:none;margin:0px;padding:0px; }
 .mercenary_detail_item dl.player_info ul li { float:left;margin:0px 10px 10px 0px;width:45px; }
-.mercenary_detail_item dl.player_info ul li:nth-child(4n +1) { clear:both; }
 .mercenary_detail_item dl.player_info ul li img.player { width:45px;height:45px;border-radius:23px; }
 .mercenary_detail_item dl.player_info ul li strong { display:block;text-align:center;margin-top:4px; }
 .mercenary_detail_item dl.player_info ul li span { display:block;text-align:center;font-size:10px;color:#24E5FF; }
@@ -2240,3 +2239,30 @@ div.qrcode_btn_wrap button.form_btn { margin:0px; }
 .bgwhite { background-color:#FFF; }
 
 
+/* add */
+._btn {font-size: 10px;border: 1px solid #222;line-height: 24px;display: inline-block;padding:0 1.5em;border-radius: 2em;}
+
+.__info{border-left: 1px solid #24e5ff}
+.__info ._row{display: flex;align-items: center;padding-left: 10px;}
+.__info ._row:nth-child(n + 2){margin-top: 10px;}
+.__info ._row strong{width: 60px;flex: none;}
+
+.bg39 {background:#fff;padding:20px;}
+.bg39 .sub_list {margin-top: 20px;}
+.bg39 .mercenary_detail_item{border: 1px solid #24e5ff;border-radius: 10px; padding: 15px;}
+.bg39 .mercenary_detail_item dl{display:flex;align-items: center;}
+.bg39 .mercenary_detail_item dl.player_info{align-items: flex-start;margin-top: 20px;}
+.bg39 .mercenary_detail_item dt{width: 60px; flex: none;}
+.bg39 .mercenary_detail_item dl ul{border: 1px solid #ddd; padding:10px;border-radius: 10px;}
+.bg39 .mercenary_detail_item dl ul:after{content:'';display: block;clear:both;}
+.bg39 .mercenary_detail_item dl ul li{width: 33.333%;margin: 0;text-align: center;}
+.bg39 .mercenary_detail_item dl ul li:nth-child(n + 4) {margin-top: 10px;}
+
+.bg39__top {display: flex;align-items: center;margin-bottom: 25px;}
+.bg39__top .infos{flex: 1;}
+.bg39__top .infos span{color:#337ef7;font-weight: 600;}
+.bg39__top .infos h2{font-size: 16px;margin-top: 5px;}
+.bg39__top .infos p{font-size: 10px;margin-top: 10px;}
+.bg39__top .actions{flex: none;padding-left: 15px; border-left: 1px solid #ddd;}
+.bg39__top .actions .btn2{border: 1px solid #333;display: block;width: 70px;height: 32px;background:none;border-radius: 5px;}
+.bg39__top .actions .btn2:nth-child(2){margin-top: 5px;}
