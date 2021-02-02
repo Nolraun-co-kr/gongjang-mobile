@@ -22,29 +22,43 @@
     <link rel="stylesheet" href="./css/selectSet.css">
 </head>
 
-<body>
-
+<body class="login">
 <header class="dark">
     <a href="#" class="menu_btn"><img src="./img/menu_dark_ico.svg" /></a>
     <a href="#" class="item_btn"></a>
     <a href="./search.php" class="item_btn2"><img src="./img/search_dark_ico.svg" /></a>
     <div class="top_title">
-        리그
+        시흥주니어 P4U님의 공간
     </div>
 </header>
 
-<div class="content detail bg44">
+<div class="content detail aca">
     <ul class="sub_detail">
-        <li class="sub_detail_item">
-            <span><img src="./img/star.svg" /> 진행중</span>
-            <div class="loc_txt"><strong>2018 제주국제유스축구대회</strong></div>
-            <div class="loc_addr">2018. 8. 13(mon)-2018. 8. 19(sun)</div>
-            <button class="rev_btn">공간 <img src="./img/league_branch_ico.svg" /></button>
-            <button class="dec_btn">신청하기</button>
+        <li class="sub_detail_item academy">
+            <span class="favorite on">시흥점</span>
+            <div class="loc_txt"><strong>시흥주니어 P4U축구교실</strong><p></p></div>
+            <div class="loc_addr">동절친 소개로 수업료 할인받고, 친구는 유니폼에 공짜!</div>
+
+            <button class="rev_btn rev_btn--2">공간 <img src="./img/league_branch_ico.svg" /></button>
+            <button class="dec_btn dec_btn--2" disabled>신청하기</button>
         </li>
     </ul>
     <script>
+      $(document).on("click",".sub_detail_item .favorite", function() {
+        if ($(this).hasClass("on")) {
+          $(this).html("<img src='./img/star_none.png' /> 즐겨찾기").removeClass("on");
+        } else {
+          $(this).html("<img src='./img/star_ico.png' /> 즐겨찾기").addClass("on");
+        }
+      });
 
+      $(document).on("click",".sub_detail_item .rev_btn", function() {
+        if ($(this).hasClass("on")) {
+          $(this).html("아카데미 홈 <img src='./img/academy_ico.png' />").removeClass("on");
+        } else {
+          $(this).html("아카데미 홈 <img src='./img/academy_dark_ico.png' />").addClass("on");
+        }
+      });
 
       $(document).on("click",".sub_detail_item .dec_btn", function() {
         if ($(this).hasClass("on")) {
@@ -56,197 +70,70 @@
     </script>
     <div class="dark_tab_wrap">
         <ul class="dark_tab">
-            <li><a href="javascript:;">컵소개</a></li>
-            <li><a href="javascript:;">팀리스트</a></li>
-            <li class="on"><a href="javascript:;">경기일점</a></li>
-            <li><a href="javascript:;">순위</a></li>
+            <li><a href="javascript:;">홈</a></li>
+            <li class="on"><a href="javascript:;">결제내역</a></li>
+            <li><a href="javascript:;">출석</a></li>
+            <li><a href="javascript:;">상점</a></li>
             <li><a href="javascript:;">공지사항</a></li>
         </ul>
     </div>
-    <div class="league2-list league2-list--select  mt0">
-        <div class="history-wrap ">
-            <ul class="history-tab">
-                <li class="history-li">
-                    <div class="form-input-group">
-                        <select name="date" id="date">
-                            <option value="">기간</option>
-                            <option value="1">하루</option>
-                            <option value="2">일주일</option>
-                            <option value="3">1개월</option>
-                            <option value="4">3개월</option>
-                            <option value="5">6개월</option>
-                            <option value="6">1년</option>
-                        </select>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="league2-list">
-        <div class="history-wrap">
-            <h3 class="_history-date">2020년 2월</h3>
-            <ul class="history-list-data">
-                <li>
-                    <div class="history-content-title">
-                        <span>new 예약</span>
-                        <h5>2018 제주국제유스축구대회</h5>
-                        <a href="#">취소</a>
-                    </div>
-                    <div class="history-content-type">
-                        <div class="type-line">결제날짜</div>
-                        <div class="type-line">결제가격</div>
-                        <div class="type-line">결제상황</div>
-                    </div>
-                    <div class="history-content-value">
-                        <div class="type-line">2020. 2. 22</div>
-                        <div class="type-line">50,500원</div>
-                        <div class="type-line">결제완료</div>
-                    </div>
-                </li>
-                <li>
-                    <div class="history-content-title">
-                        <span>new 예약</span>
-                        <h5>2018 제주국제유스축구대회</h5>
-                        <a href="#">취소</a>
-                    </div>
-                    <div class="history-content-type">
-                        <div class="type-line">결제날짜</div>
-                        <div class="type-line">결제가격</div>
-                        <div class="type-line">결제상황</div>
-                    </div>
-                    <div class="history-content-value">
-                        <div class="type-line">2020. 2. 22</div>
-                        <div class="type-line">50,500원</div>
-                        <div class="type-line">결제완료</div>
-                    </div>
-                </li>
-                <li>
-                    <div class="history-content-title">
-                        <span>new 예약</span>
-                        <h5>2018 제주국제유스축구대회</h5>
-                        <a href="#">취소</a>
-                    </div>
-                    <div class="history-content-type">
-                        <div class="type-line">결제날짜</div>
-                        <div class="type-line">결제가격</div>
-                        <div class="type-line">결제상황</div>
-                    </div>
-                    <div class="history-content-value">
-                        <div class="type-line">2020. 2. 22</div>
-                        <div class="type-line">50,500원</div>
-                        <div class="type-line">결제완료</div>
-                    </div>
-                </li>
-                <li>
-                    <div class="history-content-title">
-                        <span>new 예약</span>
-                        <h5>2018 제주국제유스축구대회</h5>
-                        <a href="#">취소</a>
-                    </div>
-                    <div class="history-content-type">
-                        <div class="type-line">결제날짜</div>
-                        <div class="type-line">결제가격</div>
-                        <div class="type-line">결제상황</div>
-                    </div>
-                    <div class="history-content-value">
-                        <div class="type-line">2020. 2. 22</div>
-                        <div class="type-line">50,500원</div>
-                        <div class="type-line">결제완료</div>
-                    </div>
-                </li>
 
-            </ul>
-        </div>
-    </div>
-    <div class="league2-list">
-        <div class="history-wrap">
-            <h3 class="_history-date">2020년 2월</h3>
-            <ul class="history-list-data">
-                <li>
-                    <div class="history-content-title">
-                        <span>new 예약</span>
-                        <h5>2018 제주국제유스축구대회</h5>
-                        <a href="#">취소</a>
-                    </div>
-                    <div class="history-content-type">
-                        <div class="type-line">결제날짜</div>
-                        <div class="type-line">결제가격</div>
-                        <div class="type-line">결제상황</div>
-                    </div>
-                    <div class="history-content-value">
-                        <div class="type-line">2020. 2. 22</div>
-                        <div class="type-line">50,500원</div>
-                        <div class="type-line">결제완료</div>
-                    </div>
-                </li>
-                <li>
-                    <div class="history-content-title">
-                        <span>new 예약</span>
-                        <h5>2018 제주국제유스축구대회</h5>
-                        <a href="#">취소</a>
-                    </div>
-                    <div class="history-content-type">
-                        <div class="type-line">결제날짜</div>
-                        <div class="type-line">결제가격</div>
-                        <div class="type-line">결제상황</div>
-                    </div>
-                    <div class="history-content-value">
-                        <div class="type-line">2020. 2. 22</div>
-                        <div class="type-line">50,500원</div>
-                        <div class="type-line">결제완료</div>
-                    </div>
-                </li>
-                <li>
-                    <div class="history-content-title">
-                        <span>new 예약</span>
-                        <h5>2018 제주국제유스축구대회</h5>
-                        <a href="#">취소</a>
-                    </div>
-                    <div class="history-content-type">
-                        <div class="type-line">결제날짜</div>
-                        <div class="type-line">결제가격</div>
-                        <div class="type-line">결제상황</div>
-                    </div>
-                    <div class="history-content-value">
-                        <div class="type-line">2020. 2. 22</div>
-                        <div class="type-line">50,500원</div>
-                        <div class="type-line">결제완료</div>
-                    </div>
-                </li>
-                <li>
-                    <div class="history-content-title">
-                        <span>new 예약</span>
-                        <h5>2018 제주국제유스축구대회</h5>
-                        <a href="#">취소</a>
-                    </div>
-                    <div class="history-content-type">
-                        <div class="type-line">결제날짜</div>
-                        <div class="type-line">결제가격</div>
-                        <div class="type-line">결제상황</div>
-                    </div>
-                    <div class="history-content-value">
-                        <div class="type-line">2020. 2. 22</div>
-                        <div class="type-line">50,500원</div>
-                        <div class="type-line">결제완료</div>
-                    </div>
-                </li>
-
-            </ul>
-        </div>
-    </div>
 </div>
-<script>
-  $(document).on("click", ".league2-group-title a", function() {
 
-    var target = $(this).data("target");
-    var status = $("#"+target).hasClass("on");
-    if (status) {
-      $("#"+target).removeClass("on").hide();
-    } else {
-      $("#"+target).addClass("on").show();
-    }
-  });
-</script>
+<div class="aca_detail">
+    <div class="aca_detail_title">
+        <span>결제 완료</span>
+        <h3>정왕 주니어 FC 선수반</h3>
+        <p>환불 신청</p>
+        <button type="button" class="aca_detail_title_btn">환불신청</button>
+    </div>
+
+    <ul class="aca_detail_info">
+        <li>
+            <span>신청날짜</span>
+            <p>2020. 1. 21</p>
+        </li>
+        <li>
+            <span>수업 가격</span>
+            <p>50,500원</p>
+        </li>
+        <li>
+            <span>신청자</span>
+            <p>김공장</p>
+        </li>
+    </ul>
+
+    <ul class="aca_detail_content">
+        <li>
+            <span>구매자</span>
+            <p>강공장</p>
+        </li>
+        <li>
+            <span>구매목록</span>
+            <p>유니폼 (2), 양말(5)</p>
+        </li>
+        <li>
+            <span>특이사항</span>
+            <p>유니폼(s), 풋살화(225)</p>
+        </li>
+        <li>
+            <span>쿠폰</span>
+            <p>SFSFF231231</p>
+        </li>
+        <li>
+            <span>총 결제 금액</span>
+            <p>240,000원</p>
+        </li>
+        <li>
+            <span>결제 방식</span>
+            <p>카드결제</p>
+        </li>
+    </ul>
+
+</div>
+
+
+
 
 <div class="left_nav">
     <div class="left_wrap">
@@ -331,3 +218,4 @@
 </script>
 </body>
 </html>
+
