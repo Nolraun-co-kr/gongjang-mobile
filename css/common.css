@@ -2266,3 +2266,5 @@ div.qrcode_btn_wrap button.form_btn { margin:0px; }
 .bg39__top .actions{flex: none;padding-left: 15px; border-left: 1px solid #ddd;}
 .bg39__top .actions .btn2{border: 1px solid #333;display: block;width: 70px;height: 32px;background:none;border-radius: 5px;}
 .bg39__top .actions .btn2:nth-child(2){margin-top: 5px;}
+
+.pay-complete-list-data--flex li{display: flex;align-items: center;}
