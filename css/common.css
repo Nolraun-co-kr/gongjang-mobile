@@ -2344,6 +2344,7 @@ img{max-width: 100%;}
 .mt-0 {margin-top: 0 !important;}
 .mt-10 {margin-top: 10px !important;}
 .league2-group-category{background:#5a5553;color:#fff;padding:0 30px;line-height: 35px;font-size: 14px;}
+.league2-group-category.active{background:#337ef7;}
 .league2-group--arrow li > div{display: flex;align-items: center;}
 .league2-group--arrow li > div ._arrow{margin-left: auto;}
 
@@ -2355,6 +2356,8 @@ img{max-width: 100%;}
 .mercenary_detail_item--border h3 span{flex: 1;margin-left: 10px;height: 1px;background:#222;}
 .mercenary_detail_item--border .player_list li{position:relative}
 .mercenary_detail_item--border .player_list li ._arrow{position: absolute;right:0;top: 50%;transform: translateY(-50%);}
+.mercenary_detail_item--pd{padding: 20px 30px;}
+.mercenary_detail_item--border .player_list.player_list--me li{padding: 0;}
 
 ._setting{background:#eaeaea;}
 ._setting .setting-list-data{margin-bottom: 10px !important;background:#fff; padding:0 20px;}
@@ -2382,6 +2385,7 @@ img{max-width: 100%;}
 ._evaluationbox__box ._thumb img{width: 70px;}
 ._evaluationbox__box ._info{}
 ._evaluationbox__box ._info p{margin-top: 10px;}
+._evaluationbox__box ._info strong{margin-top: 10px;display: block;}
 ._evaluationbox__box ._title { display:inline-block;padding:0px;background: linear-gradient(transparent 50%, rgba( 36, 229, 255, 0.5 ) 50%); }
 ._evaluationbox__box ._title h3 { display:inline-block;font-size:22px;font-weight:700;color:#5A5553;overflow:hidden; }
 ._evaluationbox__box ._title h3 span{font-weight: 300;font-size: 1em;}
@@ -2419,8 +2423,8 @@ img{max-width: 100%;}
 
 ._teamHome{background:#fff;}
 ._teamHome-top{display: flex;align-items: center;}
-._teamHome ._evaluationbox__box{border-bottom-left-radius: 0;flex: 1;border-top-right-radius: 0;}
-._teamHome-top ._actions{padding: 0 20px 0 10px;}
+._teamHome ._evaluationbox__box{border-bottom-left-radius: 0;flex: 1;border-top-right-radius: 0;margin-right:20px;}
+._teamHome-top ._actions{padding: 0 20px 0 0px;}
 
 ._teamHome-top .custom-toggle-content{width: 65px;}
 ._teamHome-top  .custom-toggle-content:after{left: 40px;}
@@ -2430,11 +2434,31 @@ img{max-width: 100%;}
 ._teamHome-top .custom-toggle-content.on .as_off{display:none;}
 ._teamHome-top .custom-toggle-content span.as_on{right: 5px;}
 ._teamHome-top .custom-toggle-content span.as_off{left: 5px;}
+._teamHome-top ._actions{display: flex;flex-direction: column;min-width: 85px;}
+._teamHome-top ._actions ._nbtn{min-height: 32px;border-radius: 7px;border: none;background:#337ef7;color:#fff;margin-top: 5px;padding: 5px 0;}
+._teamHome-top ._actions ._nbtn.on,
+._teamHome-top ._actions ._nbtn:hover{background:#24e5ff;}
+._teamHome-top ._actions ._btn3{height: 25px;border-radius: 10px;border: none;border:1px solid #337ef7;color:#337ef7;margin-top: 5px;background: none;}
+._teamHome-top ._actions ._btn3._btn3--black{border-color:#5a5553;color:#5a5553;height: 30px;}
+._teamHome-top ._actions ._btn3._btn3--black.on,
+._teamHome-top ._actions ._btn3._btn3--black:hover{color:#fff;background:#5a5553;}
 
-
-
-
-
+._teamHome-bottom{background:#5a5553;margin-top: 15px;}
+._teamHome-bottom ._block{padding: 20px 30px;border-bottom: 10px solid #eaeaea;}
+._teamHome-bottom ._block ._block-header{display: flex;align-items: center;}
+._teamHome-bottom ._block ._block-header h2{flex: 1;color:#fff;}
+._teamHome-bottom ._block ._block-header h2 span{color:#24e5ff;}
+._teamHome-bottom ._block ._block-header a{margin-left: auto;border:1px solid #24e5ff;color:#fff;width: 55px;line-height: 22px;text-align: center;border-radius: 2em;}
+._teamHome-bottom ._block ._block-header a.on,
+._teamHome-bottom ._block ._block-header a:hover{background:#24e5ff;}
+._teamHome-bottom ._block .schedule-group-content2-title,
+._teamHome-bottom ._block .schedule-group-content2-date{color:#fff;}
+._teamHome-bottom ._block .schedule-group-content2-item{box-shadow: none;}
+._teamHome-bottom ._block .schedule-group.schedule-group--border{padding-top: 15px;border-top: 1px solid #eaeaea;}
+._teamHome-bottom ._block .schedule-group .schedule-group-content3-item .basic-info{background: none;}
+._teamHome-bottom ._block .schedule-group .schedule-group-content3-item .basic-info h3,
+._teamHome-bottom ._block .schedule-group .schedule-group-content3-item .basic-info span{color:#fff;}
+._teamHome-bottom ._block .schedule-group .schedule-group-content3-item .add-info{box-shadow: none;}
 /* .new */
 .bg-white {background: #fff !important;}
 
@@ -2449,3 +2473,26 @@ img{max-width: 100%;}
 .write_form_group ._sub-title {font-size: 10px; color: #337ef7;font-weight: 700;}
 ._row .sub_title {display: inline-block;margin: 0px 0 30px 30px;padding: 0;background: linear-gradient(#FFFFFF 50%, rgba( 36, 229, 255, 0.5 ) 50%);}
 ._row .sub_title h3 {display: inline-block;font-size: 22px;font-weight: 700;color: #5A5553;overflow: hidden;}
+
+._manners{}
+._manners-top{display: flex;padding: 15px 0;border-bottom: 1px solid #707070;}
+._manners-top strong{color:#fff;font-size: 12px;margin-right: 5px;}
+._manners-top ._stars{display:flex;align-items: center;}
+._manners-top ._stars img{width: 10px;margin-right: 3px;}
+._manners_count{font-size: 10px;color:#fff;opacity: .3;line-height: 30px;}
+
+._manners-lists{}
+._manners-lists ._item{border: 1px solid #707070;border-radius: 5px;}
+._manners-lists ._item ~ ._item{margin-top: 10px;}
+._manners-lists ._item ._item-top{padding: 10px;border-bottom: 1px solid #707070;display: flex;align-items: center;justify-content: space-between}
+._manners-lists ._item .left{display: flex;flex: 1;align-items: center;}
+._manners-lists ._item .left .thumb{border-radius: 50%;width: 30px;height: 30px;overflow: hidden;flex: none;}
+._manners-lists ._item .left .info{flex: 1;padding-left: 5px ;}
+._manners-lists ._item .left .info ._stars{display: flex;}
+._manners-lists ._item .left .info ._stars img{width: 8px;margin-right: 3px;}
+._manners-lists ._item .left .info p{padding: 0;margin-top: 5px;}
+._manners-lists ._item .right{}
+._manners-lists ._item .right a{display: flex;align-items: center;color:#24e5ff}
+._manners-lists ._item .right a img{height: 10px;margin-right: 3px;}
+._manners-lists ._item .right p{color:#707070;padding: 0;text-align: right;}
+._manners-lists ._item p{font-size: 10px;line-height: 1.25em;color:#fff;padding: 10px;}

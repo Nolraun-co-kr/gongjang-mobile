@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <title>GONGJANG</title>
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/common.css?ver=<?php echo time(); ?>">
+    <script src="./js/swiper.min.js"></script>
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <!-- selectSet -->
+    <script src="./js/selectSet.js"></script>
+    <link rel="stylesheet" href="./css/selectSet.css">
+    <link rel="stylesheet" href="../../Downloads/gongjang-mobile/css/new.css">
+</head>
+
+<body class="login">
+<!--
+<div class="intro">
+	<a class="intro_img_wrap"><img src="./img/intro_logo.png" /></a>
+</div>
+-->
+<header class="league ">
+    <a href="#" class="menu_btn"><img src="./img/menu-ico.png" /></a>
+    <a href="#" class="item_btn"></a>
+    <a href="./search.php" class="item_btn2"><img src="./img/search-ico.png" /></a>
+    <div class="top_title">
+        가나다팀의 홈
+    </div>
+    <ul class="sub_tab sub_tab--4">
+        <li class="on"><a href="javascript:;">팀정보</a></li>
+        <li class=""><a href="javascript:;">팀원목록</a></li>
+        <li class=""><a href="javascript:;">팀 일정</a></li>
+        <li class=""><a href="javascript:;">팀 순위</a></li>
+    </ul>
+</header>
+
+<div class="content schedule pb-70">
+    <div class="_teamHome">
+        <div class="_teamHome-top">
+            <div class="_evaluationbox__box">
+                <img src="./img/team5_ico.png" class="_bg" alt="">
+                <div class="relative">
+                    <div class="_thumb">
+                        <img src="./img/team5_ico.png" alt="">
+                    </div>
+                    <div class="_info">
+                        <div class="_title">
+                            <h3>
+                                가나다 <span>스포츠</span>
+                            </h3>
+                        </div>
+                        <p>2014.05.26.</p>
+
+                        <strong>
+                            안녕하세요. 가나다 스포츠입니다.
+                            누구든 환영합니다!
+                        </strong>
+                    </div>
+                </div>
+            </div>
+            <div class="_actions">
+                <button class="_nbtn _share">
+                    <img src="./img/pub_ico.svg" alt=""><br/>
+                    공유하기
+                </button>
+                <button class="_nbtn _share">
+                    <img src="./img/league_branch_ico.svg" alt=""><br/>
+                    공간가기
+                </button>
+                <button class="_btn3 _btn3--black">팀원 신청</button>
+            </div>
+        </div>
+        <div class="_teamHome-bottom">
+            <div class="_block">
+                <div class="_block-header">
+                    <h2>
+                        팀 일정 <span>* 상세하게 확인하시려면 더보기 버튼을 클릭하세요.</span>
+                    </h2>
+                    <a href="" class="on">더보기</a>
+                </div>
+                <div class="schedule-group">
+
+                    <ul class="schedule-group-content2 on">
+                        <li class="schedule-group-content2-status on">
+                            <img src="./img/star_ico.png" /> 진행중
+                        </li>
+                        <li class="schedule-group-content2-title">
+                            AIA 생명 2019 H풋살리그 전국챔피언십 - 남자부
+                        </li>
+                        <li class="schedule-group-content2-date">
+                            2019. 8. 13(mon) - 2019. 8.19(sun)
+                        </li>
+                        <li>
+                            <div class="schedule-group-content2-item">
+                                <div class="basic-info">
+                                    <div class="home">
+                                        <div class="home-img-wrap">
+                                            <img src="./img/team5_ico.png" />
+                                        </div>
+                                        <span><strong>가나다</strong> 스포츠</span>
+                                    </div>
+
+                                    <div class="vs">
+                                        <p>VS</p>
+                                        <span>5. 12 pm 4:00</span>
+                                    </div>
+
+                                    <div class="away">
+                                        <div class="away-img-wrap">
+                                            <img src="./img/team4_ico.png" />
+                                        </div>
+                                        <span><strong>다락</strong> 스포츠</span>
+                                    </div>
+                                </div>
+                                <div class="add-info">
+                                    <div class="loc">동대문점<br />(B구장)</div>
+                                    <h3>4강</h3>
+                                </div>
+                            </div>
+
+                            <div class="schedule-group-content2-item">
+                                <div class="basic-info">
+                                    <div class="home">
+                                        <div class="home-img-wrap">
+                                            <img src="./img/team5_ico.png" />
+                                        </div>
+                                        <span><strong>가나다</strong> 스포츠</span>
+                                    </div>
+
+                                    <div class="vs">
+                                        <p>VS</p>
+                                        <span>5. 12 pm 4:00</span>
+                                    </div>
+
+                                    <div class="away">
+                                        <div class="away-img-wrap">
+                                            <img src="./img/team2_ico.png" />
+                                        </div>
+                                        <span><strong>다락</strong> 스포츠</span>
+                                    </div>
+                                </div>
+                                <div class="add-info">
+                                    <div class="loc">동대문점<br />(B구장)</div>
+                                    <h3>4강</h3>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="schedule-group schedule-group--border">
+
+                    <ul class="schedule-group-content2 ">
+                        <li>
+                            <div class="schedule-group-content3-item">
+                                <div class="basic-info">
+                                    <p>예약번호 01011010</p>
+                                    <h3><strong>부천중동</strong>점 (가맹점)</h3>
+                                    <span>2019. 8. 13(mon) - 2019. 8. 19(sun)</span>
+                                </div>
+                                <div class="add-info">
+                                    <div class="loc">동대문점<br />(B구장)</div>
+                                    <h3>4강</h3>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="_block">
+                <div class="_block-header">
+                    <h2>
+                        대회결과 <span>* 상세하게 확인하시려면 더보기 버튼을 클릭하세요.</span>
+                    </h2>
+                    <a href="">더보기</a>
+                </div>
+                <div class="schedule-group">
+
+                    <ul class="schedule-group-content2 on">
+                        <li class="schedule-group-content2-status on">
+                            <img src="./img/star_ico.png" /> 진행중
+                        </li>
+                        <li class="schedule-group-content2-title">
+                            AIA 생명 2019 H풋살리그 전국챔피언십 - 남자부
+                        </li>
+                        <li class="schedule-group-content2-date">
+                            2019. 8. 13(mon) - 2019. 8.19(sun)
+                        </li>
+                        <li>
+                            <div class="schedule-group-content2-item">
+                                <div class="basic-info">
+                                    <div class="home">
+                                        <div class="home-img-wrap">
+                                            <img src="./img/team5_ico.png" />
+                                        </div>
+                                        <span><strong>가나다</strong> 스포츠</span>
+                                    </div>
+
+                                    <div class="vs">
+                                        <p>VS</p>
+                                        <span>5. 12 pm 4:00</span>
+                                    </div>
+
+                                    <div class="away">
+                                        <div class="away-img-wrap">
+                                            <img src="./img/team4_ico.png" />
+                                        </div>
+                                        <span><strong>다락</strong> 스포츠</span>
+                                    </div>
+                                </div>
+                                <div class="add-info">
+                                    <div class="loc">동대문점<br />(B구장)</div>
+                                    <h3>4강</h3>
+                                </div>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="_block">
+                <div class="_block-header">
+                    <h2>
+                        팀 매너(최고점 5점)  <span>* 지금까지 총 39명이 주신 점수입니다.</span>
+                    </h2>
+                </div>
+                <div class="_manners">
+                    <div class="_manners-top">
+                        <strong>3.5</strong>
+                        <div class="_stars">
+                            <img src="./img/star1.png" alt="">
+                            <img src="./img/star1.png" alt="">
+                            <img src="./img/star1.png" alt="">
+                            <img src="./img/star-half.png" alt="">
+                            <img src="./img/star-zero.png" alt="">
+                        </div>
+                    </div>
+                    <p class="_manners_count">
+                        34개의 모든 후기평가 보기
+                    </p>
+
+                    <div class="_manners-lists">
+                        <div class="_item">
+                            <div class="_item-top">
+                                <div class="left">
+                                    <div class="thumb">
+                                        <img src="./img/player1.png" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <div class="_stars">
+                                            <img src="./img/star1.png" alt="">
+                                            <img src="./img/star1.png" alt="">
+                                            <img src="./img/star1.png" alt="">
+                                            <img src="./img/star-half.png" alt="">
+                                            <img src="./img/star-zero.png" alt="">
+                                        </div>
+                                        <p>김영광</p>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <a href="">
+                                        <img src="./img/team1_ico.png" alt=""> 카카카 스포츠
+                                    </a>
+                                    <p>2.24 am 8:00</p>
+                                </div>
+                            </div>
+                            <p>
+                                기대가 됩니다!!!! 2020
+                            </p>
+                        </div>
+                        <div class="_item">
+                            <div class="_item-top">
+                                <div class="left">
+                                    <div class="thumb">
+                                        <img src="./img/player1.png" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <div class="_stars">
+                                            <img src="./img/star1.png" alt="">
+                                            <img src="./img/star1.png" alt="">
+                                            <img src="./img/star1.png" alt="">
+                                            <img src="./img/star-half.png" alt="">
+                                            <img src="./img/star-zero.png" alt="">
+                                        </div>
+                                        <p>김영광</p>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <a href="">
+                                        <img src="./img/team1_ico.png" alt=""> 카카카 스포츠
+                                    </a>
+                                    <p>2.24 am 8:00</p>
+                                </div>
+                            </div>
+                            <p>
+                                기대가 됩니다!!!! 2020기대가 됩니다!!!! 2020기대가 됩니다!!!! 2020기대가 됩니다!!!! 2020기대가 됩니다!!!! 2020기대가 됩니다!!!! 2020기대가 됩니다!!!! 2020기대가 됩니다!!!! 2020기대가 됩니다!!!! 2020
+                            </p>
+                        </div>
+                        <div class="_item">
+                            <div class="_item-top">
+                                <div class="left">
+                                    <div class="thumb">
+                                        <img src="./img/player1.png" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <div class="_stars">
+                                            <img src="./img/star1.png" alt="">
+                                            <img src="./img/star1.png" alt="">
+                                            <img src="./img/star1.png" alt="">
+                                            <img src="./img/star-half.png" alt="">
+                                            <img src="./img/star-zero.png" alt="">
+                                        </div>
+                                        <p>김영광</p>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <a href="">
+                                        <img src="./img/team1_ico.png" alt=""> 카카카 스포츠
+                                    </a>
+                                    <p>2.24 am 8:00</p>
+                                </div>
+                            </div>
+                            <p>
+                                기대가 됩니다!!!! 2020
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="nav-bottom">
+    <a href="#" class="circle-logo-btn"><img src="./img/circle-logo.png" /></a>
+    <a href="./main.php" class="left-arrow-btn"><img src="./img/arrow-left-on.png" /></a>
+    <a href="#" class="right-arrow-btn"><img src="./img/arrow-right-on.png" /></a>
+</div>
+<script>
+  selectSet("#area");
+</script>
+</body>
+</html>
+
