@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <title>GONGJANG</title>
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/common.css?ver=<?php echo time(); ?>">
+    <script src="./js/swiper.min.js"></script>
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <!-- selectSet -->
+    <script src="./js/selectSet.js"></script>
+    <link rel="stylesheet" href="./css/selectSet.css">
+</head>
+
+<body class="login">
+<!--
+<div class="intro">
+	<a class="intro_img_wrap"><img src="./img/intro_logo.png" /></a>
+</div>
+-->
+<header class="league shadow">
+    <a href="#" class="menu_btn"><img src="./img/menu-ico.png" /></a>
+    <a href="#" class="item_btn"></a>
+    <a href="./search.php" class="item_btn2"><img src="./img/search-ico.png" /></a>
+    <div class="top_title">
+        가나다팀의 홈
+    </div>
+    <ul class="sub_tab sub_tab--4">
+        <li class=""><a href="javascript:;">팀정보</a></li>
+        <li class=""><a href="javascript:;">팀원목록</a></li>
+        <li class=""><a href="javascript:;">팀 일정</a></li>
+        <li class="on"><a href="javascript:;">팀 순위</a></li>
+    </ul>
+</header>
+
+<div class="content schedule">
+    <div class="schedule-select">
+        <label>참여 대회</label>
+        <div class="schedule-select-content">
+            <select name="area" id="area">
+                <option value="">선택</option>
+                <option value="1">AIA 생명 2019 H풋살리그 전국챔피언십 - 남자부</option>
+            </select>
+            <div class="schedule_help">* 참여대회 선택 시 해당 대회에 대한 순위정보 열람 가능합니다.</div>
+        </div>
+    </div>
+
+    <div class="schedule-list">
+        <div class="schedule-group">
+            <ul class="schedule-group-content2 on">
+                <li class="league2-group-content2-table">
+                    <table>
+                        <colgroup>
+                            <col width="33px" />
+                            <col width="60px" />
+                            <col width="" />
+                            <col width="30px" />
+                            <col width="30px" />
+                            <col width="30px" />
+                            <col width="30px" />
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th colspan="3"></th>
+                            <th>PTS</th>
+                            <th>W</th>
+                            <th>D</th>
+                            <th>L</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td><div class="record-1"><span>1</span></div></td>
+                            <td><img src="./img/team4_ico.png" /></td>
+                            <td><strong>가나다</strong> 스포츠</td>
+                            <td>7</td>
+                            <td>7</td>
+                            <td>7</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td><div class="record-2"><span>2</span></div></td>
+                            <td><img src="./img/team4_ico.png" /></td>
+                            <td><strong>가나다</strong> 스포츠</td>
+                            <td>6</td>
+                            <td>6</td>
+                            <td>6</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td><div class="record-3"><span>3</span></div></td>
+                            <td><img src="./img/team5_ico.png" /></td>
+                            <td><strong>가나다</strong> 스포츠</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td><div class="record-0"><span>4</span></div></td>
+                            <td><img src="./img/team1_ico.png" /></td>
+                            <td><strong>가나다</strong> 스포츠</td>
+                            <td>4</td>
+                            <td>4</td>
+                            <td>4</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td><div class="record-0"><span>5</span></div></td>
+                            <td><img src="./img/team1_ico.png" /></td>
+                            <td><strong>가나다</strong> 스포츠</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td><div class="record-0"><span>6</span></div></td>
+                            <td><img src="./img/team1_ico.png" /></td>
+                            <td><strong>가나다</strong> 스포츠</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </li>
+
+            </ul>
+        </div>
+
+
+    </div>
+</div>
+
+<div class="nav-bottom">
+    <a href="#" class="circle-logo-btn"><img src="./img/circle-logo.png" /></a>
+    <a href="./main.php" class="left-arrow-btn"><img src="./img/arrow-left-on.png" /></a>
+    <a href="#" class="right-arrow-btn"><img src="./img/arrow-right-on.png" /></a>
+</div>
+<script>
+  selectSet("#area");
+</script>
+</body>
+</html>
+
