@@ -1759,9 +1759,11 @@ div.alarm_txt span.title_info { display:block;color:#646464;font-weight:300;marg
 .mercenary_detail_item dd { position:relative;float:left;margin-left:10px;font-size:10px;color:#5a5553;font-weight:400; }
 .mercenary_detail_item dl:nth-child(n+2) { margin-top:20px; }
 .mercenary_detail_item dd.team_info { line-height:26px;font-weight:700; }
-.mercenary_detail_item dl.player_info { margin-top:10px; }
+.mercenary_detail_item dl.player_info { margin-top:10px;display: flex; }
+.mercenary_detail_item dl.player_info dt{flex: none;}
 .mercenary_detail_item dl.player_info ul { list-style:none;margin:0px;padding:0px; }
-.mercenary_detail_item dl.player_info ul li { float:left;margin:0px 10px 10px 0px;width:45px; }
+.mercenary_detail_item dl.player_info ul:after{content:'';display: block;clear:both;}
+.mercenary_detail_item dl.player_info ul li { float:left;width:25%;text-align: center; }
 .mercenary_detail_item dl.player_info ul li img.player { width:45px;height:45px;border-radius:23px; }
 .mercenary_detail_item dl.player_info ul li strong { display:block;text-align:center;margin-top:4px; }
 .mercenary_detail_item dl.player_info ul li span { display:block;text-align:center;font-size:10px;color:#24E5FF; }
@@ -2414,3 +2416,5 @@ img{max-width: 100%;}
 ._evaluationbox .comment__form .comment__textbox{flex: 1;height: 35px;border: 1px solid #ddd;border-right: 0;border-top-left-radius: 5px; border-bottom-left-radius: 5px;}
 ._evaluationbox .comment__form .comment__textbox input{border: none;height: 100%;width: 100%;padding:0 10px;}
 ._evaluationbox .comment__form .submit{height: 35px;background:#337ef7;color:#fff;width: 40px;border: none;border-top-right-radius: 5px; border-bottom-right-radius: 5px;}
+
+._teamHome{}
