@@ -20,12 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bddca6b7-b5a3-4dff-9c02-cb9f99a2676d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/img/tournament__1row.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/tournament__2row-revert.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/tournament__2row.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/tournament__4row-revert.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/tournament__4row.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/52.html" beforeDir="false" afterPath="$PROJECT_DIR$/52.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/58.html" beforeDir="false" afterPath="$PROJECT_DIR$/58.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/61-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/61-1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/61-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/61-2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/61.html" beforeDir="false" afterPath="$PROJECT_DIR$/61.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/44-6-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/44-6-3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/44-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/44-6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/44-9-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/44-9-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/44-9.html" beforeDir="false" afterPath="$PROJECT_DIR$/44-9.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/common.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -66,7 +70,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/img" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -75,8 +79,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/img" />
+      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/img" />
@@ -109,7 +113,7 @@
       <workItem from="1612209960845" duration="1275000" />
       <workItem from="1612252016112" duration="13471000" />
       <workItem from="1612295853124" duration="211000" />
-      <workItem from="1612296082929" duration="3683000" />
+      <workItem from="1612296082929" duration="5601000" />
     </task>
     <servers />
   </component>

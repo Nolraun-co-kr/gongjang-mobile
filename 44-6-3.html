@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <title>GONGJANG</title>
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/common.css?ver=<?php echo time(); ?>">
+    <script src="./js/swiper.min.js"></script>
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <!-- selectSet -->
+    <script src="./js/selectSet.js"></script>
+    <link rel="stylesheet" href="./css/selectSet.css">
+</head>
+
+<body>
+
+<header class="dark">
+    <a href="#" class="menu_btn"><img src="./img/menu_dark_ico.svg" /></a>
+    <a href="#" class="item_btn"></a>
+    <a href="./search.php" class="item_btn2"><img src="./img/search_dark_ico.svg" /></a>
+    <div class="top_title">
+        리그
+    </div>
+</header>
+
+<div class="content detail">
+    <ul class="sub_detail">
+        <li class="sub_detail_item">
+            <span><img src="./img/star.svg" /> 진행중</span>
+            <div class="loc_txt"><strong>2018 제주국제유스축구대회</strong></div>
+            <div class="loc_addr">2018. 8. 13(mon)-2018. 8. 19(sun)</div>
+            <button class="rev_btn">공간 <img src="./img/league_branch_ico.svg" /></button>
+            <button class="dec_btn">신청하기</button>
+        </li>
+    </ul>
+    <script>
+
+
+      $(document).on("click",".sub_detail_item .dec_btn", function() {
+        if ($(this).hasClass("on")) {
+          $(this).removeClass("on");
+        } else {
+          $(this).addClass("on");
+        }
+      });
+    </script>
+    <div class="dark_tab_wrap">
+        <ul class="dark_tab">
+            <li><a href="javascript:;">컵소개</a></li>
+            <li><a href="javascript:;">팀리스트</a></li>
+            <li class="on"><a href="javascript:;">경기일점</a></li>
+            <li><a href="javascript:;">순위</a></li>
+            <li><a href="javascript:;">공지사항</a></li>
+        </ul>
+    </div>
+    <ul class="mercenary-tab">
+        <li class="mercenary-li">
+            <div class="form-input-group">
+                <select name="date" id="date">
+                    <option value="">그룹</option>
+                </select>
+            </div>
+        </li>
+        <li class="mercenary-info">
+            * 그룹별로 경기일정을 확인하세요.
+        </li>
+    </ul>
+
+    <div class="league2-list">
+        <div class="league2-group">
+            <div class="league2-group-title bbnone">
+                <a href="javascript:;" data-target="list0">
+                    내용접기&nbsp;&nbsp;<img src="./img/arrow-down.svg" />
+                </a>
+                <h3>TOURNAMENT TABLE</h3>
+            </div>
+            <div class="league2-group-content2 league2-group-content2--overflow on" id="list0">
+                <div class="tournamentTable">
+                    <div class="tournament__body">
+                        <div class="row row--1">
+                            <div class="matchinfo">
+                                <h3 class="matchinfo__title">Final</h3>
+                                <article class="matchinfo__box">
+                                    <a href="" class="matchinfo__team win star">
+                                        <img src="//via.placeholder.com/20x20" alt="" />
+                                        <p>가나다 스포츠</p>
+                                    </a>
+                                    <a href="" class="matchinfo__team">
+                                        <img src="//via.placeholder.com/20x20" alt="" />
+                                        <p>가나다 스포츠</p>
+                                    </a>
+                                    <span class="count">2:0</span>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="row row--2">
+                            <div class="matchinfo">
+                                <h3 class="matchinfo__title">Semi-Final2</h3>
+                                <article class="matchinfo__box">
+                                    <a href="" class="matchinfo__team win">
+                                        <img src="//via.placeholder.com/20x20" alt="" />
+                                        <p>가나다 스포츠</p>
+                                    </a>
+                                    <a href="" class="matchinfo__team">
+                                        <img src="//via.placeholder.com/20x20" alt="" />
+                                        <p>가나다 스포츠</p>
+                                    </a>
+                                    <span class="count">2:0</span>
+                                </article>
+                            </div>
+                            <div class="matchinfo">
+                                <h3 class="matchinfo__title">Semi-Final3</h3>
+                                <article class="matchinfo__box">
+                                    <a href="" class="matchinfo__team">
+                                        <img src="//via.placeholder.com/20x20" alt="" />
+                                        <p>가나다 스포츠</p>
+                                    </a>
+                                    <a href="" class="matchinfo__team win">
+                                        <img src="//via.placeholder.com/20x20" alt="" />
+                                        <p>가나다 스포츠</p>
+                                    </a>
+                                    <span class="count">0:2</span>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="row row--4">
+                            <div class="matchinfo">
+                                <h3 class="matchinfo__title">Quarter-Final 1</h3>
+                                <article class="matchinfo__box">
+                                    <a href="" class="matchinfo__team win">
+                                        <img src="//via.placeholder.com/20x20" alt="" />
+                                        <p>가나다 스포츠</p>
+                                    </a>
+                                    <a href="" class="matchinfo__team">
+                                        <img src="//via.placeholder.com/20x20" alt="" />
+                                        <p>가나다 스포츠</p>
+                                    </a>
+                                    <span class="count">2:0</span>
+                                </article>
+                            </div>
+
+                            <div class="matchinfo">
+                                <h3 class="matchinfo__title">Quarter-Final 2</h3>
+                                <article class="matchinfo__box">
+                                    <a href="" class="matchinfo__team win">
+                                        <img src="//via.placeholder.com/20x20" alt="" />
+                                        <p>가나다 스포츠</p>
+                                    </a>
+                                    <a href="" class="matchinfo__team">
+                                        <img src="//via.placeholder.com/20x20" alt="" />
+                                        <p>가나다 스포츠</p>
+                                    </a>
+                                    <span class="count">2:0</span>
+                                </article>
+                            </div>
+
+                            <div class="matchinfo">
+                                <h3 class="matchinfo__title">Quarter-Final 3</h3>
+                                <article class="matchinfo__box">
+                                    <a href="" class="matchinfo__team win">
+                                        <img src="//via.placeholder.com/20x20" alt="" />
+                                        <p>가나다 스포츠</p>
+                                    </a>
+                                    <a href="" class="matchinfo__team">
+                                        <img src="//via.placeholder.com/20x20" alt="" />
+                                        <p>가나다 스포츠</p>
+                                    </a>
+                                    <span class="count">2:0</span>
+                                </article>
+                            </div>
+                            <div class="matchinfo">
+                                <h3 class="matchinfo__title">Quarter-Final 4</h3>
+                                <article class="matchinfo__box">
+                                    <a href="" class="matchinfo__team win">
+                                        <img src="//via.placeholder.com/20x20" alt="" />
+                                        <p>가나다 스포츠</p>
+                                    </a>
+                                    <a href="" class="matchinfo__team">
+                                        <img src="//via.placeholder.com/20x20" alt="" />
+                                        <p>가나다 스포츠</p>
+                                    </a>
+                                    <span class="count">2:0</span>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="league2-list">
+        <div class="league2-group">
+            <div class="league2-group-title bbnone">
+                <a href="javascript:;" data-target="list1">
+                    내용접기&nbsp;&nbsp;<img src="./img/arrow-down.svg" />
+                </a>
+                <h3><strong class="_text-blue">A</strong> 그룹 컵 대회 순위</h3>
+            </div>
+            <ul class="league2-group-content2 on" id="list1">
+                <li class="league2-group-content2-status on">
+                    <img src="./img/star_ico.png" /> 진행중
+                </li>
+                <li class="league2-group-content2-date">
+                    2019. 8. 13(mon) - 2019. 8.19(sun)
+                </li>
+                <li>
+                    <div class="league2-group-content2-item">
+                        <div class="basic-info">
+                            <div class="home">
+                                <div class="home-img-wrap">
+                                    <img src="./img/team5_ico.png" />
+                                </div>
+                                <span><strong>가나다</strong> 스포츠</span>
+                            </div>
+
+                            <div class="vs">
+                                <p>VS</p>
+                                <span>5. 12 pm 4:00</span>
+                            </div>
+
+                            <div class="away">
+                                <div class="away-img-wrap">
+                                    <img src="./img/team4_ico.png" />
+                                </div>
+                                <span><strong>다락</strong> 스포츠</span>
+                            </div>
+                        </div>
+                        <div class="add-info">
+                            <div class="loc">동대문점<br />(B구장)</div>
+                            <h3>4강</h3>
+                        </div>
+                    </div>
+                    <div class="league2-group-content2-item">
+                        <div class="basic-info">
+                            <div class="home">
+                                <div class="home-img-wrap">
+                                    <img src="./img/team5_ico.png" />
+                                </div>
+                                <span><strong>가나다</strong> 스포츠</span>
+                            </div>
+
+                            <div class="vs">
+                                <p>VS</p>
+                                <span>5. 12 pm 4:00</span>
+                            </div>
+
+                            <div class="away">
+                                <div class="away-img-wrap">
+                                    <img src="./img/team4_ico.png" />
+                                </div>
+                                <span><strong>다락</strong> 스포츠</span>
+                            </div>
+                        </div>
+                        <div class="add-info">
+                            <div class="loc">동대문점<br />(B구장)</div>
+                            <h3>4강</h3>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script>
+  $(document).on("click", ".league2-group-title a", function() {
+
+    var target = $(this).data("target");
+    var status = $("#"+target).hasClass("on");
+    if (status) {
+      $("#"+target).removeClass("on").hide();
+    } else {
+      $("#"+target).addClass("on").show();
+    }
+  });
+</script>
+
+<div class="left_nav">
+    <div class="left_wrap">
+        <div class="sect">
+            <a href="/" class="side_logo"><img src="./img/logo.jpg" /></a>
+            <div class="profile">
+                <a href="javascript:;" class="profile_img"><img src="./img/user1.jpg" /></a>
+                <span><strong>김공장</strong>님,<br />안녕하세요?</span>
+            </div>
+        </div>
+        <div class="sect2">
+            <ul class="sect2_btn">
+                <li>
+                    <a href="./pay_history.php" class="side_btn1">결제내역</a>
+                    <a href="./membership.php" class="side_btn2">멤버십</a>
+                    <a href="./app.php" class="side_btn3">앱설정</a>
+                </li>
+            </ul>
+        </div>
+        <div class="sect3">
+            <ul class="sec3_menu">
+                <li class="side_menu" data-page="m1"><a href="./member.php">회원수정</a></li>
+                <li class="side_menu" data-page="m2"><a href="#">내 공간 관리</a></li>
+                <li class="side_menu" data-page="m3"><a href="#">고객센터</a></li>
+            </ul>
+        </div>
+
+        <div class="sect4">
+            <a href="#">이용약관</a>
+            <a href="#">버전정보</a>
+            <a href="#">공지사항</a>
+            <a href="#">로그아웃</a>
+        </div>
+    </div>
+</div>
+
+<div class="nav-bottom">
+    <a href="#" class="circle-logo-btn"><img src="./img/circle-logo.png" /></a>
+    <a href="./main.php" class="left-arrow-btn"><img src="./img/arrow-left-on.png" /></a>
+    <a href="#" class="right-arrow-btn"><img src="./img/arrow-right-on.png" /></a>
+</div>
+
+<footer>
+
+</footer>
+
+
+
+<script>
+  selectSet("#date");
+
+  $(document).on('click', '.menu_btn', function() {
+    if ($(".left_nav").hasClass("on")) {
+      $(".left_nav").removeClass("on");
+    } else {
+      $(".left_nav").addClass("on");
+    }
+  });
+
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView : 3,
+    spaceBetween : 10,
+    slidesPerGroup : 2,
+    loopFillGroupWithBlank : true
+  });
+
+  var cw = $('.swiper-slide:nth-child(1)').width();
+  $('.swiper-slide img').css({'height':cw+'px'});
+
+  $(document).on('click', '.nav_close', function() {
+    $(".left_nav").removeClass("on");
+  });
+
+  /*
+  $(document).ready(function() {
+      $('.intro').delay(1000).fadeOut(1500);
+  });
+  */
+
+
+
+</script>
+</body>
+</html>
+
