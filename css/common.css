@@ -2370,3 +2370,47 @@ img{max-width: 100%;}
 
 ._submit-btns{display: flex;align-items: center;justify-content: center;padding-bottom: 40px !important;}
 ._submit-btns button{background:#337ef7;color:#fff;width: 180px;height: 35px;border: none;font-size: 12px;border-radius: 2em;}
+
+._evaluationbox{padding: 30px;padding-bottom: 140px;}
+._evaluationbox__box{padding: 50px 20px;border-radius: 15px;box-shadow: 3px 0px 10px rgba(0,0,0,0.2);position: relative}
+._evaluationbox__box .relative{position: relative;z-index: 2;display: flex; align-items: center;}
+._evaluationbox__box ._bg{position: absolute;z-index: 1;left: 50%;top: 50%;transform: translate(-50%, -50%);height: 120px;filter: blur(1);opacity: .2}
+._evaluationbox__box{display: flex;align-items: center; justify-content: center;}
+._evaluationbox__box ._thumb{margin-right: 20px;}
+._evaluationbox__box ._thumb img{width: 70px;}
+._evaluationbox__box ._info{}
+._evaluationbox__box ._info p{margin-top: 10px;}
+._evaluationbox__box ._title { display:inline-block;padding:0px;background: linear-gradient(transparent 50%, rgba( 36, 229, 255, 0.5 ) 50%); }
+._evaluationbox__box ._title h3 { display:inline-block;font-size:22px;font-weight:700;color:#5A5553;overflow:hidden; }
+._evaluationbox__box ._title h3 span{font-weight: 300;font-size: 1em;}
+
+._evaluationbox .grade {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+._evaluationbox .grade__star {
+    margin: 0 2px;
+    width: 30px;
+    height: 30px;
+    background: url('../img/star-zero.png') no-repeat center;
+    background-size: 100% 100%;
+    border: none;
+}
+._evaluationbox .grade__star.active {
+ background: url('../img/star1.png') no-repeat center;
+ background-size: 100% 100%;
+}
+._evaluationbox .grade__star.active-half {
+     background: url('../img/star-half.png') no-repeat center;
+     background-size: 100% 100%;
+ }
+
+.teamEvaluation__form{margin-top: 20px;}
+.teamEvaluation__form p{text-align: center;margin-top: 10px;}
+.teamEvaluation__form input{border: none;display: block;text-align: center;width: 100%;font-size: 40px;font-weight: 600;margin-top: 20px;}
+._evaluationbox .comment__form{display: flex;margin-top: 50px;}
+._evaluationbox .comment__form .comment__textbox{flex: 1;height: 35px;border: 1px solid #ddd;border-right: 0;border-top-left-radius: 5px; border-bottom-left-radius: 5px;}
+._evaluationbox .comment__form .comment__textbox input{border: none;height: 100%;width: 100%;padding:0 10px;}
+._evaluationbox .comment__form .submit{height: 35px;background:#337ef7;color:#fff;width: 40px;border: none;border-top-right-radius: 5px; border-bottom-right-radius: 5px;}

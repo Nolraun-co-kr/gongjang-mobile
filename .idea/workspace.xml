@@ -20,14 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bddca6b7-b5a3-4dff-9c02-cb9f99a2676d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/71-8.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/star-half.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/star-zero.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/star1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/58.html" beforeDir="false" afterPath="$PROJECT_DIR$/58.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/59-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/59-1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/59-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/59-2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/59.html" beforeDir="false" afterPath="$PROJECT_DIR$/59.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/60.html" beforeDir="false" afterPath="$PROJECT_DIR$/60.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/64-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/64-2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/64-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/64-3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/common.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -68,7 +65,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -77,8 +74,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/img" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/img" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -106,7 +106,7 @@
       <workItem from="1611990203142" duration="121000" />
       <workItem from="1612152467161" duration="2053000" />
       <workItem from="1612209960845" duration="1275000" />
-      <workItem from="1612252016112" duration="11451000" />
+      <workItem from="1612252016112" duration="12919000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <title>GONGJANG</title>
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/common.css?ver=<?php echo time(); ?>">
+    <script src="./js/swiper.min.js"></script>
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <!-- selectSet -->
+    <script src="./js/selectSet.js"></script>
+    <link rel="stylesheet" href="./css/selectSet.css">
+</head>
+
+<body class="login">
+
+<div class="sub_header">
+    <div class="logo">
+        <a href="/">
+            <img src="./img/logo_white.svg" />
+        </a>
+    </div>
+    <div class="sub_title">
+        <div class="bg"></div>
+        <h3>평가하기</h3>
+    </div>
+    <span class="sub_title_info">* 상대팀에 대한 매너를 평가해주세요.</span>
+</div>
+
+
+<div class="_evaluationbox">
+    <div class="_evaluationbox__box">
+        <img src="./img/team5_ico.png" class="_bg" alt="">
+        <div class="relative">
+            <div class="_thumb">
+                <img src="./img/team5_ico.png" alt="">
+            </div>
+            <div class="_info">
+                <div class="_title">
+                    <h3>
+                        가나다 <span>스포츠</span>
+                    </h3>
+                </div>
+                <p>2014.05.26.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="teamEvaluation__form">
+        <div class="grade">
+            <button class="grade__star" onclick="setReviewStar(1, '1.0')" ondblclick="setReviewStar(1, '0.5', true)"></button>
+            <button class="grade__star" onclick="setReviewStar(2, '2.0')" ondblclick="setReviewStar(2, '1.5', true)"></button>
+            <button class="grade__star" onclick="setReviewStar(3, '3.0')" ondblclick="setReviewStar(3, '2.5', true)"></button>
+            <button class="grade__star" onclick="setReviewStar(4, '4.0')" ondblclick="setReviewStar(4, '3.5', true)"></button>
+            <button class="grade__star" onclick="setReviewStar(5, '5.0')" ondblclick="setReviewStar(5, '4.5', true)"></button>
+        </div>
+        <p>* 두번 클릭 시 0.5점 선택 가능합니다.</p>
+        <input type="text" readonly class="grade__count" id="count" value="0.0">
+    </div>
+
+
+
+    <form action="">
+        <div class="comment__form">
+            <div class="comment__textbox">
+                <input type="text" placeholder="40자 이내로 입력해주세요.">
+            </div>
+            <button class="submit waves-effect" type="submit">전송</button>
+        </div>
+    </form>
+</div>
+
+
+<script>
+  function setReviewStar(index, number, isHalf = false) {
+    $('#count').val(number);
+
+    $('.grade__star').removeClass('active');
+    $('.grade__star').removeClass('active-half');
+    if(!isHalf) {
+      $('.grade__star').map(function( idx, item ) {
+        if( idx < index ) {
+          item.classList.add('active');
+        }
+      })
+    } else {
+      $('.grade__star').map(function( idx, item ) {
+        if( idx < (index - 1) ) {
+          item.classList.add('active');
+        }
+        else if ( idx === (index - 1) ) {
+          item.classList.add('active-half');
+        }
+      })
+    }
+  }
+</script>
+
+<div class="nav-bottom">
+    <a href="#" class="circle-logo-btn"><img src="./img/circle-logo.png" /></a>
+    <a href="./main.php" class="left-arrow-btn"><img src="./img/arrow-left-on.png" /></a>
+    <a href="#" class="right-arrow-btn"><img src="./img/arrow-right-on.png" /></a>
+</div>
+
+<form>
+    <input type="hidden" name="user" value="" />
+    <input type="hidden" name="type" value="" />
+
+    <input type="hidden" name="type1" value="" />
+    <input type="hidden" name="type2" value="" />
+    <input type="hidden" name="type3" value="" />
+</form>
+
+<script>
+  $(document).on("click", ".evaluation_list li a", function() {
+    var user = $(this).data("idx");
+    $("input[name='user']").val(user);
+    $(".eval1").html('<img src="./img/eval1_ico.svg" />');
+    $(".eval2").html('<img src="./img/eval2_ico.svg" />');
+    $(".eval3").html('<img src="./img/eval3_ico.svg" />');
+
+    $(".eval-pop").show();
+  });
+
+  $(document).on("click", ".form_btn", function() {
+    $(".message-pop").show();
+  });
+
+
+</script>
+
+</body>
+</html>
+
