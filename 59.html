@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <title>GONGJANG</title>
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/common.css?ver=<?php echo time(); ?>">
+    <script src="./js/swiper.min.js"></script>
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <!-- selectSet -->
+    <script src="./js/selectSet.js"></script>
+    <link rel="stylesheet" href="./css/selectSet.css">
+</head>
+
+<body class="login">
+
+<div class="sub_header">
+    <div class="logo">
+        <a href="/">
+            <img src="./img/logo_white.svg" />
+        </a>
+    </div>
+
+    <div class="sub_title">
+        <div class="bg"></div>
+        <h3>
+            가나다 <span>스포츠 홈 설정</span>
+        </h3>
+    </div>
+</div>
+
+<div class="_setting pb-70">
+    <ul class="setting-list-data">
+        <li>
+            <div class="setting-content-title">
+                <span class="title">공개</span>
+                <span class="title_info">가나다 스포츠 홈을 전체공개 하시겠습니까?</span>
+            </div>
+
+            <div class="setting-content-value">
+                <div class="custom-toggle-btn">
+                    <input type="checkbox" name="set1" id="set1" checked />
+                    <div class="custom-toggle-content"></div>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <ul class="setting-list-data">
+        <li>
+            <div class="setting-content-title">
+                <span class="title">기본팀</span>
+                <span class="title_info">가나다 스포츠 홈을 기본팀으로 설정하시겠습니까?</span>
+            </div>
+
+            <div class="setting-content-value">
+                <div class="custom-toggle-btn">
+                    <input type="checkbox" name="set1" id="set1" checked />
+                    <div class="custom-toggle-content"></div>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <ul class="setting-list-data">
+        <li>
+            <div class="setting-content-title">
+                <span class="title">삭제</span>
+                <span class="title_info">가나다 스포츠팀을 해체 하시겠습니까?</span>
+            </div>
+
+            <div class="setting-content-value">
+                <button class="_btn">삭제</button>
+            </div>
+        </li>
+    </ul>
+    <ul class="setting-list-data setting-list-data--block">
+        <li>
+            <div class="setting-content-title">
+                <span class="title">팀 정보 변경</span>
+            </div>
+            <div class="_setting-team">
+                <div class="_thumb">
+                    <img src="./img/team5_ico.png" alt="">
+                </div>
+                <div class="_form">
+                    <div class="write_form_group">
+                        <label for="write_file">팀 사진</label>
+                        <div class="write_form_content write_form_content--block">
+                            <label for="write_file" class="write_file">업로드 파일 선택</label>
+                            <input type="file" name="write_file" id="write_file">
+                            <a href="javascript:;" class="filebtn"><img src="./img/file-search-ico.svg" /></a>
+                        </div>
+                    </div>
+
+                    <div class="write_form_group">
+                        <label>팀 명</label>
+                        <div class="write_form_content">
+                            <input type="text" name="write_subject" class="write_form_input" placeholder="제목을 입력하세요" />
+                        </div>
+                    </div>
+
+                    <div class="write_form_group">
+                        <label>소개말</label>
+                        <div class="write_form_content">
+                            <textarea name="write_content" class="write_form_textarea" placeholder="내용을 입력하세요"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </li>
+
+        <li class="_submit-btns">
+            <button>완료</button>
+        </li>
+    </ul>
+
+</div>
+
+<div class="nav-bottom">
+    <a href="#" class="circle-logo-btn"><img src="./img/circle-logo.png" /></a>
+    <a href="./main.php" class="left-arrow-btn"><img src="./img/arrow-left-on.png" /></a>
+    <a href="#" class="right-arrow-btn"><img src="./img/arrow-right.png" /></a>
+</div>
+
+<script>
+  selectSet("#date");
+
+  /* custom-toggle-btn 처리 */
+  $(".custom-toggle-btn").each(function() {
+    var checked = $(this).find("input[type='checkbox']").prop("checked");
+    if (checked) {
+      $(this).find(".custom-toggle-content").addClass("on");
+    }
+  });
+
+  $(document).on("click", ".custom-toggle-btn", function() {
+    if ($(this).find(".custom-toggle-content").hasClass("on")) {
+      $(this).find(".custom-toggle-content").removeClass("on");
+      $(this).find("input[type='checkbox']").attr("checked", false);
+    } else {
+      $(this).find(".custom-toggle-content").addClass("on");
+      $(this).find("input[type='checkbox']").attr("checked", true);
+    }
+  });
+
+</script>
+
+</body>
+</html>
+

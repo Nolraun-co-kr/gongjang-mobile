@@ -1588,6 +1588,7 @@ div.alarm_txt span.title_info { display:block;color:#646464;font-weight:300;marg
 .sub_header .step span { display:inline-block; margin-left:10px;color:#24E5FF;font-size:10px;font-weight:700; }
 .sub_header .sub_title { display:inline-block;margin:40px 0px 30px 30px;padding:0px;background: linear-gradient(#FFFFFF 50%, rgba( 36, 229, 255, 0.5 ) 50%); }
 .sub_header .sub_title h3 { display:inline-block;font-size:22px;font-weight:700;color:#5A5553;overflow:hidden; }
+.sub_header .sub_title h3 span{font-weight: 300;font-size: 1em;}
 .sub_header .sub_title_info { color:#337ef7; }
 
 .sub_header div.sub_title_info { position:relative;display:inline-block; }
@@ -2352,3 +2353,20 @@ img{max-width: 100%;}
 .mercenary_detail_item--border h3 span{flex: 1;margin-left: 10px;height: 1px;background:#222;}
 .mercenary_detail_item--border .player_list li{position:relative}
 .mercenary_detail_item--border .player_list li ._arrow{position: absolute;right:0;top: 50%;transform: translateY(-50%);}
+
+._setting{background:#eaeaea;}
+._setting .setting-list-data{margin-bottom: 10px !important;background:#fff; padding:0 20px;}
+._setting .setting-list-data.setting-list-data--block li .setting-content-title{width: 100%;float: none;}
+._setting .setting-list-data li{border-bottom: none;}
+._setting .setting-list-data ._btn{background: none;width: 56px;height: 30px;}
+._setting .setting-list-data ._btn.on{background:#707070;color:#fff;}
+._setting .setting-list-data ._btn:hover{background:#707070;color:#fff;}
+._setting-team{display: flex;}
+._setting-team ._thumb{width: 80px;height: 80px;flex: none;border-radius: 50%;background:#d7d4d2;display: flex;align-items: center;justify-content: center;}
+._setting-team ._form{flex: 1;margin-left: 20px;}
+._setting-team ._form .write_form_group{padding: 0;}
+.write_form_content--block .write_file{margin:0 !important;}
+.write_form_content--block .filebtn{top: 50% !important;transform: translateY(-50%)}
+
+._submit-btns{display: flex;align-items: center;justify-content: center;padding-bottom: 40px !important;}
+._submit-btns button{background:#337ef7;color:#fff;width: 180px;height: 35px;border: none;font-size: 12px;border-radius: 2em;}
