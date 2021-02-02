@@ -2337,3 +2337,8 @@ img{max-width: 100%;}
 .player_dark_content_title--flex .custom-toggle-content.on .as_off{display:none;}
 .player_dark_content_title--flex .custom-toggle-content span.as_on{right: 5px;}
 .player_dark_content_title--flex .custom-toggle-content span.as_off{left: 5px;}
+
+.mt-0 {margin-top: 0 !important;}
+.league2-group-category{background:#5a5553;color:#fff;padding:0 30px;line-height: 35px;font-size: 14px;}
+.league2-group--arrow li > div{display: flex;align-items: center;}
+.league2-group--arrow li > div ._arrow{margin-left: auto;}
